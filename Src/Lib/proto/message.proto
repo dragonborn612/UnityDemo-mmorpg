@@ -119,6 +119,8 @@ message NetMessageRequest{
 
 	MapEntitySyncRequest mapEntitySync = 8;
 	MapTeleportRequest mapTeleport = 9;
+
+	FirstTestRequest firstRequest=10;
 }
 
 message NetMessageResponse{
@@ -133,6 +135,10 @@ message NetMessageResponse{
 
 	MapEntitySyncResponse mapEntitySync = 8;
 	
+}
+
+message FirstTestRequest { 
+	string helloworld = 1;
 }
 
 

@@ -2095,7 +2095,7 @@
         </member>
         <member name="F:ProtoBuf.PrefixStyle.Base128">
             <summary>
-            A base-128 ("varint", the default prefix format in protobuf) length prefix is applied to the data (efficient for short messages).
+            A base-128 length prefix is applied to the data (efficient for short messages).
             </summary>
         </member>
         <member name="F:ProtoBuf.PrefixStyle.Fixed32">
