@@ -1,0 +1,97 @@
+2020-07-02 16:20:41,194 [ 1] INFO  Unity: LoadingManager start
+2020-07-02 16:20:59,555 [ 1] INFO  Unity: UserRegisterRequest::user :1 psw:1
+2020-07-02 16:20:59,557 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-07-02 16:20:59,559 [ 1] INFO  Unity: DoConnect
+2020-07-02 16:20:59,561 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-02 16:20:59,565 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-07-02 16:20:59,569 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-07-02 16:20:59,712 [ 1] INFO  Unity: OnUserRegister:Failed [用户已存在]
+2020-07-02 16:21:09,771 [ 1] INFO  Unity: UserRegisterRequest::user :2 psw:1
+2020-07-02 16:21:09,820 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2020-07-02 16:21:57,088 [ 1] INFO  Unity: UserRegisterRequest::user :1078530492 psw:min160hua
+2020-07-02 16:21:57,142 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2020-07-02 16:23:43,420 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in E:\mmorpg\mmorpg\mmowork\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+
+2020-07-02 16:23:43,422 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
+
+2020-07-02 16:23:43,466 [ 1] INFO  Unity: DoConnect
+2020-07-02 16:23:43,467 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-02 16:23:43,471 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-07-02 16:23:45,480 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-02 16:23:45,481 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-02 16:23:45,542 [ 1] INFO  Unity: DoConnect
+2020-07-02 16:23:45,543 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-02 16:23:45,546 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2020-07-02 16:23:47,550 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-02 16:23:47,551 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-02 16:23:47,668 [ 1] INFO  Unity: DoConnect
+2020-07-02 16:23:47,669 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-02 16:23:47,670 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2020-07-02 16:23:49,676 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-02 16:23:49,678 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-02 16:23:49,678 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2020-07-02 16:23:56,476 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-07-02 16:23:56,476 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+

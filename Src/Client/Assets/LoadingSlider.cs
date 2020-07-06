@@ -15,6 +15,11 @@ public class LoadingSlider : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        log4net.Config.XmlConfigurator.ConfigureAndWatch(new System.IO.FileInfo("log4net.xml"));
+        UnityLogger.Init();
+        Common.Log.Init("Unity");
+        Common.Log.Info("LoadingManager start");//引用Log.InfoFormat
+
         loadingPanle.gameObject.SetActive(true);
         rigiestPanle.gameObject.SetActive(false);
         tipsPanle.gameObject.SetActive(true);

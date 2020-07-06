@@ -13,19 +13,24 @@ namespace Services
     class UserService : Singleton<UserService>, IDisposable
     {
         public UnityEngine.Events.UnityAction<Result, string> OnRegister;
+        public UnityEngine.Events.UnityAction<Result, string> OnLogin;
         NetMessage pendingMessage = null;
         bool connected = false;
 
-        public UserService()
+        public UserService()//
         {
-            NetClient.Instance.OnConnect += OnGameServerConnect;
-            NetClient.Instance.OnDisconnect += OnGameServerDisconnect;
-            MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
+            NetClient.Instance.OnConnect += OnGameServerConnect;//连上事件
+            NetClient.Instance.OnDisconnect += OnGameServerDisconnect;//断开事件
+            MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);//返回事件
+            MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             
         }
 
+       
+
         public void Dispose()
         {
+            MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
@@ -36,7 +41,7 @@ namespace Services
 
         }
 
-        public void ConnectToServer()
+        public void ConnectToServer()//连接服务器
         {
             Debug.Log("ConnectToServer() Start ");
             //NetClient.Instance.CryptKey = this.SessionId;
@@ -48,12 +53,12 @@ namespace Services
         void OnGameServerConnect(int result, string reason)
         {
             Log.InfoFormat("LoadingMesager::OnGameServerConnect :{0} reason:{1}", result, reason);
-            if (NetClient.Instance.Connected)
+            if (NetClient.Instance.Connected)//判断服务器连接
             {
                 this.connected = true;
                 if(this.pendingMessage!=null)
                 {
-                    NetClient.Instance.SendMessage(this.pendingMessage);
+                    NetClient.Instance.SendMessage(this.pendingMessage);//补发
                     this.pendingMessage = null;
                 }
             }
@@ -72,7 +77,7 @@ namespace Services
             return;
         }
 
-        bool DisconnectNotify(int result,string reason)
+        bool DisconnectNotify(int result,string reason)//断链通知
         {
             if (this.pendingMessage != null)
             {
@@ -83,6 +88,14 @@ namespace Services
                         this.OnRegister(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
                     }
                 }
+                if (this.pendingMessage.Request.userLogin != null)
+                {
+                    if (this.OnLogin != null)
+                    {
+                        this.OnLogin(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
+                    }
+                }
+
                 return true;
             }
             return false;
@@ -108,6 +121,26 @@ namespace Services
                 this.ConnectToServer();
             }
         }
+        public void SendLogin(string user ,string psw)
+        {
+            Debug.LogFormat("UserLoginRequsest::user :{0} psw:{1}", user, psw);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.userLogin = new UserLoginRequest();
+            message.Request.userLogin.User = user;
+            message.Request.userLogin.Passward = psw;
+            if (this.connected&&NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
 
         void OnUserRegister(object sender, UserRegisterResponse response)
         {
@@ -116,6 +149,15 @@ namespace Services
             if (this.OnRegister != null)
             {
                 this.OnRegister(response.Result, response.Errormsg);
+            }
+        }
+        private void OnUserLogin(object sender, UserLoginResponse response)
+        {
+            Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (this.OnLogin != null)
+            {
+                this.OnLogin(response.Result, response.Errormsg);
             }
         }
     }
