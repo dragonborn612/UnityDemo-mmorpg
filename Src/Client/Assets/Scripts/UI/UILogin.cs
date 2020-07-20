@@ -25,7 +25,20 @@ public class UILogin : MonoBehaviour {
 
     private void OnLogin(Result result, string messge)
     {
-        MessageBox.Show(string.Format("登入{0} 原因:{1}", result, messge));
+        //MessageBox.Show(string.Format("登入{0} 原因:{1}", result, messge));
+
+        //如果成功 进入用户选这 SceneManger
+        //否则 显示错误信息
+        
+        if (result==Result.Success)
+        {
+            SceneManager.Instance.LoadScene("CharacterSelect");
+        }
+        else
+        {
+            MessageBox.Show(string.Format("登入失败 原因:{0}", messge));
+        }
+        
     }
 
     // Update is called once per frame

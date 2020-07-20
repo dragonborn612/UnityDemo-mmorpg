@@ -63,8 +63,24 @@ namespace GameServer.Services
             {
                 if (loginRequest.Passward==user.Password)
                 {
+                    sender.Session.User = user;//当前会话的用户
+
                     netMessage.Response.userLogin.Result = Result.Success;
                     netMessage.Response.userLogin.Errormsg = "None";
+                    //在返回消息中添加用户 角色信息
+                    netMessage.Response.userLogin.Userinfo = new NUserInfo();
+                    netMessage.Response.userLogin.Userinfo.Id = 1;                 
+                    netMessage.Response.userLogin.Userinfo.Player = new NPlayerInfo();
+                    netMessage.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
+                    foreach (var character in user.Player.Characters)
+                    {
+                        NCharacterInfo info = new NCharacterInfo();
+                        info.Id = character.ID;
+                        info.Class = (CharacterClass)character.Class;
+                        info.Name = character.Name;
+                        netMessage.Response.userLogin.Userinfo.Player.Characters.Add(info);
+                    }
+
                 }
                 else
                 {

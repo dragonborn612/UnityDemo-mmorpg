@@ -12,23 +12,25 @@ namespace Services
 {
     class UserService : Singleton<UserService>, IDisposable
     {
+        //注册客户端响应服务器反馈结果的事件
         public UnityEngine.Events.UnityAction<Result, string> OnRegister;
         public UnityEngine.Events.UnityAction<Result, string> OnLogin;
+        public UnityEngine.Events.UnityAction<Result, string> OnCreateCharacter;
         NetMessage pendingMessage = null;
         bool connected = false;
 
-        public UserService()//
+        public UserService()//创建时执行
         {
             NetClient.Instance.OnConnect += OnGameServerConnect;//连上事件
             NetClient.Instance.OnDisconnect += OnGameServerDisconnect;//断开事件
             MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);//返回事件
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
-            
+            MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+
         }
 
        
-
-        public void Dispose()
+        public void Dispose()//销毁时执行
         {
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
@@ -141,24 +143,60 @@ namespace Services
                 this.ConnectToServer();
             }
         }
+        public void SendCharacterCreate(string characterName, CharacterClass characterClass)
+        {
+            Debug.LogFormat("UserCharacterCreate::characterName :{0} characterClass:{1}", characterName, characterClass.ToString());
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.createChar = new UserCreateCharacterRequest();
+            message.Request.createChar.Name = characterName;
+            message.Request.createChar.Class = characterClass;
+            if (this.connected && NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
 
         void OnUserRegister(object sender, UserRegisterResponse response)
         {
             Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
 
+            
             if (this.OnRegister != null)
             {
                 this.OnRegister(response.Result, response.Errormsg);
             }
         }
+
         private void OnUserLogin(object sender, UserLoginResponse response)
         {
             Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
-
+            // 如果成功 更新玩家信息
+            if (response.Result==Result.Success)
+            {
+                Models.User.Instance.SetupUserInfo(response.Userinfo);
+            }
             if (this.OnLogin != null)
             {
                 this.OnLogin(response.Result, response.Errormsg);
             }
         }
+        private void OnUserCreateCharacter(object sender, UserCreateCharacterResponse message)
+        {
+            Debug.LogFormat("OnUserCreateCharacter:{0} [{1}]", message.Result, message.Errormsg);
+
+            if (OnCreateCharacter!=null)
+            {
+                this.OnCreateCharacter.Invoke(message.Result, message.Errormsg);
+            }
+        }
+
     }
 }

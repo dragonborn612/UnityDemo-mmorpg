@@ -5,6 +5,7 @@
     "Type": "Normal",
     "Class": "WARRIOR",
     "Resource": "Character/Warrior",
+    "Description": "掌握强大武技和剑术的人类战士，灵活地挥舞手中的双手大剑，给敌人致命的伤害，同时也可为盟友抵挡伤害",
     "InitLevel": 1,
     "Speed": 300
   },
@@ -14,6 +15,7 @@
     "Type": "Normal",
     "Class": "WIZARD",
     "Resource": "Character/Wizard",
+    "Description": "操纵元素魔法的地灵族法师，灵活的运用万物中所蕴含的风地水火四大元素的力量进行战斗，也可以为自己和盟友提供额外的魔法增益。",
     "InitLevel": 1,
     "Speed": 300
   },
@@ -23,6 +25,7 @@
     "Type": "Normal",
     "Class": "ARCHER",
     "Resource": "Character/Archer",
+    "Description": "运用自然之弓的精灵弓箭手，箭术高超，百步穿杨，可以在远处给敌人致命伤害，同时也擅长远距离群体伤害",
     "InitLevel": 1,
     "Speed": 300
   },
