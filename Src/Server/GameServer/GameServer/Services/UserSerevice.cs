@@ -17,16 +17,17 @@ namespace GameServer.Services
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegiester);//如果接到注册请求消息则调用OnRegiester
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCharacterCrate);
         }
 
-       
+        
         public void Init()
         {
             Log.InfoFormat("UserServicce:UuserService已启动");
         }
         private void OnRegiester(NetConnection<NetSession> sender, UserRegisterRequest request)
         {
-            Log.InfoFormat("UserRegisterRequest:User{0} Password{1}", request.User, request.Passward);
+            Log.InfoFormat("UserRegisterRequest:User:{0} Password:{1}", request.User, request.Passward);
 
             NetMessage netMessage = new NetMessage();
             netMessage.Response = new NetMessageResponse();
@@ -96,6 +97,40 @@ namespace GameServer.Services
             byte[] data = PackageHandler.PackMessage(netMessage); //打包二进制
             sender.SendData(data, 0, data.Length); //发送到客户端
         }
+        private void OnCharacterCrate(NetConnection<NetSession> sender, UserCreateCharacterRequest message)
+        {
+            Log.InfoFormat("UserCharacterCrateRequset:CharacterName:{0} ChaaracterClass:{1}", message.Name, message.Class);
+
+            NetMessage netMessage = new NetMessage();
+            netMessage.Response = new NetMessageResponse();
+            netMessage.Response.createChar = new UserCreateCharacterResponse();
+
+            TCharacter character = new TCharacter()
+            {
+                Name = message.Name,
+                Class = (int)message.Class,
+                TID = (int)message.Class,
+                MapID = 1,
+                MapPosX = 5000,
+                MapPosY=4000,
+                MapPosZ=820,
+                
+
+            };
+            DBService.Instance.Entities.Characters.Add(character);
+            sender.Session.User.Player.Characters.Add(character);
+            DBService.Instance.Entities.SaveChanges();
+
+            netMessage.Response.createChar.Result = Result.Success;
+            netMessage.Response.createChar.Errormsg = "None";
+
+            byte[] date = PackageHandler.PackMessage(netMessage);
+            sender.SendData(date, 0, date.Length);
+
+
+
+        }
+
 
     }
 }

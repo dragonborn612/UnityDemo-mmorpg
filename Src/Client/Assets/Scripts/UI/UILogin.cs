@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UILogin : MonoBehaviour {
     public InputField username;
@@ -20,6 +21,7 @@ public class UILogin : MonoBehaviour {
         if (1== PlayerPrefs.GetInt("记住账号"))
         {
             username.text = PlayerPrefs.GetString("账号");
+            rememberUser.isOn = true;
         }
 	}
 
@@ -32,7 +34,7 @@ public class UILogin : MonoBehaviour {
         
         if (result==Result.Success)
         {
-            SceneManager.Instance.LoadScene("CharacterSelect");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
         else
         {

@@ -1,6 +1,26 @@
-2020-07-02 21:29:29,468 [ 1] INFO  Unity: LoadingManager start
-2020-07-02 21:29:38,753 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-07-02 21:29:38,756 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-07-22 15:01:01,644 [ 1] INFO  Unity: LoadingManager start
+2020-07-22 15:01:15,091 [ 1] INFO  Unity: UserLoginRequsest::user :admin psw:123
+2020-07-22 15:01:15,095 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-07-22 15:01:15,097 [ 1] INFO  Unity: DoConnect
+2020-07-22 15:01:15,100 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-22 15:01:15,103 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-07-22 15:01:15,107 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-07-22 15:01:15,242 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2020-07-22 15:01:15,386 [ 1] INFO  Unity: DataManager > DataManager()
+2020-07-22 15:01:15,522 [ 1] INFO  Unity: º«‘ÿ1
+2020-07-22 15:01:15,522 [ 1] INFO  Unity: º«‘ÿ2
+2020-07-22 15:01:15,616 [ 1] INFO  Unity: º«‘ÿ3
+2020-07-22 15:01:15,619 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{UnassignedReferenceException: The variable uiCharInfo of UICharacterSelect has not been assigned.
+You probably need to assign the uiCharInfo variable of the UICharacterSelect script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:264)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:300)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:295)
+UICharacterSelect.InitCharacterSelect (Boolean init) (at Assets/Scripts/UI/UICharacterSelect.cs:90)
+UICharacterSelect.Start () (at Assets/Scripts/UI/UICharacterSelect.cs:33)
+}</args></log4net.Error>
+2020-07-22 15:01:53,862 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-07-22 15:01:53,863 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

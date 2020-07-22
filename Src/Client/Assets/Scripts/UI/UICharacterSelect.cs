@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using SkillBridge.Message;
+using Models;
+using Services;
+using System;
+
 public class UICharacterSelect : MonoBehaviour {
 
     
@@ -11,9 +15,14 @@ public class UICharacterSelect : MonoBehaviour {
     public Text descs;
     public UICharacterView characterView;
     public Text[] name;
+    public List<GameObject> uiChars = new List<GameObject>();
+    public GameObject uiCharInfo;//角色列表项目预制体
+    public Transform uicahrListPos;
+    public GameObject selectPanel;
+    public GameObject cratePanel;
 
     private CharacterClass characterClass;
-
+    private  int selectCharacterIdx = -1;
 
     // Use this for initialization
     void Start ()
@@ -21,13 +30,35 @@ public class UICharacterSelect : MonoBehaviour {
         DataManager.Instance.Load();
         CareerNameInit();
         CareerInit();
+        InitCharacterSelect(true);
+        //UserService.Instance.OnCreateCharacter = this.OnCreateCharacter;
+        InitPanel(true);
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    
+
+    // Update is called once per frame
+ //   void Update () {
 		
-	}
+	//}
+    /// <summary>
+    /// 初始化面板 ture为选择面板 false为创建面板
+    /// </summary>
+    /// <param name="init"></param>
+    private void InitPanel(bool init)
+    {
+        if (init)
+        {
+            selectPanel.SetActive(true);
+            cratePanel.SetActive(false);
+        }
+        else
+        {
+            selectPanel.SetActive(false);
+            cratePanel.SetActive(true);
+        }
+    }
     /// <summary>
     /// 职业名字动态加载
     /// </summary>
@@ -39,9 +70,41 @@ public class UICharacterSelect : MonoBehaviour {
             Debug.LogFormat("记载{0}", i+1);
         }
     }
+    /// <summary>
+    /// 初始化 角色选择菜单中的角色列表
+    /// </summary>
+    public void InitCharacterSelect(bool init)
+    {
+        //删除上一个用户的角色列表
+        if (init)
+        {
+            foreach (var oldCharUi in uiChars)
+            {
+                Destroy(oldCharUi);
+            }
+            uiChars.Clear();
+        }
+        //更新现在登入用户的角色列表
+        for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
+        {
+            GameObject go = Instantiate(uiCharInfo, uicahrListPos);
+            UICharInfo charInfo = go.GetComponent<UICharInfo>();
+            charInfo.characterInfo = User.Instance.Info.Player.Characters[i];
+            Button button =go. GetComponent<Button>();
+            int idx = i;
+            button.onClick.AddListener(() => OnSelectcharacter(idx));
+            uiChars.Add(go);
+            go.SetActive(true);
+
+        }
+    }
+    /// <summary>
+    /// 创建界面 点击角色后 处理标题和描述
+    /// </summary>
+    /// <param name="characterClass"></param>
     public void OnSelectClass(int characterClass)
     {
-        this.characterClass = (CharacterClass)characterClass;
+        this.characterClass = (CharacterClass)characterClass+1;
         characterView.CurrentCharacter = characterClass;
         for (int i = 0; i < Titles.Length; i++)
         {
@@ -54,7 +117,25 @@ public class UICharacterSelect : MonoBehaviour {
                 Titles[i].gameObject.SetActive(false);
             }
         }
-        descs.text = DataManager.Instance.Characters[characterClass + 1].Description;
+        descs.text = DataManager.Instance.Characters[characterClass + 1].Description;//加载角色描述
+
+    }
+    /// <summary>
+    /// 点击选择角色时 角色模型、当前角色更改，选中标记处理
+    /// </summary>
+    /// <param name="idx"></param>
+    public void OnSelectcharacter(int idx)
+    {
+        this.selectCharacterIdx = idx;
+        var cha = User.Instance.Info.Player.Characters[idx];
+        Debug.LogFormat("Select Char :[{0}]{1}[{2}]", cha.Id, cha.Name, cha.Class);
+        User.Instance.CurrentCharacter = cha;
+        characterView.CurrentCharacter = (int)cha.Class-1;
+        for (int i = 0; i < uiChars.Count; i++)
+        {
+            UICharInfo uiCharInfo = uiChars[i]. GetComponent<UICharInfo>();
+            uiCharInfo.IsSelect = idx == i;           
+        }
     }
     /// <summary>
     /// 除始化 职业模型、标题、描述
@@ -76,9 +157,26 @@ public class UICharacterSelect : MonoBehaviour {
         }
         descs.text = DataManager.Instance.Characters[1].Description;
     }
+    /// <summary>
+    /// 点击创建角色按钮
+    /// </summary>
     public void OnClickCreate()
     {
-        //验证用户名是不是空
+        //验证角色名是不是空
         //验证完后 发送服务器 参数(角色名字，角色职业)
+        if (characterName==null)
+        {
+            MessageBox.Show("用户名不能为空！");
+        }
+        else
+        {
+            MessageBox.Show("创建成功！");
+            UserService.Instance.SendCharacterCreate(characterName.text, characterClass);
+
+        }
     }
+    //private void OnCreateCharacter(Result arg0, string arg1)
+    //{
+       
+    //}
 }

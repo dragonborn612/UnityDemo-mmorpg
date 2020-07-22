@@ -178,7 +178,7 @@ namespace Services
         private void OnUserLogin(object sender, UserLoginResponse response)
         {
             Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
-            // 如果成功 更新玩家信息
+            // 如果成功 更新玩家角色表信息
             if (response.Result==Result.Success)
             {
                 Models.User.Instance.SetupUserInfo(response.Userinfo);
