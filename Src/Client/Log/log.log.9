@@ -1,33 +1,87 @@
-2020-07-22 15:03:08,868 [ 1] INFO  Unity: LoadingManager start
-2020-07-22 15:03:18,581 [ 1] INFO  Unity: UserLoginRequsest::user :admin psw:123
-2020-07-22 15:03:18,583 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-07-22 15:03:18,585 [ 1] INFO  Unity: DoConnect
-2020-07-22 15:03:18,587 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-07-22 15:03:18,591 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-07-23 16:33:00,432 [ 1] INFO  Unity: LoadingManager start
+2020-07-23 16:33:12,515 [ 1] INFO  Unity: UserLoginRequsest::user :user1 psw:123
+2020-07-23 16:33:12,518 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-07-23 16:33:12,519 [ 1] INFO  Unity: DoConnect
+2020-07-23 16:33:12,521 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-23 16:33:12,524 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-07-22 15:03:18,596 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-07-22 15:03:18,740 [ 1] INFO  Unity: OnUserRegister:Success [None]
-2020-07-22 15:03:18,872 [ 1] INFO  Unity: DataManager > DataManager()
-2020-07-22 15:03:19,007 [ 1] INFO  Unity: 记载1
-2020-07-22 15:03:19,008 [ 1] INFO  Unity: 记载2
-2020-07-22 15:03:19,009 [ 1] INFO  Unity: 记载3
-2020-07-22 15:03:26,056 [ 1] INFO  Unity: Select Char :[1]123[None]
-2020-07-22 15:03:26,983 [ 1] INFO  Unity: Select Char :[2]123[None]
-2020-07-22 15:03:27,909 [ 1] INFO  Unity: Select Char :[3]箭手[Wizard]
-2020-07-22 15:03:29,020 [ 1] INFO  Unity: Select Char :[2]123[None]
-2020-07-22 15:03:29,935 [ 1] INFO  Unity: Select Char :[1]123[None]
-2020-07-22 15:03:31,346 [ 1] INFO  Unity: Select Char :[2]123[None]
-2020-07-22 15:03:31,895 [ 1] INFO  Unity: Select Char :[1]123[None]
-2020-07-22 15:03:32,531 [ 1] INFO  Unity: Select Char :[2]123[None]
-2020-07-22 15:03:32,946 [ 1] INFO  Unity: Select Char :[1]123[None]
-2020-07-22 15:03:33,362 [ 1] INFO  Unity: Select Char :[2]123[None]
-2020-07-22 15:03:33,710 [ 1] INFO  Unity: Select Char :[1]123[None]
-2020-07-22 15:03:34,092 [ 1] INFO  Unity: Select Char :[2]123[None]
-2020-07-22 15:03:34,426 [ 1] INFO  Unity: Select Char :[1]123[None]
-2020-07-22 15:03:34,823 [ 1] INFO  Unity: Select Char :[2]123[None]
-2020-07-22 15:03:35,140 [ 1] INFO  Unity: Select Char :[1]123[None]
-2020-07-22 15:05:01,285 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-07-22 15:05:01,286 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-07-23 16:33:14,532 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:51)
+Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:143)
+UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:76)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020-07-23 16:33:14,558 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:51)
+Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:143)
+UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:76)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020-07-23 16:33:14,559 [ 1] INFO  Unity: DoConnect
+2020-07-23 16:33:14,560 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-23 16:33:14,561 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2020-07-23 16:33:16,567 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-23 16:33:16,568 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-07-23 16:34:10,308 [ 1] INFO  Unity: DoConnect
+2020-07-23 16:34:10,309 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-23 16:34:10,310 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2020-07-23 16:34:10,312 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-07-23 16:34:13,571 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2020-07-23 16:34:13,698 [ 1] INFO  Unity: DataManager > DataManager()
+2020-07-23 16:34:13,811 [ 1] INFO  Unity: 记载1
+2020-07-23 16:34:13,813 [ 1] INFO  Unity: 记载2
+2020-07-23 16:34:13,814 [ 1] INFO  Unity: 记载3
+2020-07-23 16:34:13,816 [ 1] INFO  Unity: 刷新角色列表
+2020-07-23 16:34:19,064 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:34:19,859 [ 1] INFO  Unity: Select Char :[9]贵金属钩[Archer]
+2020-07-23 16:34:20,342 [ 1] INFO  Unity: Select Char :[8]贵金属钩[Archer]
+2020-07-23 16:34:20,943 [ 1] INFO  Unity: Select Char :[7]法1[Wizard]
+2020-07-23 16:34:21,489 [ 1] INFO  Unity: Select Char :[8]贵金属钩[Archer]
+2020-07-23 16:34:21,859 [ 1] INFO  Unity: Select Char :[9]贵金属钩[Archer]
+2020-07-23 16:34:45,068 [ 1] INFO  Unity: UserCharacterCreate::characterName :箭手 characterClass:None
+2020-07-23 16:34:45,485 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2020-07-23 16:35:09,542 [ 1] INFO  Unity: 刷新角色列表
+2020-07-23 16:35:18,087 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:18,634 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:19,121 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:19,790 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:20,040 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:23,336 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:30,345 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:31,193 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:32,898 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:33,543 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:35,517 [ 1] INFO  Unity: Select Char :[13]箭手[None]
+2020-07-23 16:35:59,306 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-07-23 16:35:59,306 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

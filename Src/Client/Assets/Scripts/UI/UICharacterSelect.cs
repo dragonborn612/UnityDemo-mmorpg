@@ -14,7 +14,7 @@ public class UICharacterSelect : MonoBehaviour {
     public InputField characterName;
     public Text descs;
     public UICharacterView characterView;
-    public Text[] name;
+    public Text[] className;
     public List<GameObject> uiChars = new List<GameObject>();
     public GameObject uiCharInfo;//角色列表项目预制体
     public Transform uicahrListPos;
@@ -31,7 +31,7 @@ public class UICharacterSelect : MonoBehaviour {
         CareerNameInit();
         CareerInit();
         InitCharacterSelect(true);
-        //UserService.Instance.OnCreateCharacter = this.OnCreateCharacter;
+        UserService.Instance.OnCreateCharacter = this.OnCreateCharacter;
         InitPanel(true);
 
     }
@@ -60,21 +60,64 @@ public class UICharacterSelect : MonoBehaviour {
         }
     }
     /// <summary>
+    /// 除始化 职业模型、标题、描述
+    /// </summary>
+    public void CareerInit()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if (i == 0)
+            {
+                characterView.characterModels[i].SetActive(true);
+                Titles[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                characterView.characterModels[i].SetActive(false);
+                Titles[i].gameObject.SetActive(false);
+            }
+        }
+        descs.text = DataManager.Instance.Characters[1].Description;
+    }
+    /// <summary>
     /// 职业名字动态加载
     /// </summary>
     public void CareerNameInit()
     {
-        for (int i = 0; i < name.Length; i++)
+        for (int i = 0; i < className.Length; i++)
         {
-            name[i].text = DataManager.Instance.Characters[i + 1].Name;
-            Debug.LogFormat("记载{0}", i+1);
+            className[i].text = DataManager.Instance.Characters[i + 1].Name;
+            //Debug.LogFormat("记载{0}", i+1);
         }
+    }
+    /// <summary>
+    /// 创建界面 点击角色后 处理标题和描述
+    /// </summary>
+    /// <param name="characterClass"></param>
+    public void OnSelectClass(int characterClass)
+    {
+        this.characterClass = (CharacterClass)characterClass + 1;
+        characterView.CurrentCharacter = characterClass;
+        for (int i = 0; i < Titles.Length; i++)
+        {
+            if (i == characterClass)
+            {
+                Titles[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                Titles[i].gameObject.SetActive(false);
+            }
+        }
+        descs.text = DataManager.Instance.Characters[characterClass + 1].Description;//加载角色描述
+
     }
     /// <summary>
     /// 初始化 角色选择菜单中的角色列表
     /// </summary>
     public void InitCharacterSelect(bool init)
     {
+        Debug.Log("刷新角色列表");
         //删除上一个用户的角色列表
         if (init)
         {
@@ -89,7 +132,7 @@ public class UICharacterSelect : MonoBehaviour {
         {
             GameObject go = Instantiate(uiCharInfo, uicahrListPos);
             UICharInfo charInfo = go.GetComponent<UICharInfo>();
-            charInfo.characterInfo = User.Instance.Info.Player.Characters[i];
+            charInfo.characterInfo = User.Instance.Info.Player.Characters[i];//更新角色ui的信息
             Button button =go. GetComponent<Button>();
             int idx = i;
             button.onClick.AddListener(() => OnSelectcharacter(idx));
@@ -98,28 +141,7 @@ public class UICharacterSelect : MonoBehaviour {
 
         }
     }
-    /// <summary>
-    /// 创建界面 点击角色后 处理标题和描述
-    /// </summary>
-    /// <param name="characterClass"></param>
-    public void OnSelectClass(int characterClass)
-    {
-        this.characterClass = (CharacterClass)characterClass+1;
-        characterView.CurrentCharacter = characterClass;
-        for (int i = 0; i < Titles.Length; i++)
-        {
-            if (i==characterClass)
-            {
-                Titles[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                Titles[i].gameObject.SetActive(false);
-            }
-        }
-        descs.text = DataManager.Instance.Characters[characterClass + 1].Description;//加载角色描述
-
-    }
+    
     /// <summary>
     /// 点击选择角色时 角色模型、当前角色更改，选中标记处理
     /// </summary>
@@ -137,26 +159,7 @@ public class UICharacterSelect : MonoBehaviour {
             uiCharInfo.IsSelect = idx == i;           
         }
     }
-    /// <summary>
-    /// 除始化 职业模型、标题、描述
-    /// </summary>
-    public void CareerInit()
-    {
-        for (int i = 0; i < 3; i++)
-        {
-            if (i==0)
-            {
-                characterView.characterModels[i].SetActive(true);
-                Titles[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                characterView.characterModels[i].SetActive(false);
-                Titles[i].gameObject.SetActive(false);
-            }
-        }
-        descs.text = DataManager.Instance.Characters[1].Description;
-    }
+   
     /// <summary>
     /// 点击创建角色按钮
     /// </summary>
@@ -170,13 +173,28 @@ public class UICharacterSelect : MonoBehaviour {
         }
         else
         {
-            MessageBox.Show("创建成功！");
+           
             UserService.Instance.SendCharacterCreate(characterName.text, characterClass);
 
         }
     }
-    //private void OnCreateCharacter(Result arg0, string arg1)
-    //{
-       
-    //}
+    private void OnCreateCharacter(Result arg0, string arg1)
+    {
+        if (arg0==Result.Success)
+        {
+            MessageBox.Show("创建成功！");
+        }
+        else
+        {
+            MessageBox.Show("创建失败！");
+        }
+        
+
+    }
+    public void OnClickStrat()
+    {
+        //进入地图
+        Debug.Log("点击开始游戏");
+        UserService.Instance.SenderGameEnter(selectCharacterIdx);
+    }
 }

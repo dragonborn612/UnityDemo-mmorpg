@@ -1,26 +1,57 @@
-2020-07-22 15:01:01,644 [ 1] INFO  Unity: LoadingManager start
-2020-07-22 15:01:15,091 [ 1] INFO  Unity: UserLoginRequsest::user :admin psw:123
-2020-07-22 15:01:15,095 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-07-22 15:01:15,097 [ 1] INFO  Unity: DoConnect
-2020-07-22 15:01:15,100 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-07-22 15:01:15,103 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-07-23 16:18:19,118 [ 1] INFO  Unity: LoadingManager start
+2020-07-23 16:18:37,420 [ 1] INFO  Unity: UserLoginRequsest::user :user1 psw:123
+2020-07-23 16:18:37,422 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-07-23 16:18:37,424 [ 1] INFO  Unity: DoConnect
+2020-07-23 16:18:37,426 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-23 16:18:37,428 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-07-22 15:01:15,107 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-07-22 15:01:15,242 [ 1] INFO  Unity: OnUserRegister:Success [None]
-2020-07-22 15:01:15,386 [ 1] INFO  Unity: DataManager > DataManager()
-2020-07-22 15:01:15,522 [ 1] INFO  Unity: 记载1
-2020-07-22 15:01:15,522 [ 1] INFO  Unity: 记载2
-2020-07-22 15:01:15,616 [ 1] INFO  Unity: 记载3
-2020-07-22 15:01:15,619 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable uiCharInfo of UICharacterSelect has not been assigned.
-You probably need to assign the uiCharInfo variable of the UICharacterSelect script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UICharacterSelect.InitCharacterSelect (Boolean init) (at Assets/Scripts/UI/UICharacterSelect.cs:90)
-UICharacterSelect.Start () (at Assets/Scripts/UI/UICharacterSelect.cs:33)
-}</args></log4net.Error>
-2020-07-22 15:01:53,862 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-07-22 15:01:53,863 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-07-23 16:18:37,432 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-07-23 16:18:37,557 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2020-07-23 16:18:37,686 [ 1] INFO  Unity: DataManager > DataManager()
+2020-07-23 16:18:37,815 [ 1] INFO  Unity: 记载1
+2020-07-23 16:18:37,816 [ 1] INFO  Unity: 记载2
+2020-07-23 16:18:37,829 [ 1] INFO  Unity: 记载3
+2020-07-23 16:18:37,831 [ 1] INFO  Unity: 刷新角色列表
+2020-07-23 16:18:40,428 [ 1] INFO  Unity: Select Char :[7]法1[Wizard]
+2020-07-23 16:18:41,213 [ 1] INFO  Unity: Select Char :[8]贵金属钩[Archer]
+2020-07-23 16:18:41,615 [ 1] INFO  Unity: Select Char :[9]贵金属钩[Archer]
+2020-07-23 16:18:42,294 [ 1] INFO  Unity: Select Char :[8]贵金属钩[Archer]
+2020-07-23 16:18:42,631 [ 1] INFO  Unity: Select Char :[9]贵金属钩[Archer]
+2020-07-23 16:18:43,061 [ 1] INFO  Unity: Select Char :[8]贵金属钩[Archer]
+2020-07-23 16:18:52,797 [ 1] INFO  Unity: UserCharacterCreate::characterName :fa2 characterClass:Wizard
+2020-07-23 16:18:52,833 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2020-07-23 16:18:56,014 [ 1] INFO  Unity: 刷新角色列表
+2020-07-23 16:19:01,450 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:01,979 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:02,415 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:02,978 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:03,923 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:04,222 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:04,504 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:05,217 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:05,567 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:05,905 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:06,534 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:07,302 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:07,718 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:08,116 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:08,486 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:09,027 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:09,425 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:09,837 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:13,386 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:13,799 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:14,314 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:14,748 [ 1] INFO  Unity: Select Char :[11]fa2[Wizard]
+2020-07-23 16:19:23,130 [ 1] INFO  Unity: UserCharacterCreate::characterName :fa characterClass:Wizard
+2020-07-23 16:19:23,163 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2020-07-23 16:19:25,372 [ 1] INFO  Unity: 刷新角色列表
+2020-07-23 16:19:28,884 [ 1] INFO  Unity: Select Char :[12]fa[Wizard]
+2020-07-23 16:19:29,316 [ 1] INFO  Unity: Select Char :[12]fa[Wizard]
+2020-07-23 16:19:29,680 [ 1] INFO  Unity: Select Char :[12]fa[Wizard]
+2020-07-23 16:19:30,592 [ 1] INFO  Unity: Select Char :[12]fa[Wizard]
+2020-07-23 16:28:23,622 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-07-23 16:28:23,623 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
