@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class UILogin : MonoBehaviour {
     public InputField username;
     public InputField passward;
@@ -34,7 +35,7 @@ public class UILogin : MonoBehaviour {
         
         if (result==Result.Success)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            SceneManager.Instance.LoadScene("Levels/CharacterSelect");
         }
         else
         {

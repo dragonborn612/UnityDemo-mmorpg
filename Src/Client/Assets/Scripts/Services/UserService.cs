@@ -22,13 +22,14 @@ namespace Services
 
         public UserService()//创建时执行
         {
+            Debug.Log("UserService()");
             NetClient.Instance.OnConnect += OnGameServerConnect;//连上事件
             NetClient.Instance.OnDisconnect += OnGameServerDisconnect;//断开事件
             MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);//反馈响应
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnGameEnter);
-            MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
+            //MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
 
         }
 
@@ -39,7 +40,7 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnGameEnter);
-            MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
+            //MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
         }
@@ -224,12 +225,12 @@ namespace Services
 
             }
         }
-        private void OnCharacterEnter(object sender, MapCharacterEnterResponse message)
-        {
-            Debug.LogFormat("OnCharacterEnter:character {0} mapId {1}", message.Characters[0], message.mapId);
-            NCharacterInfo nCharacterInfo = message.Characters[0];
-            User.Instance.CurrentCharacter = nCharacterInfo;
-            SceneManager.Instance.LoadScene(DataManager.Instance.Maps[message.mapId].Resource);
-        }
+        //private void OnCharacterEnter(object sender, MapCharacterEnterResponse message)
+        //{
+        //    Debug.LogFormat("OnCharacterEnter:character {0} mapId {1}", message.Characters[0], message.mapId);
+        //    NCharacterInfo nCharacterInfo = message.Characters[0];
+        //    User.Instance.CurrentCharacter = nCharacterInfo;
+        //    SceneManager.Instance.LoadScene(DataManager.Instance.Maps[message.mapId].Resource);
+        //}
     }
 }

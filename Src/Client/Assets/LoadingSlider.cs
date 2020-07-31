@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Services;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +25,8 @@ public class LoadingSlider : MonoBehaviour
         rigiestPanle.gameObject.SetActive(false);
         tipsPanle.gameObject.SetActive(true);
         //loadingSlider = gameObject.GetComponent<Slider>();
+        UserService.Instance.Init();
+        MapService.Instance.Init();
 	}
 	
 	// Update is called once per frame
