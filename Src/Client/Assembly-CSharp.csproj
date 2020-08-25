@@ -61,8 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LoadingSlider.cs" />
-    <Compile Include="Assets\Login.cs" />
     <Compile Include="Assets\Scripts\Assets\Resloader.cs" />
     <Compile Include="Assets\Scripts\Entities\Character.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
@@ -72,7 +70,9 @@
     <Compile Include="Assets\Scripts\Gameobject\MainPlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Gameobject\PlayerInputController1.cs" />
     <Compile Include="Assets\Scripts\Gameobject\PlayerInputerController.cs" />
+    <Compile Include="Assets\Scripts\LoadingSlider.cs" />
     <Compile Include="Assets\Scripts\Log\UnityLogger.cs" />
+    <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Models\User.cs" />
@@ -80,17 +80,21 @@
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
+    <Compile Include="Assets\Scripts\TipsAnimatonEvent.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\UICharInfo.cs" />
     <Compile Include="Assets\Scripts\UI\UILogin.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMainCity.cs" />
     <Compile Include="Assets\Scripts\UI\UIMessageBox.cs" />
+    <Compile Include="Assets\Scripts\UI\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UIRegister.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWorldElement.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWorldElementManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
-    <Compile Include="Assets\TipsAnimatonEvent.cs" />
     <Compile Include="Assets\我的客户端.cs" />
     <None Include="Assets\Shader\UITest.shader" />
     <None Include="Assets\Shader\Lightmap\Lightmap.shader" />

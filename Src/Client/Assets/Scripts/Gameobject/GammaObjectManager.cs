@@ -36,7 +36,7 @@ public class GammaObjectManager : MonoBehaviour {
     }
     private void OnCharacterEnter(Character arg0)
     {
-        throw new NotImplementedException();
+        
     }
 
     /// <summary>
@@ -85,7 +85,7 @@ public class GammaObjectManager : MonoBehaviour {
                     pc.enabled = false;
                 }
             }
-            
+            UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, cha); 
         }
     }
 }
