@@ -4,8 +4,10 @@ using UnityEngine;
 using Entities;
 using Gameobject;
 using SkillBridge.Message;
+using Assets.Scripts.Managers;
 
-public class EntiyController : MonoBehaviour {
+public class EntiyController : MonoBehaviour,IEntityNotiy
+{
 
     public Animator anim;
     public Rigidbody rb;
@@ -28,6 +30,7 @@ public class EntiyController : MonoBehaviour {
 	void Start () {
         if (entity != null)
         {
+            EntityManager.Instance.RegiestEntityChangeNotify(entity.entityId, this);
             this.UpdataTransforn();
 
         }
@@ -93,5 +96,15 @@ public class EntiyController : MonoBehaviour {
                 break;
             
         }
+    }
+
+    //接口实现
+    public void OnEntityRemoved()
+    {
+        if (UIWorldElementManager.Instance != null)
+        {
+            UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
+        }
+        Destroy(this.gameObject);
     }
 }

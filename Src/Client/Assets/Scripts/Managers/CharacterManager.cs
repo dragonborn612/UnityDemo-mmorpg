@@ -6,7 +6,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
 using SkillBridge.Message;
-
+using Assets.Scripts.Managers;
 
 namespace Managers
 {
@@ -15,6 +15,7 @@ namespace Managers
         public Dictionary<int, Character> Characters = new Dictionary<int, Character>();
 
         public UnityAction<Character> OnCharacterEnter;
+        public UnityAction<Character> OnCharacterLeave;
 
         public void Dispose()
         {
@@ -26,6 +27,11 @@ namespace Managers
         }
         public void Clear()
         {
+            int[] keys = Characters.Keys.ToArray();
+            foreach (var item in keys)
+            {
+                this.RemoceCharacter(item);
+            }
             Characters.Clear();
         }
         public void AddCharacter(NCharacterInfo nCharacterInfo)
@@ -33,6 +39,7 @@ namespace Managers
             Debug.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", nCharacterInfo.Id, nCharacterInfo.Name, nCharacterInfo.mapId, nCharacterInfo.Entity.ToString());
             Character character = new Character(nCharacterInfo);
             this.Characters[nCharacterInfo.Id] = character;
+            EntityManager.Instance.AddEntity(character);
             if (OnCharacterEnter!=null)
             {
                 OnCharacterEnter.Invoke(character);
@@ -41,7 +48,15 @@ namespace Managers
         public void RemoceCharacter(int characterId)
         {
             Debug.LogFormat("RemoveCharacter:{0}", characterId);
-            this.Characters.Remove(characterId);
+            if (Characters.ContainsKey(characterId))
+            {
+                EntityManager.Instance.RemoveEntity(Characters[characterId].nCharacterInfo.Entity);     
+                if (OnCharacterLeave != null)
+                {
+                    OnCharacterLeave.Invoke(Characters[characterId]);
+                }
+                this.Characters.Remove(characterId);
+            }    
         }
     }
 }

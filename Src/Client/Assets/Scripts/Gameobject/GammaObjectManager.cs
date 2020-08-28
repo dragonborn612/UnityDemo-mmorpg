@@ -1,31 +1,36 @@
 ﻿using Entities;
 using Gameobject;
 using Managers;
+using Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GammaObjectManager : MonoBehaviour {
+public class GammaObjectManager : MonoSingleton<GammaObjectManager> {
 
     Dictionary<int, GameObject> Characters = new Dictionary<int, GameObject>();
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    protected override void OnStart()
+    {
         StartCoroutine(InintGameObject());
-        CharacterManager.Instance.OnCharacterEnter = OnCharacterEnter;//注册委托
-	}
+        CharacterManager.Instance.OnCharacterEnter+= OnCharacterEnter;//注册委托
+        CharacterManager.Instance.OnCharacterLeave+=OnCharacterLeave;
+
+    }
+
+    
 
     private void OnDestroy()
     {
-        CharacterManager.Instance.OnCharacterEnter = null;//销毁时解除注册
+        CharacterManager.Instance.OnCharacterEnter -= OnCharacterEnter;//销毁时解除注册
+        CharacterManager.Instance.OnCharacterLeave -= OnCharacterLeave;
     }
 
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+   
     IEnumerator InintGameObject()
     {
         foreach (var cha in CharacterManager.Instance.Characters.Values)
@@ -34,18 +39,30 @@ public class GammaObjectManager : MonoBehaviour {
             yield return null; 
         }
     }
-    private void OnCharacterEnter(Character arg0)
+    private void OnCharacterEnter(Character cha)
     {
-        
+        Debug.Log("角色添加委托执行");
+        CreateCharacterObject(cha);
     }
-
+    private void OnCharacterLeave(Character cha)
+    {
+        if (!Characters.ContainsKey(cha.nCharacterInfo.Id))
+        {
+            return;
+        }
+        if (Characters[cha.nCharacterInfo.Id]!=null)
+        {
+            Destroy(Characters[cha.nCharacterInfo.Id]);
+            Characters.Remove(cha.nCharacterInfo.Id);
+        }
+    }
     /// <summary>
     /// 在unity场景中创建角色
     /// </summary>
     /// <param name="cha"></param>
     private void CreateCharacterObject(Character cha)
     {
-        if (!Characters.ContainsKey(cha.nCharacterInfo.Id)||Characters[cha.nCharacterInfo.Id]==null)
+        if (!Characters.ContainsKey(cha.entityId)||Characters[cha.entityId] ==null)
         {
             UnityEngine.Object obj = Resloader.Load<UnityEngine.Object>(cha.characterDefine.Resource);
             if (obj==null)
@@ -53,39 +70,45 @@ public class GammaObjectManager : MonoBehaviour {
                 Debug.LogErrorFormat("Character[{0}] Resourse[{1}] not existed", cha.characterDefine.TID, cha.characterDefine.Resource);
                 return;
             }
-            GameObject go =(GameObject) Instantiate(obj) ;
+            GameObject go =(GameObject) Instantiate(obj,this.transform) ;
             go.name = "Character_" + cha.nCharacterInfo.Id + "_" + cha.nCharacterInfo.Name;
 
             go.transform.position = GameObjectTool.LogicToWorld(cha.position);
             go.transform.forward = GameObjectTool.LogicToWorld(cha.direction);
 
-            Characters[cha.nCharacterInfo.Id] = go;
+            Characters[cha.entityId] = go;
 
-            EntiyController ec = go.GetComponent<EntiyController>();
-            if (ec!=null)
-            {
-                ec.entity = cha;
-                ec.isPlayer = cha.IsPlayer;
-            }
-
-            PlayerInputerController pc = go.GetComponent<PlayerInputerController>();
-            if (pc != null)
-            {
-                //确定是否为当前控制角色
-                if (cha.nCharacterInfo.Id==Models.User.Instance.CurrentCharacter.Id)
-                {
-                    MainPlayerCamera.Instance.player = go;
-                    pc.enabled = true;
-                    pc.isPlayer = true;
-                    pc.character = cha;
-                    pc.entiyController = ec;
-                }
-                else
-                {
-                    pc.enabled = false;
-                }
-            }
+            
             UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, cha); 
+        }
+        InitGameObject(cha,Characters[cha.entityId]);
+    }
+    private void InitGameObject(Character cha,GameObject go)
+    {
+        EntiyController ec = go.GetComponent<EntiyController>();
+        if (ec != null)
+        {
+            ec.entity = cha;
+            ec.isPlayer = cha.IsPlayer;
+        }
+
+        PlayerInputerController pc = go.GetComponent<PlayerInputerController>();
+        if (pc != null)
+        {
+            //确定是否为当前控制角色
+            if (cha.nCharacterInfo.Id == Models.User.Instance.CurrentCharacter.Id)
+            {
+                User.Instance.currentCharacterObject = go;
+                MainPlayerCamera.Instance.player = go;
+                pc.enabled = true;
+                pc.isPlayer = true;
+                pc.character = cha;
+                pc.entiyController = ec;
+            }
+            else
+            {
+                pc.enabled = false;
+            }
         }
     }
 }

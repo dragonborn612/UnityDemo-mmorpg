@@ -28,8 +28,8 @@ namespace Services
 
         public void Dispose()//销毁时执行
         {
-            MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
-            MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
+            MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
+            MessageDistributer.Instance.Unsubscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
 
         }
 
@@ -45,27 +45,31 @@ namespace Services
             {
                 if (User.Instance.CurrentCharacter.Id==cha.Id)
                 {
-                    User.Instance.CurrentCharacter = cha;//更新角色的其他信息
-                    //加入角色管理器
-                    CharacterManager.Instance.AddCharacter(cha);
-
-                  
+                    User.Instance.CurrentCharacter = cha;//更新角色的其他信息                  
                 }
+                //加入角色管理器
+                CharacterManager.Instance.AddCharacter(cha);
                 //判断是否是当前地图
-                //不是，进入地图，更改当前地图
+                //不是，进入正确地图，更改当前地图
                 if (CurrentMapId!=message.mapId)
                 {
                     EnterMap(message.mapId);
                     CurrentMapId = message.mapId;
                 }
-
             }
-
         }
 
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse message)//切换地图
         {
-            
+            //判断是不是自己离开
+            //是自己全部移除
+            //别人 移除别人
+            if (message.characterId == User.Instance.CurrentCharacter.Id)
+            {
+                CharacterManager.Instance.Clear();
+            }
+            else
+                CharacterManager.Instance.RemoceCharacter(message.characterId);
         }
         /// <summary>
         /// 进入指定id的地图
@@ -75,6 +79,7 @@ namespace Services
         {
             if (DataManager.Instance.Maps.ContainsKey(mapId))
             {
+                User.Instance.currenMapData = DataManager.Instance.Maps[mapId];
                 SceneManager.Instance.LoadScene(DataManager.Instance.Maps[mapId].Resource);
                 Debug.LogFormat("EnterMap:map:{0} success", mapId);
             }

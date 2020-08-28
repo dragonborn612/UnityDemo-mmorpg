@@ -1,8 +1,10 @@
-﻿using SkillBridge.Message;
+﻿using Common.Data;
+using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace Models
 {
@@ -27,6 +29,9 @@ namespace Models
             this.userInfo.Player.Characters.AddRange(characters);
         }
         public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
+        public MapDefine currenMapData { get; set; }
+        public GameObject currentCharacterObject { get; set; }
+
 
     }
 }

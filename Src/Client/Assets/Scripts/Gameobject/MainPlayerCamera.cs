@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Models;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,10 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera> {
 	}
     private void LateUpdate()//每帧后调用
     {
+        if (player==null)
+        {
+            player = User.Instance.currentCharacterObject;
+        }
         if (player==null)
         {
             return;

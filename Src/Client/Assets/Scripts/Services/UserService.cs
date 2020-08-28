@@ -29,6 +29,7 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnGameEnter);
+            MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnGameLeave);
             //MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
 
         }
@@ -37,9 +38,10 @@ namespace Services
 
         public void Dispose()//销毁时执行
         {
-            MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
+            MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
-            MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnGameEnter);
+            MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+            MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnGameEnter);
             //MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
@@ -179,6 +181,19 @@ namespace Services
             message.Request.gameEnter.characterIdx = characterIdx;
             NetClient.Instance.SendMessage(message);
         }
+        public void SenderGameLeave()
+        {
+            Debug.Log("UserGameLeaveReausest");
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameLeave = new UserGameLeaveRequest();
+            NetClient.Instance.SendMessage(message);
+        }
+
+
+
+
+
         void OnUserRegister(object sender, UserRegisterResponse response)
         {
             Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
@@ -225,6 +240,12 @@ namespace Services
 
             }
         }
+        private void OnGameLeave(object sender, UserGameLeaveResponse message)
+        {
+            Debug.LogFormat("OnGameLeave:{0} [{1}]", message.Result, message.Errormsg);
+
+        }
+       
         //private void OnCharacterEnter(object sender, MapCharacterEnterResponse message)
         //{
         //    Debug.LogFormat("OnCharacterEnter:character {0} mapId {1}", message.Characters[0], message.mapId);

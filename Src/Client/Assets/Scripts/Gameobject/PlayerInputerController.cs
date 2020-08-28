@@ -126,7 +126,7 @@ public class PlayerInputerController : MonoBehaviour {
         Vector3 offset = this.rb.transform.position - lastPos;
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);//magnitude向量的模
         this.lastPos = this.rb.transform.position;
-        if ((GameObjectTool.WorldToLogic(rb.transform.position)-this.character.position).magnitude>50)
+        if ((GameObjectTool.WorldToLogic(rb.transform.position)-this.character.position).magnitude>50)//物理位置和逻辑位置大于50
         {
             this.character.SetPosition(GameObjectTool.WorldToLogic(this.rb.transform.position));
             this.SendEntityEvent(EntityEvent.None);
