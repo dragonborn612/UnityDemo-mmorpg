@@ -68,7 +68,6 @@
     <Compile Include="Assets\Scripts\Gameobject\GameObjectTool.cs" />
     <Compile Include="Assets\Scripts\Gameobject\GammaObjectManager.cs" />
     <Compile Include="Assets\Scripts\Gameobject\MainPlayerCamera.cs" />
-    <Compile Include="Assets\Scripts\Gameobject\PlayerInputController1.cs" />
     <Compile Include="Assets\Scripts\Gameobject\PlayerInputerController.cs" />
     <Compile Include="Assets\Scripts\LoadingSlider.cs" />
     <Compile Include="Assets\Scripts\Log\UnityLogger.cs" />

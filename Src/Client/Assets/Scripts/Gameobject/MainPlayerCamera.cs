@@ -8,15 +8,7 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera> {
     public Camera camera;
     public GameObject player;
     public Transform viewPoint;
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
     private void LateUpdate()//每帧后调用
     {
         if (player==null)

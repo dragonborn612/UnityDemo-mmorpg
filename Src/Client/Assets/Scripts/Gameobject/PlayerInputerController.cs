@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SkillBridge.Message;
 using Gameobject;
+using Services;
 
 public class PlayerInputerController : MonoBehaviour {
 
@@ -62,9 +63,9 @@ public class PlayerInputerController : MonoBehaviour {
             if (state!=CharacterState.Move)
             {
                 state = CharacterState.Move;
+                this.character.MoveForward();//改变消息速度
+                SendEntityEvent(EntityEvent.MoveFwd);//动画状态改变并同步
                 
-                SendEntityEvent(EntityEvent.MoveFwd);//动画状态改变
-                this.character.MoveForward();//改变速度
 
             }
             rb.velocity = rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (character.speed + 9.81f)/100f;//9.81为了移动更平滑
@@ -76,11 +77,11 @@ public class PlayerInputerController : MonoBehaviour {
             if (state != CharacterState.Move)
             {
                 state = CharacterState.Move;
-               
-                SendEntityEvent(EntityEvent.MoveBack);//动画状态改变
+                this.character.MoveBack();
+                SendEntityEvent(EntityEvent.MoveBack);//动画状态改变并同步
 
             }
-            this.character.MoveBack();
+            
             rb.velocity = rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (character.speed + 9.81f)/100f;
         }
         else
@@ -129,9 +130,10 @@ public class PlayerInputerController : MonoBehaviour {
         if ((GameObjectTool.WorldToLogic(rb.transform.position)-this.character.position).magnitude>50)//物理位置和逻辑位置大于50
         {
             this.character.SetPosition(GameObjectTool.WorldToLogic(this.rb.transform.position));
-            this.SendEntityEvent(EntityEvent.None);
+            this.SendEntityEvent(EntityEvent.None);//同步
         }
         this.transform.position = this.rb.transform.position;
+        
         //var dir = GameObjectTool.LogicToWorld(character.direction);
         //var rot = new Quaternion();
         //rot.SetFromToRotation(dir, this.transform.forward);
@@ -145,7 +147,8 @@ public class PlayerInputerController : MonoBehaviour {
     {
         if (entiyController!=null)
         {
-            entiyController.OnEntityEnvent(entityEvent);
+            entiyController.OnEntityEvent(entityEvent);
+            MapService.Instance.SendMapSync(entityEvent,this.character.EntityData);
         }
     }
 }

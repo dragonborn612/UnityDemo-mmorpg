@@ -76,8 +76,8 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
     /// <summary>
     /// 动画状态机条件改变
     /// </summary>
-    /// <param name="entityEvent"></param>
-    public void OnEntityEnvent(EntityEvent entityEvent)
+    /// <param name="entityEvent"></param> //接口实现 同步状态
+    public void OnEntityEvent(EntityEvent entityEvent)
     {
         switch (entityEvent)
         {
@@ -107,4 +107,11 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
         }
         Destroy(this.gameObject);
     }
+    //接口实现
+    public void OnEntityChange(Entity entity)
+    {
+        Debug.LogFormat("OnEntityChange:id:{0} pos:{1}:Dir:{2} Spd{3}", entity.entityId, entity.position, entity.direction, entity.speed);
+    }
+
+    
 }

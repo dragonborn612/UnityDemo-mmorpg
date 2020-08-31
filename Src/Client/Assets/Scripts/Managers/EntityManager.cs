@@ -10,6 +10,8 @@ namespace Assets.Scripts.Managers
     interface IEntityNotiy
     {
         void OnEntityRemoved();//移除“事件”
+        void OnEntityChange(Entity entity);
+        void OnEntityEvent(EntityEvent @event);
     }
     class EntityManager:Singleton<EntityManager>
     {
@@ -31,6 +33,24 @@ namespace Assets.Scripts.Managers
             {
                 notifiers[entity.Id].OnEntityRemoved();
                 notifiers.Remove(entity.Id);
+            }
+        }
+        public void OnEntitySync(NEntitySync nEntitySync)
+        {
+            Entity entity = null;
+            entities.TryGetValue(nEntitySync.Id, out entity);
+            if (entity!=null)
+            {
+                if (nEntitySync != null)
+                {
+                    entity.EntityData = nEntitySync.Entity;//同步位置
+                }
+                if (notifiers.ContainsKey(nEntitySync.Id))
+                {
+                    //发消息
+                    notifiers[nEntitySync.Id].OnEntityChange(entity);
+                    notifiers[nEntitySync.Id].OnEntityEvent(nEntitySync.Event);
+                }
             }
         }
     }

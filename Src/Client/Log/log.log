@@ -1,36 +1,1577 @@
-2020-08-28 22:33:34,746 [ 1] INFO  Unity: LoadingManager start
-2020-08-28 22:33:34,786 [ 1] INFO  Unity: UserService()
-2020-08-28 22:33:34,791 [ 1] INFO  Unity: MapService()
-2020-08-28 22:33:47,387 [ 1] INFO  Unity: UserLoginRequsest::user :user1 psw:123
-2020-08-28 22:33:47,395 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-08-28 22:33:47,396 [ 1] INFO  Unity: DoConnect
-2020-08-28 22:33:47,399 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-08-28 22:33:47,401 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-08-31 16:43:32,538 [ 1] INFO  Unity: LoadingManager start
+2020-08-31 16:43:32,585 [ 1] INFO  Unity: UserService()
+2020-08-31 16:43:32,589 [ 1] INFO  Unity: MapService()
+2020-08-31 16:43:41,720 [ 1] INFO  Unity: UserLoginRequsest::user :user1 psw:123
+2020-08-31 16:43:41,721 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-08-31 16:43:41,724 [ 1] INFO  Unity: DoConnect
+2020-08-31 16:43:41,727 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-31 16:43:41,732 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-08-28 22:33:47,409 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-08-28 22:33:50,754 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2020-08-28 22:33:50,761 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
-2020-08-28 22:33:50,926 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-08-28 22:33:50,931 [ 1] INFO  Unity: DataManager > DataManager()
-2020-08-28 22:33:51,350 [ 1] INFO  Unity: 刷新角色列表
-2020-08-28 22:33:52,536 [ 1] INFO  Unity: Select Char :[7]法1[Wizard]
-2020-08-28 22:33:53,435 [ 1] INFO  Unity: 点击开始游戏
-2020-08-28 22:33:53,437 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :0 
-2020-08-28 22:33:53,476 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2020-08-28 22:33:53,482 [ 1] INFO  Unity: AddCharacter:7:法1 Map:1 Entity:SkillBridge.Message.NEntity
-2020-08-28 22:33:53,499 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-08-28 22:33:53,500 [ 1] INFO  Unity: EnterMap:map:1 success
-2020-08-28 22:33:53,501 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
-2020-08-28 22:33:54,021 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-08-28 22:34:23,583 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2020-08-28 22:34:23,584 [ 1] INFO  Unity: AddCharacter:21:123 Map:1 Entity:SkillBridge.Message.NEntity
-2020-08-28 22:34:23,585 [ 1] INFO  Unity: 角色添加委托执行
-2020-08-28 22:34:32,345 [ 1] INFO  Unity: RemoveCharacter:21
-2020-08-28 22:34:32,350 [ 1] INFO  Unity: Character_21_123 Ondestroy:ID:2 Pos:(5000, 4000, 820) Dir:(100, 0, 0) Spd:0
-2020-08-28 22:34:43,974 [ 1] INFO  Unity: Character_7_法1 Ondestroy:ID:1 Pos:(5000, 4000, 820) Dir:(100, 0, 0) Spd:0
-2020-08-28 22:34:43,977 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-08-28 22:34:43,978 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-08-31 16:43:41,736 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-08-31 16:43:41,929 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2020-08-31 16:43:41,932 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
+2020-08-31 16:43:42,102 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-31 16:43:42,103 [ 1] INFO  Unity: DataManager > DataManager()
+2020-08-31 16:43:42,284 [ 1] INFO  Unity: 刷新角色列表
+2020-08-31 16:43:43,342 [ 1] INFO  Unity: Select Char :[7]法1[Wizard]
+2020-08-31 16:43:44,203 [ 1] INFO  Unity: 点击开始游戏
+2020-08-31 16:43:44,204 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :0 
+2020-08-31 16:43:44,243 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:3
+2020-08-31 16:43:44,248 [ 1] INFO  Unity: AddCharacter:7:法1 Map:1 Entity:SkillBridge.Message.NEntity
+2020-08-31 16:43:44,253 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-08-31 16:43:44,255 [ 1] INFO  Unity: EnterMap:map:1 success
+2020-08-31 16:43:44,257 [ 1] INFO  Unity: AddCharacter:21:123 Map:1 Entity:SkillBridge.Message.NEntity
+2020-08-31 16:43:44,259 [ 1] INFO  Unity: AddCharacter:7:法1 Map:1 Entity:SkillBridge.Message.NEntity
+2020-08-31 16:43:44,263 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
+2020-08-31 16:43:44,982 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-31 16:43:45,272 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:45,274 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:45,334 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:45,336 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:45,545 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:45,547 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:45,602 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:45,604 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:45,803 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:45,804 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:45,873 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:45,875 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:46,073 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:46,074 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:46,148 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:46,149 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:46,346 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:46,347 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:46,399 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:46,400 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:46,610 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:46,611 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:46,658 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:46,661 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:46,858 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:46,861 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:46,908 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:46,911 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:47,115 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:47,116 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:47,172 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:47,174 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:47,376 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:47,378 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:47,428 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:47,429 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:47,631 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:47,632 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:47,680 [ 1] INFO  Unity: SetDrirection:(-95, 32, 0)
+2020-08-31 16:43:47,681 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:47,682 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-87, 49, 0) Spd300
+2020-08-31 16:43:47,683 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-87,49,0),spd:300
+
+2020-08-31 16:43:47,699 [ 1] INFO  Unity: SetDrirection:(-95, 30, 0)
+2020-08-31 16:43:47,700 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:47,719 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3571, 3587, 811):Dir:(-95, 32, 0) Spd300
+2020-08-31 16:43:47,720 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3571,3587,811),dir:(-95,32,0),spd:300
+
+2020-08-31 16:43:47,755 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3579, 3583, 811):Dir:(-95, 30, 0) Spd300
+2020-08-31 16:43:47,757 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3579,3583,811),dir:(-95,30,0),spd:300
+
+2020-08-31 16:43:47,798 [ 1] INFO  Unity: SetDrirection:(-99, 11, 0)
+2020-08-31 16:43:47,799 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:47,835 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3569, 3587, 811):Dir:(-99, 11, 0) Spd300
+2020-08-31 16:43:47,837 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3569,3587,811),dir:(-99,11,0),spd:300
+
+2020-08-31 16:43:47,888 [ 1] INFO  Unity: SetDrirection:(-100, -10, 0)
+2020-08-31 16:43:47,889 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:47,923 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3554, 3590, 811):Dir:(-100, -10, 0) Spd300
+2020-08-31 16:43:47,924 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3554,3590,811),dir:(-100,-10,0),spd:300
+
+2020-08-31 16:43:47,996 [ 1] INFO  Unity: SetDrirection:(-95, -30, 0)
+2020-08-31 16:43:47,997 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,014 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:48,015 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,036 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3534, 3586, 811):Dir:(-95, -30, 0) Spd300
+2020-08-31 16:43:48,038 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3534,3586,811),dir:(-95,-30,0),spd:300
+
+2020-08-31 16:43:48,059 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:48,061 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,077 [ 1] INFO  Unity: SetDrirection:(-89, -46, 0)
+2020-08-31 16:43:48,079 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,081 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-95, -30, 0) Spd300
+2020-08-31 16:43:48,082 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-95,-30,0),spd:300
+
+2020-08-31 16:43:48,099 [ 1] INFO  Unity: SetDrirection:(-87, -49, 0)
+2020-08-31 16:43:48,100 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,118 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3578, 3579, 811):Dir:(-89, -46, 0) Spd300
+2020-08-31 16:43:48,119 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3578,3579,811),dir:(-89,-46,0),spd:300
+
+2020-08-31 16:43:48,151 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3578, 3579, 811):Dir:(-89, -46, 0) Spd300
+2020-08-31 16:43:48,152 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3578,3579,811),dir:(-89,-46,0),spd:300
+
+2020-08-31 16:43:48,190 [ 1] INFO  Unity: SetDrirection:(-78, -62, 0)
+2020-08-31 16:43:48,191 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,194 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3578, 3579, 811):Dir:(-87, -49, 0) Spd300
+2020-08-31 16:43:48,195 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3578,3579,811),dir:(-87,-49,0),spd:300
+
+2020-08-31 16:43:48,207 [ 1] INFO  Unity: SetDrirection:(-77, -64, 0)
+2020-08-31 16:43:48,208 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,225 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3566, 3573, 811):Dir:(-78, -62, 0) Spd300
+2020-08-31 16:43:48,228 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3566,3573,811),dir:(-78,-62,0),spd:300
+
+2020-08-31 16:43:48,259 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3574, 3577, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:48,261 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3574,3577,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:48,415 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:48,416 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,466 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:48,467 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:48,651 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:48,652 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,712 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:48,714 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:48,902 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:48,903 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,936 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:43:48,937 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:48,956 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3583, 3581, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:48,957 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3583,3581,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:48,988 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3575, 3575, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:48,990 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveFwd entity:(2:pos:(3575,3575,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:49,818 [ 1] INFO  Unity: Stop
+2020-08-31 16:43:49,830 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:49,868 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3379, 3428, 811):Dir:(-77, -64, 0) Spd0
+2020-08-31 16:43:49,869 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(3379,3428,811),dir:(-77,-64,0),spd:0
+
+2020-08-31 16:43:50,586 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:43:50,587 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:50,620 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3379, 3428, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:50,622 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveFwd entity:(2:pos:(3379,3428,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:51,427 [ 1] INFO  Unity: Stop
+2020-08-31 16:43:51,428 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:51,461 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3183, 3281, 811):Dir:(-77, -64, 0) Spd0
+2020-08-31 16:43:51,463 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(3183,3281,811),dir:(-77,-64,0),spd:0
+
+2020-08-31 16:43:51,780 [ 1] INFO  Unity: MoveBack
+2020-08-31 16:43:51,782 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-08-31 16:43:51,819 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3183, 3281, 811):Dir:(-77, -64, 0) Spd-300
+2020-08-31 16:43:51,821 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveBack entity:(2:pos:(3183,3281,811),dir:(-77,-64,0),spd:-300
+
+2020-08-31 16:43:52,569 [ 1] INFO  Unity: Stop
+2020-08-31 16:43:52,570 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:52,607 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3363, 3416, 811):Dir:(-77, -64, 0) Spd0
+2020-08-31 16:43:52,609 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(3363,3416,811),dir:(-77,-64,0),spd:0
+
+2020-08-31 16:43:53,140 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:43:53,141 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:53,177 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3363, 3416, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:53,178 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveFwd entity:(2:pos:(3363,3416,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:54,000 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:43:54,001 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:54,054 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3147, 3218, 811):Dir:(-77, -64, 0) Spd300
+2020-08-31 16:43:54,056 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3147,3218,811),dir:(-77,-64,0),spd:300
+
+2020-08-31 16:43:54,536 [ 1] INFO  Unity: Stop
+2020-08-31 16:43:54,537 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:54,570 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(-77, -64, 0) Spd0
+2020-08-31 16:43:54,572 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(3031,3131,811),dir:(-77,-64,0),spd:0
+
+2020-08-31 16:43:54,706 [ 1] INFO  Unity: SetDrirection:(-64, -77, 0)
+2020-08-31 16:43:54,707 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:54,740 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(-64, -77, 0) Spd0
+2020-08-31 16:43:54,742 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3031,3131,811),dir:(-64,-77,0),spd:0
+
+2020-08-31 16:43:54,861 [ 1] INFO  Unity: SetDrirection:(-47, -88, 0)
+2020-08-31 16:43:54,862 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:54,897 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(-47, -88, 0) Spd0
+2020-08-31 16:43:54,899 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3031,3131,811),dir:(-47,-88,0),spd:0
+
+2020-08-31 16:43:54,963 [ 1] INFO  Unity: SetDrirection:(-28, -96, 0)
+2020-08-31 16:43:54,964 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:54,999 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(-28, -96, 0) Spd0
+2020-08-31 16:43:55,000 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3031,3131,811),dir:(-28,-96,0),spd:0
+
+2020-08-31 16:43:55,031 [ 1] INFO  Unity: SetDrirection:(-11, -99, 0)
+2020-08-31 16:43:55,032 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:55,078 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(-11, -99, 0) Spd0
+2020-08-31 16:43:55,080 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3031,3131,811),dir:(-11,-99,0),spd:0
+
+2020-08-31 16:43:55,129 [ 1] INFO  Unity: SetDrirection:(7, -100, 0)
+2020-08-31 16:43:55,130 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:55,165 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(7, -100, 0) Spd0
+2020-08-31 16:43:55,167 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3031,3131,811),dir:(7,-100,0),spd:0
+
+2020-08-31 16:43:55,219 [ 1] INFO  Unity: SetDrirection:(27, -96, 0)
+2020-08-31 16:43:55,220 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:55,262 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(27, -96, 0) Spd0
+2020-08-31 16:43:55,264 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3031,3131,811),dir:(27,-96,0),spd:0
+
+2020-08-31 16:43:55,349 [ 1] INFO  Unity: SetDrirection:(44, -90, 0)
+2020-08-31 16:43:55,350 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:55,383 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(44, -90, 0) Spd0
+2020-08-31 16:43:55,384 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3031,3131,811),dir:(44,-90,0),spd:0
+
+2020-08-31 16:43:55,797 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:43:55,797 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:55,833 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3031, 3131, 811):Dir:(44, -90, 0) Spd300
+2020-08-31 16:43:55,834 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveFwd entity:(2:pos:(3031,3131,811),dir:(44,-90,0),spd:300
+
+2020-08-31 16:43:56,746 [ 1] INFO  Unity: Stop
+2020-08-31 16:43:56,747 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:56,785 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3141, 2856, 811):Dir:(44, -90, 0) Spd0
+2020-08-31 16:43:56,788 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(3141,2856,811),dir:(44,-90,0),spd:0
+
+2020-08-31 16:43:57,372 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:43:57,373 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:43:57,411 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3141, 2856, 811):Dir:(44, -90, 0) Spd300
+2020-08-31 16:43:57,413 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveFwd entity:(2:pos:(3141,2856,811),dir:(44,-90,0),spd:300
+
+2020-08-31 16:43:58,212 [ 1] INFO  Unity: Stop
+2020-08-31 16:43:58,213 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:58,251 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3237, 2616, 811):Dir:(44, -90, 0) Spd0
+2020-08-31 16:43:58,253 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(3237,2616,811),dir:(44,-90,0),spd:0
+
+2020-08-31 16:43:58,601 [ 1] INFO  Unity: MoveBack
+2020-08-31 16:43:58,602 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-08-31 16:43:58,648 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3237, 2616, 811):Dir:(44, -90, 0) Spd-300
+2020-08-31 16:43:58,650 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveBack entity:(2:pos:(3237,2616,811),dir:(44,-90,0),spd:-300
+
+2020-08-31 16:43:59,590 [ 1] INFO  Unity: Stop
+2020-08-31 16:43:59,591 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:59,625 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(44, -90, 0) Spd0
+2020-08-31 16:43:59,627 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(3123,2901,811),dir:(44,-90,0),spd:0
+
+2020-08-31 16:43:59,763 [ 1] INFO  Unity: SetDrirection:(25, -97, 0)
+2020-08-31 16:43:59,764 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:59,797 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(25, -97, 0) Spd0
+2020-08-31 16:43:59,799 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(25,-97,0),spd:0
+
+2020-08-31 16:43:59,868 [ 1] INFO  Unity: SetDrirection:(4, -100, 0)
+2020-08-31 16:43:59,869 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:43:59,903 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(4, -100, 0) Spd0
+2020-08-31 16:43:59,905 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(4,-100,0),spd:0
+
+2020-08-31 16:43:59,972 [ 1] INFO  Unity: SetDrirection:(-16, -99, 0)
+2020-08-31 16:43:59,973 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:00,011 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-16, -99, 0) Spd0
+2020-08-31 16:44:00,013 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(-16,-99,0),spd:0
+
+2020-08-31 16:44:00,061 [ 1] INFO  Unity: SetDrirection:(-33, -94, 0)
+2020-08-31 16:44:00,061 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:00,098 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-33, -94, 0) Spd0
+2020-08-31 16:44:00,099 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(-33,-94,0),spd:0
+
+2020-08-31 16:44:00,135 [ 1] INFO  Unity: SetDrirection:(-49, -87, 0)
+2020-08-31 16:44:00,136 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:00,172 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-49, -87, 0) Spd0
+2020-08-31 16:44:00,173 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(-49,-87,0),spd:0
+
+2020-08-31 16:44:00,225 [ 1] INFO  Unity: SetDrirection:(-64, -77, 0)
+2020-08-31 16:44:00,227 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:00,266 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-64, -77, 0) Spd0
+2020-08-31 16:44:00,267 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(-64,-77,0),spd:0
+
+2020-08-31 16:44:00,319 [ 1] INFO  Unity: SetDrirection:(-78, -62, 0)
+2020-08-31 16:44:00,320 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:00,355 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-78, -62, 0) Spd0
+2020-08-31 16:44:00,357 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(-78,-62,0),spd:0
+
+2020-08-31 16:44:00,422 [ 1] INFO  Unity: SetDrirection:(-89, -45, 0)
+2020-08-31 16:44:00,423 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:00,457 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-89, -45, 0) Spd0
+2020-08-31 16:44:00,460 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(-89,-45,0),spd:0
+
+2020-08-31 16:44:00,527 [ 1] INFO  Unity: SetDrirection:(-96, -27, 0)
+2020-08-31 16:44:00,528 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:00,565 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-96, -27, 0) Spd0
+2020-08-31 16:44:00,566 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:None entity:(2:pos:(3123,2901,811),dir:(-96,-27,0),spd:0
+
+2020-08-31 16:44:00,583 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:00,584 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:00,617 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(3123, 2901, 811):Dir:(-96, -27, 0) Spd300
+2020-08-31 16:44:00,618 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:MoveFwd entity:(2:pos:(3123,2901,811),dir:(-96,-27,0),spd:300
+
+2020-08-31 16:44:01,458 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:01,461 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:01,497 [ 1] INFO  Unity: OnEntityChange:id:2 pos:(2873, 2851, 811):Dir:(-96, -27, 0) Spd0
+2020-08-31 16:44:01,499 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [2]event:Idle entity:(2:pos:(2873,2851,811),dir:(-96,-27,0),spd:0
+
+2020-08-31 16:44:28,128 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
+2020-08-31 16:44:28,129 [ 1] INFO  Unity: UserGameLeaveReausest
+2020-08-31 16:44:28,257 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-31 16:44:28,263 [ 1] INFO  Unity: 刷新角色列表
+2020-08-31 16:44:28,279 [ 1] INFO  Unity: RemoveCharacter:7
+2020-08-31 16:44:28,282 [ 1] INFO  Unity: RemoveCharacter:21
+2020-08-31 16:44:28,283 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2020-08-31 16:44:28,284 [ 1] INFO  Unity: Character_7_法1 Ondestroy:ID:2 Pos:(2873, 2851, 811) Dir:(-96, -27, 0) Spd:0
+2020-08-31 16:44:28,287 [ 1] INFO  Unity: Character_21_123 Ondestroy:ID:1 Pos:(5000, 4000, 820) Dir:(-53, -85, 0) Spd:0
+2020-08-31 16:44:31,258 [ 1] INFO  Unity: Select Char :[7]法1[Wizard]
+2020-08-31 16:44:34,255 [ 1] INFO  Unity: 点击开始游戏
+2020-08-31 16:44:34,258 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :0 
+2020-08-31 16:44:34,287 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2020-08-31 16:44:34,289 [ 1] INFO  Unity: AddCharacter:7:法1 Map:1 Entity:SkillBridge.Message.NEntity
+2020-08-31 16:44:34,292 [ 1] INFO  Unity: 角色添加委托执行
+2020-08-31 16:44:34,312 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-08-31 16:44:34,313 [ 1] INFO  Unity: EnterMap:map:1 success
+2020-08-31 16:44:34,315 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:3
+2020-08-31 16:44:34,317 [ 1] INFO  Unity: AddCharacter:7:法1 Map:1 Entity:SkillBridge.Message.NEntity
+2020-08-31 16:44:34,318 [ 1] INFO  Unity: 角色添加委托执行
+2020-08-31 16:44:34,320 [ 1] INFO  Unity: AddCharacter:21:123 Map:1 Entity:SkillBridge.Message.NEntity
+2020-08-31 16:44:34,322 [ 1] INFO  Unity: 角色添加委托执行
+2020-08-31 16:44:34,446 [ 1] INFO  Unity: AddCharacter:7:法1 Map:1 Entity:SkillBridge.Message.NEntity
+2020-08-31 16:44:34,447 [ 1] INFO  Unity: 角色添加委托执行
+2020-08-31 16:44:34,449 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
+2020-08-31 16:44:34,986 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-31 16:44:36,915 [ 1] INFO  Unity: SetDrirection:(98, 18, 0)
+2020-08-31 16:44:36,916 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:36,916 [ 1] INFO  Unity: SetDrirection:(98, 18, 0)
+2020-08-31 16:44:36,917 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:36,992 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(98, 18, 0) Spd0
+2020-08-31 16:44:36,993 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(98,18,0),spd:0
+
+2020-08-31 16:44:37,032 [ 1] INFO  Unity: SetDrirection:(94, 35, 0)
+2020-08-31 16:44:37,032 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,033 [ 1] INFO  Unity: SetDrirection:(94, 35, 0)
+2020-08-31 16:44:37,034 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,109 [ 1] INFO  Unity: SetDrirection:(86, 51, 0)
+2020-08-31 16:44:37,111 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,112 [ 1] INFO  Unity: SetDrirection:(86, 51, 0)
+2020-08-31 16:44:37,112 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,114 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(94, 35, 0) Spd0
+2020-08-31 16:44:37,116 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(94,35,0),spd:0
+
+2020-08-31 16:44:37,138 [ 1] INFO  Unity: SetDrirection:(84, 54, 0)
+2020-08-31 16:44:37,139 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,194 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(86, 51, 0) Spd0
+2020-08-31 16:44:37,196 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(86,51,0),spd:0
+
+2020-08-31 16:44:37,220 [ 1] INFO  Unity: SetDrirection:(74, 68, 0)
+2020-08-31 16:44:37,221 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,222 [ 1] INFO  Unity: SetDrirection:(74, 68, 0)
+2020-08-31 16:44:37,223 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,249 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(84, 54, 0) Spd0
+2020-08-31 16:44:37,250 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(84,54,0),spd:0
+
+2020-08-31 16:44:37,269 [ 1] INFO  Unity: SetDrirection:(64, 76, 0)
+2020-08-31 16:44:37,270 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,306 [ 1] INFO  Unity: SetDrirection:(60, 80, 0)
+2020-08-31 16:44:37,309 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,329 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(74, 68, 0) Spd0
+2020-08-31 16:44:37,330 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(74,68,0),spd:0
+
+2020-08-31 16:44:37,352 [ 1] INFO  Unity: SetDrirection:(57, 82, 0)
+2020-08-31 16:44:37,353 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,375 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(64, 76, 0) Spd0
+2020-08-31 16:44:37,377 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(64,76,0),spd:0
+
+2020-08-31 16:44:37,431 [ 1] INFO  Unity: SetDrirection:(49, 87, 0)
+2020-08-31 16:44:37,432 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:37,454 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(57, 82, 0) Spd0
+2020-08-31 16:44:37,456 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(57,82,0),spd:0
+
+2020-08-31 16:44:37,478 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:37,479 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:37,480 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:37,480 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:37,481 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:37,482 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:37,504 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5000, 4000, 820):Dir:(49, 87, 0) Spd0
+2020-08-31 16:44:37,506 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5000,4000,820),dir:(49,87,0),spd:0
+
+2020-08-31 16:44:37,585 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5003, 4004, 820):Dir:(57, 82, 0) Spd300
+2020-08-31 16:44:37,587 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5003,4004,820),dir:(57,82,0),spd:300
+
+2020-08-31 16:44:37,629 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5003, 4004, 820):Dir:(57, 82, 0) Spd300
+2020-08-31 16:44:37,631 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5003,4004,820),dir:(57,82,0),spd:300
+
+2020-08-31 16:44:37,866 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:37,867 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:37,929 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5054, 4078, 811):Dir:(57, 82, 0) Spd300
+2020-08-31 16:44:37,930 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5054,4078,811),dir:(57,82,0),spd:300
+
+2020-08-31 16:44:38,171 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:38,172 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:38,230 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5109, 4156, 811):Dir:(57, 82, 0) Spd300
+2020-08-31 16:44:38,231 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5109,4156,811),dir:(57,82,0),spd:300
+
+2020-08-31 16:44:38,445 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:38,446 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:38,503 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5154, 4222, 811):Dir:(57, 82, 0) Spd300
+2020-08-31 16:44:38,505 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5154,4222,811),dir:(57,82,0),spd:300
+
+2020-08-31 16:44:38,562 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:38,563 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,564 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:38,564 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,565 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:38,566 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,643 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(57, 82, 0) Spd0
+2020-08-31 16:44:38,645 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5169,4242,811),dir:(57,82,0),spd:0
+
+2020-08-31 16:44:38,689 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(57, 82, 0) Spd0
+2020-08-31 16:44:38,690 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5169,4242,811),dir:(57,82,0),spd:0
+
+2020-08-31 16:44:38,706 [ 1] INFO  Unity: SetDrirection:(71, 71, 0)
+2020-08-31 16:44:38,708 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,744 [ 1] INFO  Unity: SetDrirection:(75, 66, 0)
+2020-08-31 16:44:38,745 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,747 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(71, 71, 0) Spd0
+2020-08-31 16:44:38,748 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(71,71,0),spd:0
+
+2020-08-31 16:44:38,821 [ 1] INFO  Unity: SetDrirection:(84, 55, 0)
+2020-08-31 16:44:38,822 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,824 [ 1] INFO  Unity: SetDrirection:(86, 52, 0)
+2020-08-31 16:44:38,826 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,867 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(84, 55, 0) Spd0
+2020-08-31 16:44:38,869 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(84,55,0),spd:0
+
+2020-08-31 16:44:38,894 [ 1] INFO  Unity: SetDrirection:(92, 39, 0)
+2020-08-31 16:44:38,896 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,934 [ 1] INFO  Unity: SetDrirection:(94, 33, 0)
+2020-08-31 16:44:38,935 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:38,961 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(92, 39, 0) Spd0
+2020-08-31 16:44:38,963 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(92,39,0),spd:0
+
+2020-08-31 16:44:39,001 [ 1] INFO  Unity: SetDrirection:(98, 19, 0)
+2020-08-31 16:44:39,002 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,004 [ 1] INFO  Unity: SetDrirection:(99, 16, 0)
+2020-08-31 16:44:39,005 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,061 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(98, 19, 0) Spd0
+2020-08-31 16:44:39,063 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(98,19,0),spd:0
+
+2020-08-31 16:44:39,086 [ 1] INFO  Unity: SetDrirection:(100, 2, 0)
+2020-08-31 16:44:39,088 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,139 [ 1] INFO  Unity: SetDrirection:(100, -3, 0)
+2020-08-31 16:44:39,141 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,173 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(100, 2, 0) Spd0
+2020-08-31 16:44:39,176 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(100,2,0),spd:0
+
+2020-08-31 16:44:39,630 [ 1] INFO  Unity: SetDrirection:(99, -16, 0)
+2020-08-31 16:44:39,631 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,673 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(99, -16, 0) Spd0
+2020-08-31 16:44:39,676 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(99,-16,0),spd:0
+
+2020-08-31 16:44:39,693 [ 1] INFO  Unity: SetDrirection:(98, -21, 0)
+2020-08-31 16:44:39,694 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,800 [ 1] INFO  Unity: SetDrirection:(94, -33, 0)
+2020-08-31 16:44:39,800 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,837 [ 1] INFO  Unity: SetDrirection:(92, -39, 0)
+2020-08-31 16:44:39,838 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,843 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(94, -33, 0) Spd0
+2020-08-31 16:44:39,845 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(94,-33,0),spd:0
+
+2020-08-31 16:44:39,887 [ 1] INFO  Unity: SetDrirection:(86, -51, 0)
+2020-08-31 16:44:39,888 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,922 [ 1] INFO  Unity: SetDrirection:(83, -56, 0)
+2020-08-31 16:44:39,923 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:39,926 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(86, -51, 0) Spd0
+2020-08-31 16:44:39,928 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(86,-51,0),spd:0
+
+2020-08-31 16:44:39,999 [ 1] INFO  Unity: SetDrirection:(74, -67, 0)
+2020-08-31 16:44:40,001 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,021 [ 1] INFO  Unity: SetDrirection:(71, -70, 0)
+2020-08-31 16:44:40,023 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,047 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(74, -67, 0) Spd0
+2020-08-31 16:44:40,049 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(74,-67,0),spd:0
+
+2020-08-31 16:44:40,097 [ 1] INFO  Unity: SetDrirection:(61, -79, 0)
+2020-08-31 16:44:40,098 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,116 [ 1] INFO  Unity: SetDrirection:(55, -83, 0)
+2020-08-31 16:44:40,117 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,150 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(61, -79, 0) Spd0
+2020-08-31 16:44:40,152 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(61,-79,0),spd:0
+
+2020-08-31 16:44:40,180 [ 1] INFO  Unity: SetDrirection:(46, -89, 0)
+2020-08-31 16:44:40,181 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,214 [ 1] INFO  Unity: SetDrirection:(37, -93, 0)
+2020-08-31 16:44:40,216 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,273 [ 1] INFO  Unity: SetDrirection:(27, -96, 0)
+2020-08-31 16:44:40,274 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,279 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(46, -89, 0) Spd0
+2020-08-31 16:44:40,280 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(46,-89,0),spd:0
+
+2020-08-31 16:44:40,314 [ 1] INFO  Unity: SetDrirection:(20, -98, 0)
+2020-08-31 16:44:40,315 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,316 [ 1] INFO  Unity: SetDrirection:(20, -98, 0)
+2020-08-31 16:44:40,316 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,398 [ 1] INFO  Unity: SetDrirection:(-1, -100, 0)
+2020-08-31 16:44:40,399 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,399 [ 1] INFO  Unity: SetDrirection:(-1, -100, 0)
+2020-08-31 16:44:40,400 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,404 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(27, -96, 0) Spd0
+2020-08-31 16:44:40,406 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(27,-96,0),spd:0
+
+2020-08-31 16:44:40,436 [ 1] INFO  Unity: SetDrirection:(-4, -100, 0)
+2020-08-31 16:44:40,437 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,526 [ 1] INFO  Unity: SetDrirection:(-19, -98, 0)
+2020-08-31 16:44:40,527 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,529 [ 1] INFO  Unity: SetDrirection:(-21, -98, 0)
+2020-08-31 16:44:40,530 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,533 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(-1, -100, 0) Spd0
+2020-08-31 16:44:40,535 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(-1,-100,0),spd:0
+
+2020-08-31 16:44:40,561 [ 1] INFO  Unity: SetDrirection:(-23, -97, 0)
+2020-08-31 16:44:40,563 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,618 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:40,620 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:40,621 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:40,623 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:40,624 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:40,625 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:40,649 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(-1, -100, 0) Spd0
+2020-08-31 16:44:40,650 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(-1,-100,0),spd:0
+
+2020-08-31 16:44:40,671 [ 1] INFO  Unity: SetDrirection:(-31, -95, 0)
+2020-08-31 16:44:40,672 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:40,693 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(-21, -98, 0) Spd0
+2020-08-31 16:44:40,694 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(-21,-98,0),spd:0
+
+2020-08-31 16:44:40,767 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(-21, -98, 0) Spd0
+2020-08-31 16:44:40,768 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(-21,-98,0),spd:0
+
+2020-08-31 16:44:40,807 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5168, 4237, 811):Dir:(-23, -97, 0) Spd300
+2020-08-31 16:44:40,809 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5168,4237,811),dir:(-23,-97,0),spd:300
+
+2020-08-31 16:44:40,892 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5168, 4237, 811):Dir:(-23, -97, 0) Spd300
+2020-08-31 16:44:40,893 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5168,4237,811),dir:(-23,-97,0),spd:300
+
+2020-08-31 16:44:40,929 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5168, 4237, 811):Dir:(-23, -97, 0) Spd300
+2020-08-31 16:44:40,931 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5168,4237,811),dir:(-23,-97,0),spd:300
+
+2020-08-31 16:44:40,972 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5169, 4242, 811):Dir:(-31, -95, 0) Spd0
+2020-08-31 16:44:40,974 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5169,4242,811),dir:(-31,-95,0),spd:0
+
+2020-08-31 16:44:40,975 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:40,976 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:41,033 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-31, -95, 0) Spd0
+2020-08-31 16:44:41,035 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-31,-95,0),spd:0
+
+2020-08-31 16:44:42,098 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:42,099 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,100 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:42,101 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,102 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:42,103 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,174 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-31, -95, 0) Spd0
+2020-08-31 16:44:42,175 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5157,4188,811),dir:(-31,-95,0),spd:0
+
+2020-08-31 16:44:42,217 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-31, -95, 0) Spd0
+2020-08-31 16:44:42,219 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5157,4188,811),dir:(-31,-95,0),spd:0
+
+2020-08-31 16:44:42,276 [ 1] INFO  Unity: SetDrirection:(-36, -93, 0)
+2020-08-31 16:44:42,277 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,406 [ 1] INFO  Unity: SetDrirection:(-48, -88, 0)
+2020-08-31 16:44:42,407 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,439 [ 1] INFO  Unity: SetDrirection:(-52, -85, 0)
+2020-08-31 16:44:42,441 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,443 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-48, -88, 0) Spd0
+2020-08-31 16:44:42,444 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-48,-88,0),spd:0
+
+2020-08-31 16:44:42,498 [ 1] INFO  Unity: SetDrirection:(-63, -78, 0)
+2020-08-31 16:44:42,499 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,536 [ 1] INFO  Unity: SetDrirection:(-68, -73, 0)
+2020-08-31 16:44:42,537 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,540 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-63, -78, 0) Spd0
+2020-08-31 16:44:42,541 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-63,-78,0),spd:0
+
+2020-08-31 16:44:42,595 [ 1] INFO  Unity: SetDrirection:(-78, -63, 0)
+2020-08-31 16:44:42,595 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,635 [ 1] INFO  Unity: SetDrirection:(-82, -58, 0)
+2020-08-31 16:44:42,636 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,639 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-78, -63, 0) Spd0
+2020-08-31 16:44:42,640 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-78,-63,0),spd:0
+
+2020-08-31 16:44:42,693 [ 1] INFO  Unity: SetDrirection:(-89, -46, 0)
+2020-08-31 16:44:42,694 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,715 [ 1] INFO  Unity: SetDrirection:(-91, -43, 0)
+2020-08-31 16:44:42,716 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,740 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-89, -46, 0) Spd0
+2020-08-31 16:44:42,741 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-89,-46,0),spd:0
+
+2020-08-31 16:44:42,776 [ 1] INFO  Unity: SetDrirection:(-96, -29, 0)
+2020-08-31 16:44:42,777 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,797 [ 1] INFO  Unity: SetDrirection:(-97, -26, 0)
+2020-08-31 16:44:42,798 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,824 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-96, -29, 0) Spd0
+2020-08-31 16:44:42,825 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-96,-29,0),spd:0
+
+2020-08-31 16:44:42,888 [ 1] INFO  Unity: SetDrirection:(-100, -9, 0)
+2020-08-31 16:44:42,890 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,912 [ 1] INFO  Unity: SetDrirection:(-100, -5, 0)
+2020-08-31 16:44:42,913 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:42,935 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-100, -9, 0) Spd0
+2020-08-31 16:44:42,937 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-100,-9,0),spd:0
+
+2020-08-31 16:44:42,989 [ 1] INFO  Unity: SetDrirection:(-99, 12, 0)
+2020-08-31 16:44:42,991 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:43,010 [ 1] INFO  Unity: SetDrirection:(-99, 15, 0)
+2020-08-31 16:44:43,011 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:43,039 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-99, 12, 0) Spd0
+2020-08-31 16:44:43,041 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-99,12,0),spd:0
+
+2020-08-31 16:44:43,079 [ 1] INFO  Unity: SetDrirection:(-95, 30, 0)
+2020-08-31 16:44:43,080 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:43,099 [ 1] INFO  Unity: SetDrirection:(-94, 33, 0)
+2020-08-31 16:44:43,100 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:43,119 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-95, 30, 0) Spd0
+2020-08-31 16:44:43,123 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-95,30,0),spd:0
+
+2020-08-31 16:44:43,243 [ 1] INFO  Unity: SetDrirection:(-89, 46, 0)
+2020-08-31 16:44:43,244 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:43,283 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5157, 4188, 811):Dir:(-89, 46, 0) Spd0
+2020-08-31 16:44:43,284 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5157,4188,811),dir:(-89,46,0),spd:0
+
+2020-08-31 16:44:43,439 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:43,441 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:43,442 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:43,442 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:43,443 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:43,444 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:43,525 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5153, 4190, 811):Dir:(-89, 46, 0) Spd300
+2020-08-31 16:44:43,526 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5153,4190,811),dir:(-89,46,0),spd:300
+
+2020-08-31 16:44:43,568 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5153, 4190, 811):Dir:(-89, 46, 0) Spd300
+2020-08-31 16:44:43,569 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5153,4190,811),dir:(-89,46,0),spd:300
+
+2020-08-31 16:44:43,953 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:43,955 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:44,010 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5015, 4262, 811):Dir:(-89, 46, 0) Spd300
+2020-08-31 16:44:44,011 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5015,4262,811),dir:(-89,46,0),spd:300
+
+2020-08-31 16:44:44,293 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:44,294 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:44,349 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4926, 4308, 811):Dir:(-89, 46, 0) Spd300
+2020-08-31 16:44:44,351 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4926,4308,811),dir:(-89,46,0),spd:300
+
+2020-08-31 16:44:44,419 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:44,429 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,430 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:44,431 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,431 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:44,432 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,522 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-89, 46, 0) Spd0
+2020-08-31 16:44:44,524 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(4898,4322,811),dir:(-89,46,0),spd:0
+
+2020-08-31 16:44:44,566 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-89, 46, 0) Spd0
+2020-08-31 16:44:44,567 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(4898,4322,811),dir:(-89,46,0),spd:0
+
+2020-08-31 16:44:44,636 [ 1] INFO  Unity: SetDrirection:(-87, 49, 0)
+2020-08-31 16:44:44,638 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,795 [ 1] INFO  Unity: SetDrirection:(-78, 62, 0)
+2020-08-31 16:44:44,796 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,812 [ 1] INFO  Unity: SetDrirection:(-77, 64, 0)
+2020-08-31 16:44:44,813 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,830 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-78, 62, 0) Spd0
+2020-08-31 16:44:44,831 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-78,62,0),spd:0
+
+2020-08-31 16:44:44,898 [ 1] INFO  Unity: SetDrirection:(-64, 77, 0)
+2020-08-31 16:44:44,899 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,900 [ 1] INFO  Unity: SetDrirection:(-64, 77, 0)
+2020-08-31 16:44:44,900 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,984 [ 1] INFO  Unity: SetDrirection:(-49, 87, 0)
+2020-08-31 16:44:44,985 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,986 [ 1] INFO  Unity: SetDrirection:(-49, 87, 0)
+2020-08-31 16:44:44,988 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:44,990 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-64, 77, 0) Spd0
+2020-08-31 16:44:44,991 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-64,77,0),spd:0
+
+2020-08-31 16:44:45,006 [ 1] INFO  Unity: SetDrirection:(-46, 89, 0)
+2020-08-31 16:44:45,008 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,059 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-49, 87, 0) Spd0
+2020-08-31 16:44:45,061 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-49,87,0),spd:0
+
+2020-08-31 16:44:45,095 [ 1] INFO  Unity: SetDrirection:(-30, 95, 0)
+2020-08-31 16:44:45,096 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,097 [ 1] INFO  Unity: SetDrirection:(-30, 95, 0)
+2020-08-31 16:44:45,097 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,099 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-46, 89, 0) Spd0
+2020-08-31 16:44:45,100 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-46,89,0),spd:0
+
+2020-08-31 16:44:45,119 [ 1] INFO  Unity: SetDrirection:(-27, 96, 0)
+2020-08-31 16:44:45,120 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,191 [ 1] INFO  Unity: SetDrirection:(-10, 100, 0)
+2020-08-31 16:44:45,192 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,192 [ 1] INFO  Unity: SetDrirection:(-10, 100, 0)
+2020-08-31 16:44:45,193 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,195 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-30, 95, 0) Spd0
+2020-08-31 16:44:45,196 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-30,95,0),spd:0
+
+2020-08-31 16:44:45,213 [ 1] INFO  Unity: SetDrirection:(-6, 100, 0)
+2020-08-31 16:44:45,214 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,232 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-10, 100, 0) Spd0
+2020-08-31 16:44:45,233 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-10,100,0),spd:0
+
+2020-08-31 16:44:45,266 [ 1] INFO  Unity: SetDrirection:(8, 100, 0)
+2020-08-31 16:44:45,267 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,268 [ 1] INFO  Unity: SetDrirection:(8, 100, 0)
+2020-08-31 16:44:45,270 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,306 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-10, 100, 0) Spd0
+2020-08-31 16:44:45,307 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-10,100,0),spd:0
+
+2020-08-31 16:44:45,326 [ 1] INFO  Unity: SetDrirection:(18, 98, 0)
+2020-08-31 16:44:45,326 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,351 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(-6, 100, 0) Spd0
+2020-08-31 16:44:45,354 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(-6,100,0),spd:0
+
+2020-08-31 16:44:45,370 [ 1] INFO  Unity: SetDrirection:(27, 96, 0)
+2020-08-31 16:44:45,371 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,373 [ 1] INFO  Unity: SetDrirection:(27, 96, 0)
+2020-08-31 16:44:45,374 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,423 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(8, 100, 0) Spd0
+2020-08-31 16:44:45,424 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(8,100,0),spd:0
+
+2020-08-31 16:44:45,438 [ 1] INFO  Unity: SetDrirection:(37, 93, 0)
+2020-08-31 16:44:45,439 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,456 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(18, 98, 0) Spd0
+2020-08-31 16:44:45,457 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(18,98,0),spd:0
+
+2020-08-31 16:44:45,471 [ 1] INFO  Unity: SetDrirection:(41, 91, 0)
+2020-08-31 16:44:45,472 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,504 [ 1] INFO  Unity: SetDrirection:(44, 90, 0)
+2020-08-31 16:44:45,506 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:45,522 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(27, 96, 0) Spd0
+2020-08-31 16:44:45,524 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(27,96,0),spd:0
+
+2020-08-31 16:44:45,542 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:45,543 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:45,545 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:45,546 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:45,546 [ 1] INFO  Unity: SetDrirection:(46, 89, 0)
+2020-08-31 16:44:45,547 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:45,548 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:45,549 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:45,578 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(37, 93, 0) Spd0
+2020-08-31 16:44:45,579 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(37,93,0),spd:0
+
+2020-08-31 16:44:45,613 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4898, 4322, 811):Dir:(41, 91, 0) Spd0
+2020-08-31 16:44:45,615 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4898,4322,811),dir:(41,91,0),spd:0
+
+2020-08-31 16:44:45,714 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4900, 4326, 811):Dir:(46, 89, 0) Spd300
+2020-08-31 16:44:45,715 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(4900,4326,811),dir:(46,89,0),spd:300
+
+2020-08-31 16:44:45,748 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4900, 4326, 811):Dir:(46, 89, 0) Spd300
+2020-08-31 16:44:45,749 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4900,4326,811),dir:(46,89,0),spd:300
+
+2020-08-31 16:44:45,787 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4900, 4326, 811):Dir:(46, 89, 0) Spd300
+2020-08-31 16:44:45,789 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(4900,4326,811),dir:(46,89,0),spd:300
+
+2020-08-31 16:44:46,155 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:46,155 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:46,211 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4963, 4458, 811):Dir:(46, 89, 0) Spd300
+2020-08-31 16:44:46,212 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4963,4458,811),dir:(46,89,0),spd:300
+
+2020-08-31 16:44:46,345 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:46,346 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,347 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:46,347 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,348 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:46,348 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,363 [ 1] INFO  Unity: SetDrirection:(59, 80, 0)
+2020-08-31 16:44:46,364 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,385 [ 1] INFO  Unity: SetDrirection:(61, 79, 0)
+2020-08-31 16:44:46,387 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,426 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(61, 79, 0) Spd0
+2020-08-31 16:44:46,427 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(4993,4518,811),dir:(61,79,0),spd:0
+
+2020-08-31 16:44:46,462 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(61, 79, 0) Spd0
+2020-08-31 16:44:46,463 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(4993,4518,811),dir:(61,79,0),spd:0
+
+2020-08-31 16:44:46,479 [ 1] INFO  Unity: SetDrirection:(73, 68, 0)
+2020-08-31 16:44:46,480 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,498 [ 1] INFO  Unity: SetDrirection:(76, 65, 0)
+2020-08-31 16:44:46,499 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,534 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(61, 79, 0) Spd0
+2020-08-31 16:44:46,535 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(61,79,0),spd:0
+
+2020-08-31 16:44:46,550 [ 1] INFO  Unity: SetDrirection:(82, 57, 0)
+2020-08-31 16:44:46,552 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,554 [ 1] INFO  Unity: SetDrirection:(84, 54, 0)
+2020-08-31 16:44:46,555 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,610 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(76, 65, 0) Spd0
+2020-08-31 16:44:46,611 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(76,65,0),spd:0
+
+2020-08-31 16:44:46,627 [ 1] INFO  Unity: SetDrirection:(91, 42, 0)
+2020-08-31 16:44:46,628 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,645 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(82, 57, 0) Spd0
+2020-08-31 16:44:46,646 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(82,57,0),spd:0
+
+2020-08-31 16:44:46,661 [ 1] INFO  Unity: SetDrirection:(93, 36, 0)
+2020-08-31 16:44:46,662 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,662 [ 1] INFO  Unity: SetDrirection:(93, 36, 0)
+2020-08-31 16:44:46,663 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,716 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(91, 42, 0) Spd0
+2020-08-31 16:44:46,717 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(91,42,0),spd:0
+
+2020-08-31 16:44:46,731 [ 1] INFO  Unity: SetDrirection:(98, 22, 0)
+2020-08-31 16:44:46,732 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,750 [ 1] INFO  Unity: SetDrirection:(98, 19, 0)
+2020-08-31 16:44:46,751 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,785 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(93, 36, 0) Spd0
+2020-08-31 16:44:46,787 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(93,36,0),spd:0
+
+2020-08-31 16:44:46,813 [ 1] INFO  Unity: SetDrirection:(100, 5, 0)
+2020-08-31 16:44:46,813 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,829 [ 1] INFO  Unity: SetDrirection:(100, 1, 0)
+2020-08-31 16:44:46,830 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,832 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(98, 22, 0) Spd0
+2020-08-31 16:44:46,833 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(98,22,0),spd:0
+
+2020-08-31 16:44:46,853 [ 1] INFO  Unity: SetDrirection:(100, -2, 0)
+2020-08-31 16:44:46,855 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,909 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(100, 5, 0) Spd0
+2020-08-31 16:44:46,910 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(100,5,0),spd:0
+
+2020-08-31 16:44:46,925 [ 1] INFO  Unity: SetDrirection:(98, -19, 0)
+2020-08-31 16:44:46,925 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,926 [ 1] INFO  Unity: SetDrirection:(98, -19, 0)
+2020-08-31 16:44:46,927 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:46,980 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(100, -2, 0) Spd0
+2020-08-31 16:44:46,981 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(100,-2,0),spd:0
+
+2020-08-31 16:44:46,998 [ 1] INFO  Unity: SetDrirection:(94, -33, 0)
+2020-08-31 16:44:46,999 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,026 [ 1] INFO  Unity: SetDrirection:(93, -36, 0)
+2020-08-31 16:44:47,026 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,064 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(98, -19, 0) Spd0
+2020-08-31 16:44:47,065 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(98,-19,0),spd:0
+
+2020-08-31 16:44:47,082 [ 1] INFO  Unity: SetDrirection:(87, -49, 0)
+2020-08-31 16:44:47,083 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,098 [ 1] INFO  Unity: SetDrirection:(86, -52, 0)
+2020-08-31 16:44:47,099 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,101 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(94, -33, 0) Spd0
+2020-08-31 16:44:47,103 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(94,-33,0),spd:0
+
+2020-08-31 16:44:47,118 [ 1] INFO  Unity: SetDrirection:(84, -55, 0)
+2020-08-31 16:44:47,120 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,172 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(87, -49, 0) Spd0
+2020-08-31 16:44:47,173 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(87,-49,0),spd:0
+
+2020-08-31 16:44:47,187 [ 1] INFO  Unity: SetDrirection:(74, -67, 0)
+2020-08-31 16:44:47,188 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,190 [ 1] INFO  Unity: SetDrirection:(74, -67, 0)
+2020-08-31 16:44:47,190 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,248 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(84, -55, 0) Spd0
+2020-08-31 16:44:47,249 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(84,-55,0),spd:0
+
+2020-08-31 16:44:47,263 [ 1] INFO  Unity: SetDrirection:(68, -73, 0)
+2020-08-31 16:44:47,264 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:47,314 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(74, -67, 0) Spd0
+2020-08-31 16:44:47,315 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(74,-67,0),spd:0
+
+2020-08-31 16:44:47,335 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:47,336 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:47,338 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:47,339 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:47,339 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:47,340 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:47,343 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:47,343 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:47,367 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4993, 4518, 811):Dir:(68, -73, 0) Spd0
+2020-08-31 16:44:47,369 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(4993,4518,811),dir:(68,-73,0),spd:0
+
+2020-08-31 16:44:47,383 [ 1] INFO  Unity: SetDrirection:(61, -79, 0)
+2020-08-31 16:44:47,384 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:47,443 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4997, 4515, 811):Dir:(74, -67, 0) Spd300
+2020-08-31 16:44:47,444 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(4997,4515,811),dir:(74,-67,0),spd:300
+
+2020-08-31 16:44:47,477 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(4997, 4515, 811):Dir:(74, -67, 0) Spd300
+2020-08-31 16:44:47,479 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(4997,4515,811),dir:(74,-67,0),spd:300
+
+2020-08-31 16:44:47,713 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:47,714 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:47,763 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5056, 4439, 811):Dir:(74, -67, 0) Spd300
+2020-08-31 16:44:47,764 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5056,4439,811),dir:(74,-67,0),spd:300
+
+2020-08-31 16:44:47,981 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:47,982 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,032 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5115, 4385, 811):Dir:(74, -67, 0) Spd300
+2020-08-31 16:44:48,033 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5115,4385,811),dir:(74,-67,0),spd:300
+
+2020-08-31 16:44:48,238 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:48,239 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,299 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5175, 4332, 811):Dir:(74, -67, 0) Spd300
+2020-08-31 16:44:48,301 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5175,4332,811),dir:(74,-67,0),spd:300
+
+2020-08-31 16:44:48,518 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:48,519 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,571 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5234, 4278, 811):Dir:(74, -67, 0) Spd300
+2020-08-31 16:44:48,573 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5234,4278,811),dir:(74,-67,0),spd:300
+
+2020-08-31 16:44:48,675 [ 1] INFO  Unity: SetDrirection:(60, -80, 0)
+2020-08-31 16:44:48,676 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,720 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5286, 4239, 811):Dir:(60, -80, 0) Spd300
+2020-08-31 16:44:48,722 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5286,4239,811),dir:(60,-80,0),spd:300
+
+2020-08-31 16:44:48,856 [ 1] INFO  Unity: SetDrirection:(45, -89, 0)
+2020-08-31 16:44:48,858 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,858 [ 1] INFO  Unity: SetDrirection:(45, -89, 0)
+2020-08-31 16:44:48,859 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,881 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:48,881 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,921 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:48,922 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:48,923 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:48,924 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:48,925 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:48,926 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:48,944 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5306, 4196, 811):Dir:(45, -89, 0) Spd300
+2020-08-31 16:44:48,946 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5306,4196,811),dir:(45,-89,0),spd:300
+
+2020-08-31 16:44:48,961 [ 1] INFO  Unity: SetDrirection:(28, -96, 0)
+2020-08-31 16:44:48,962 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:48,963 [ 1] INFO  Unity: SetDrirection:(28, -96, 0)
+2020-08-31 16:44:48,963 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:48,981 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(45, -89, 0) Spd0
+2020-08-31 16:44:48,982 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5312,4184,811),dir:(45,-89,0),spd:0
+
+2020-08-31 16:44:48,998 [ 1] INFO  Unity: SetDrirection:(21, -98, 0)
+2020-08-31 16:44:48,999 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,054 [ 1] INFO  Unity: SetDrirection:(11, -99, 0)
+2020-08-31 16:44:49,055 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,059 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(45, -89, 0) Spd0
+2020-08-31 16:44:49,061 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5312,4184,811),dir:(45,-89,0),spd:0
+
+2020-08-31 16:44:49,086 [ 1] INFO  Unity: SetDrirection:(7, -100, 0)
+2020-08-31 16:44:49,088 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,118 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(45, -89, 0) Spd0
+2020-08-31 16:44:49,120 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5312,4184,811),dir:(45,-89,0),spd:0
+
+2020-08-31 16:44:49,151 [ 1] INFO  Unity: SetDrirection:(-7, -100, 0)
+2020-08-31 16:44:49,153 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,154 [ 1] INFO  Unity: SetDrirection:(-7, -100, 0)
+2020-08-31 16:44:49,156 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,223 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5308, 4192, 811):Dir:(28, -96, 0) Spd300
+2020-08-31 16:44:49,224 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5308,4192,811),dir:(28,-96,0),spd:300
+
+2020-08-31 16:44:49,241 [ 1] INFO  Unity: SetDrirection:(-27, -96, 0)
+2020-08-31 16:44:49,242 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,243 [ 1] INFO  Unity: SetDrirection:(-27, -96, 0)
+2020-08-31 16:44:49,243 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:49,262 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(21, -98, 0) Spd0
+2020-08-31 16:44:49,263 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5312,4184,811),dir:(21,-98,0),spd:0
+
+2020-08-31 16:44:49,280 [ 1] INFO  Unity: SetDrirection:(-35, -94, 0)
+2020-08-31 16:44:49,281 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,345 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:49,346 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:49,347 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:49,348 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:49,348 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:49,349 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:49,352 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(7, -100, 0) Spd0
+2020-08-31 16:44:49,354 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5312,4184,811),dir:(7,-100,0),spd:0
+
+2020-08-31 16:44:49,376 [ 1] INFO  Unity: SetDrirection:(-45, -89, 0)
+2020-08-31 16:44:49,377 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:49,379 [ 1] INFO  Unity: SetDrirection:(-45, -89, 0)
+2020-08-31 16:44:49,380 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,434 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(-7, -100, 0) Spd0
+2020-08-31 16:44:49,436 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5312,4184,811),dir:(-7,-100,0),spd:0
+
+2020-08-31 16:44:49,452 [ 1] INFO  Unity: SetDrirection:(-50, -86, 0)
+2020-08-31 16:44:49,454 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,506 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5309, 4187, 811):Dir:(-27, -96, 0) Spd300
+2020-08-31 16:44:49,508 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5309,4187,811),dir:(-27,-96,0),spd:300
+
+2020-08-31 16:44:49,551 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5310, 4179, 811):Dir:(-35, -94, 0) Spd300
+2020-08-31 16:44:49,554 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5310,4179,811),dir:(-35,-94,0),spd:300
+
+2020-08-31 16:44:49,630 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5310, 4179, 811):Dir:(-35, -94, 0) Spd300
+2020-08-31 16:44:49,631 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5310,4179,811),dir:(-35,-94,0),spd:300
+
+2020-08-31 16:44:49,665 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5310, 4179, 811):Dir:(-35, -94, 0) Spd300
+2020-08-31 16:44:49,666 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5310,4179,811),dir:(-35,-94,0),spd:300
+
+2020-08-31 16:44:49,667 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:49,668 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:49,737 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(-45, -89, 0) Spd0
+2020-08-31 16:44:49,739 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5312,4184,811),dir:(-45,-89,0),spd:0
+
+2020-08-31 16:44:49,740 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:49,741 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,781 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5312, 4184, 811):Dir:(-50, -86, 0) Spd0
+2020-08-31 16:44:49,783 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5312,4184,811),dir:(-50,-86,0),spd:0
+
+2020-08-31 16:44:49,784 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:49,785 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:49,827 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5288, 4133, 811):Dir:(-35, -94, 0) Spd300
+2020-08-31 16:44:49,828 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5288,4133,811),dir:(-35,-94,0),spd:300
+
+2020-08-31 16:44:49,867 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-45, -89, 0) Spd0
+2020-08-31 16:44:49,868 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-45,-89,0),spd:0
+
+2020-08-31 16:44:49,906 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-50, -86, 0) Spd0
+2020-08-31 16:44:49,908 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-50,-86,0),spd:0
+
+2020-08-31 16:44:50,772 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:50,773 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:50,774 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:50,775 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:50,775 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:50,776 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:50,849 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-50, -86, 0) Spd0
+2020-08-31 16:44:50,851 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5282,4116,811),dir:(-50,-86,0),spd:0
+
+2020-08-31 16:44:50,894 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-50, -86, 0) Spd0
+2020-08-31 16:44:50,895 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5282,4116,811),dir:(-50,-86,0),spd:0
+
+2020-08-31 16:44:52,686 [ 1] INFO  Unity: SetDrirection:(-61, -79, 0)
+2020-08-31 16:44:52,687 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:52,725 [ 1] INFO  Unity: SetDrirection:(-65, -76, 0)
+2020-08-31 16:44:52,726 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:52,761 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-65, -76, 0) Spd0
+2020-08-31 16:44:52,762 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-65,-76,0),spd:0
+
+2020-08-31 16:44:52,796 [ 1] INFO  Unity: SetDrirection:(-75, -66, 0)
+2020-08-31 16:44:52,797 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:52,831 [ 1] INFO  Unity: SetDrirection:(-79, -61, 0)
+2020-08-31 16:44:52,832 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:52,874 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-79, -61, 0) Spd0
+2020-08-31 16:44:52,875 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-79,-61,0),spd:0
+
+2020-08-31 16:44:52,909 [ 1] INFO  Unity: SetDrirection:(-87, -49, 0)
+2020-08-31 16:44:52,910 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:52,928 [ 1] INFO  Unity: SetDrirection:(-89, -46, 0)
+2020-08-31 16:44:52,929 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:52,980 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-89, -46, 0) Spd0
+2020-08-31 16:44:52,981 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-89,-46,0),spd:0
+
+2020-08-31 16:44:52,998 [ 1] INFO  Unity: SetDrirection:(-95, -30, 0)
+2020-08-31 16:44:52,999 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,019 [ 1] INFO  Unity: SetDrirection:(-96, -27, 0)
+2020-08-31 16:44:53,020 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,082 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-96, -27, 0) Spd0
+2020-08-31 16:44:53,084 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-96,-27,0),spd:0
+
+2020-08-31 16:44:53,106 [ 1] INFO  Unity: SetDrirection:(-100, -10, 0)
+2020-08-31 16:44:53,107 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,108 [ 1] INFO  Unity: SetDrirection:(-100, -10, 0)
+2020-08-31 16:44:53,109 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,190 [ 1] INFO  Unity: SetDrirection:(-100, 8, 0)
+2020-08-31 16:44:53,191 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,191 [ 1] INFO  Unity: SetDrirection:(-100, 8, 0)
+2020-08-31 16:44:53,192 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,194 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-100, -10, 0) Spd0
+2020-08-31 16:44:53,195 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-100,-10,0),spd:0
+
+2020-08-31 16:44:53,210 [ 1] INFO  Unity: SetDrirection:(-99, 11, 0)
+2020-08-31 16:44:53,212 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,279 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-100, 8, 0) Spd0
+2020-08-31 16:44:53,280 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-100,8,0),spd:0
+
+2020-08-31 16:44:53,297 [ 1] INFO  Unity: SetDrirection:(-96, 28, 0)
+2020-08-31 16:44:53,298 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,299 [ 1] INFO  Unity: SetDrirection:(-96, 28, 0)
+2020-08-31 16:44:53,300 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,320 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-99, 11, 0) Spd0
+2020-08-31 16:44:53,322 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-99,11,0),spd:0
+
+2020-08-31 16:44:53,342 [ 1] INFO  Unity: SetDrirection:(-93, 36, 0)
+2020-08-31 16:44:53,343 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,398 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:53,399 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:53,399 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:53,400 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:53,400 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:44:53,401 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:53,405 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-96, 28, 0) Spd0
+2020-08-31 16:44:53,406 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-96,28,0),spd:0
+
+2020-08-31 16:44:53,422 [ 1] INFO  Unity: SetDrirection:(-89, 45, 0)
+2020-08-31 16:44:53,423 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:53,424 [ 1] INFO  Unity: SetDrirection:(-89, 45, 0)
+2020-08-31 16:44:53,425 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,443 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5277, 4118, 811):Dir:(-93, 36, 0) Spd300
+2020-08-31 16:44:53,444 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5277,4118,811),dir:(-93,36,0),spd:300
+
+2020-08-31 16:44:53,516 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5277, 4118, 811):Dir:(-93, 36, 0) Spd300
+2020-08-31 16:44:53,517 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5277,4118,811),dir:(-93,36,0),spd:300
+
+2020-08-31 16:44:53,534 [ 1] INFO  Unity: SetDrirection:(-86, 52, 0)
+2020-08-31 16:44:53,536 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:53,559 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5277, 4118, 811):Dir:(-93, 36, 0) Spd300
+2020-08-31 16:44:53,560 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5277,4118,811),dir:(-93,36,0),spd:300
+
+2020-08-31 16:44:53,629 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5282, 4116, 811):Dir:(-89, 45, 0) Spd0
+2020-08-31 16:44:53,631 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5282,4116,811),dir:(-89,45,0),spd:0
+
+2020-08-31 16:44:53,632 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:53,633 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:53,666 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5272, 4120, 811):Dir:(-86, 52, 0) Spd300
+2020-08-31 16:44:53,668 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5272,4120,811),dir:(-86,52,0),spd:300
+
+2020-08-31 16:44:53,670 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:53,671 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:53,710 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5218, 4130, 811):Dir:(-89, 45, 0) Spd0
+2020-08-31 16:44:53,711 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5218,4130,811),dir:(-89,45,0),spd:0
+
+2020-08-31 16:44:53,748 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5218, 4130, 811):Dir:(-86, 52, 0) Spd300
+2020-08-31 16:44:53,749 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5218,4130,811),dir:(-86,52,0),spd:300
+
+2020-08-31 16:44:53,947 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:53,948 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:54,010 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5158, 4167, 811):Dir:(-86, 52, 0) Spd300
+2020-08-31 16:44:54,011 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5158,4167,811),dir:(-86,52,0),spd:300
+
+2020-08-31 16:44:54,236 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:54,237 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:54,287 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5080, 4214, 811):Dir:(-86, 52, 0) Spd300
+2020-08-31 16:44:54,289 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5080,4214,811),dir:(-86,52,0),spd:300
+
+2020-08-31 16:44:54,346 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:44:54,347 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:44:54,363 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:54,364 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,365 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:54,365 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,366 [ 1] INFO  Unity: Stop
+2020-08-31 16:44:54,366 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,466 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-86, 52, 0) Spd0
+2020-08-31 16:44:54,467 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5052,4235,811),dir:(-86,52,0),spd:0
+
+2020-08-31 16:44:54,503 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-86, 52, 0) Spd0
+2020-08-31 16:44:54,505 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5052,4235,811),dir:(-86,52,0),spd:0
+
+2020-08-31 16:44:54,710 [ 1] INFO  Unity: SetDrirection:(-94, 34, 0)
+2020-08-31 16:44:54,711 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,751 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-94, 34, 0) Spd0
+2020-08-31 16:44:54,753 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-94,34,0),spd:0
+
+2020-08-31 16:44:54,771 [ 1] INFO  Unity: SetDrirection:(-97, 26, 0)
+2020-08-31 16:44:54,772 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,805 [ 1] INFO  Unity: SetDrirection:(-99, 16, 0)
+2020-08-31 16:44:54,806 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,843 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-99, 16, 0) Spd0
+2020-08-31 16:44:54,844 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-99,16,0),spd:0
+
+2020-08-31 16:44:54,862 [ 1] INFO  Unity: SetDrirection:(-100, 6, 0)
+2020-08-31 16:44:54,863 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,913 [ 1] INFO  Unity: SetDrirection:(-100, -5, 0)
+2020-08-31 16:44:54,914 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,936 [ 1] INFO  Unity: SetDrirection:(-99, -12, 0)
+2020-08-31 16:44:54,938 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:54,959 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-100, -5, 0) Spd0
+2020-08-31 16:44:54,961 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-100,-5,0),spd:0
+
+2020-08-31 16:44:55,017 [ 1] INFO  Unity: SetDrirection:(-97, -26, 0)
+2020-08-31 16:44:55,018 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,034 [ 1] INFO  Unity: SetDrirection:(-95, -32, 0)
+2020-08-31 16:44:55,035 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,058 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-97, -26, 0) Spd0
+2020-08-31 16:44:55,059 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-97,-26,0),spd:0
+
+2020-08-31 16:44:55,114 [ 1] INFO  Unity: SetDrirection:(-89, -45, 0)
+2020-08-31 16:44:55,114 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,140 [ 1] INFO  Unity: SetDrirection:(-88, -48, 0)
+2020-08-31 16:44:55,141 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,162 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-89, -45, 0) Spd0
+2020-08-31 16:44:55,163 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-89,-45,0),spd:0
+
+2020-08-31 16:44:55,207 [ 1] INFO  Unity: SetDrirection:(-78, -63, 0)
+2020-08-31 16:44:55,208 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,209 [ 1] INFO  Unity: SetDrirection:(-78, -63, 0)
+2020-08-31 16:44:55,210 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,284 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-78, -63, 0) Spd0
+2020-08-31 16:44:55,286 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-78,-63,0),spd:0
+
+2020-08-31 16:44:55,306 [ 1] INFO  Unity: SetDrirection:(-63, -77, 0)
+2020-08-31 16:44:55,307 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,307 [ 1] INFO  Unity: SetDrirection:(-63, -77, 0)
+2020-08-31 16:44:55,308 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,391 [ 1] INFO  Unity: SetDrirection:(-49, -87, 0)
+2020-08-31 16:44:55,392 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,393 [ 1] INFO  Unity: SetDrirection:(-49, -87, 0)
+2020-08-31 16:44:55,394 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,396 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-63, -77, 0) Spd0
+2020-08-31 16:44:55,397 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-63,-77,0),spd:0
+
+2020-08-31 16:44:55,418 [ 1] INFO  Unity: SetDrirection:(-46, -89, 0)
+2020-08-31 16:44:55,420 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,476 [ 1] INFO  Unity: SetDrirection:(-33, -94, 0)
+2020-08-31 16:44:55,476 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,478 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-49, -87, 0) Spd0
+2020-08-31 16:44:55,479 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-49,-87,0),spd:0
+
+2020-08-31 16:44:55,496 [ 1] INFO  Unity: SetDrirection:(-30, -96, 0)
+2020-08-31 16:44:55,497 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,518 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-46, -89, 0) Spd0
+2020-08-31 16:44:55,520 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-46,-89,0),spd:0
+
+2020-08-31 16:44:55,538 [ 1] INFO  Unity: SetDrirection:(-23, -97, 0)
+2020-08-31 16:44:55,540 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,567 [ 1] INFO  Unity: SetDrirection:(-16, -99, 0)
+2020-08-31 16:44:55,568 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,616 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-30, -96, 0) Spd0
+2020-08-31 16:44:55,617 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-30,-96,0),spd:0
+
+2020-08-31 16:44:55,634 [ 1] INFO  Unity: SetDrirection:(-4, -100, 0)
+2020-08-31 16:44:55,635 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,660 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-23, -97, 0) Spd0
+2020-08-31 16:44:55,662 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-23,-97,0),spd:0
+
+2020-08-31 16:44:55,680 [ 1] INFO  Unity: SetDrirection:(4, -100, 0)
+2020-08-31 16:44:55,681 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,681 [ 1] INFO  Unity: SetDrirection:(4, -100, 0)
+2020-08-31 16:44:55,682 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,751 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(-4, -100, 0) Spd0
+2020-08-31 16:44:55,754 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(-4,-100,0),spd:0
+
+2020-08-31 16:44:55,793 [ 1] INFO  Unity: SetDrirection:(14, -99, 0)
+2020-08-31 16:44:55,794 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:44:55,865 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(4, -100, 0) Spd0
+2020-08-31 16:44:55,867 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(4,-100,0),spd:0
+
+2020-08-31 16:44:55,913 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5052, 4235, 811):Dir:(14, -99, 0) Spd0
+2020-08-31 16:44:55,914 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5052,4235,811),dir:(14,-99,0),spd:0
+
+2020-08-31 16:45:31,940 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:45:31,941 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:45:31,942 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:45:31,942 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:45:31,943 [ 1] INFO  Unity: MoVeForward
+2020-08-31 16:45:31,943 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:45:32,011 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5053, 4230, 811):Dir:(14, -99, 0) Spd300
+2020-08-31 16:45:32,012 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5053,4230,811),dir:(14,-99,0),spd:300
+
+2020-08-31 16:45:32,048 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5053, 4230, 811):Dir:(14, -99, 0) Spd300
+2020-08-31 16:45:32,049 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:MoveFwd entity:(3:pos:(5053,4230,811),dir:(14,-99,0),spd:300
+
+2020-08-31 16:45:32,347 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:45:32,348 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:45:32,397 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5073, 4100, 811):Dir:(14, -99, 0) Spd300
+2020-08-31 16:45:32,398 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5073,4100,811),dir:(14,-99,0),spd:300
+
+2020-08-31 16:45:32,617 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:45:32,618 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:45:32,667 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5084, 4021, 811):Dir:(14, -99, 0) Spd300
+2020-08-31 16:45:32,669 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5084,4021,811),dir:(14,-99,0),spd:300
+
+2020-08-31 16:45:32,886 [ 1] INFO  Unity: SetPosition
+2020-08-31 16:45:32,887 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-08-31 16:45:32,942 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5095, 3942, 811):Dir:(14, -99, 0) Spd300
+2020-08-31 16:45:32,943 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:None entity:(3:pos:(5095,3942,811),dir:(14,-99,0),spd:300
+
+2020-08-31 16:45:33,010 [ 1] INFO  Unity: Stop
+2020-08-31 16:45:33,011 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:4Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:45:33,012 [ 1] INFO  Unity: Stop
+2020-08-31 16:45:33,012 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:45:33,013 [ 1] INFO  Unity: Stop
+2020-08-31 16:45:33,013 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:3Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-08-31 16:45:33,080 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5104, 3897, 811):Dir:(14, -99, 0) Spd0
+2020-08-31 16:45:33,081 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5104,3897,811),dir:(14,-99,0),spd:0
+
+2020-08-31 16:45:33,115 [ 1] INFO  Unity: OnEntityChange:id:3 pos:(5104, 3897, 811):Dir:(14, -99, 0) Spd0
+2020-08-31 16:45:33,117 [ 1] INFO  Unity: MapEntityUpdataResponse:Entitys:1
+  [3]event:Idle entity:(3:pos:(5104,3897,811),dir:(14,-99,0),spd:0
+
+2020-08-31 16:45:39,414 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in E:\unitymmorpg\mmowork\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+
+2020-08-31 16:45:39,416 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
+
+2020-08-31 16:45:39,444 [ 1] INFO  Unity: DoConnect
+2020-08-31 16:45:39,445 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-31 16:45:39,448 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-08-31 16:45:41,451 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-08-31 16:45:41,470 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-08-31 16:45:41,527 [ 1] INFO  Unity: DoConnect
+2020-08-31 16:45:41,528 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-31 16:45:41,530 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2020-08-31 16:45:43,535 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-08-31 16:45:43,537 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-08-31 16:45:43,632 [ 1] INFO  Unity: DoConnect
+2020-08-31 16:45:43,633 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-31 16:45:43,636 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2020-08-31 16:45:45,638 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-08-31 16:45:45,639 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-08-31 16:45:45,640 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2020-08-31 16:45:59,670 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-08-31 16:45:59,671 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2020-08-31 16:45:59,672 [ 1] INFO  Unity: Character_7_法1 Ondestroy:ID:3 Pos:(5104, 3897, 811) Dir:(14, -99, 0) Spd:0
+2020-08-31 16:45:59,672 [ 1] INFO  Unity: Character_21_123 Ondestroy:ID:1 Pos:(5000, 4000, 820) Dir:(-53, -85, 0) Spd:0
+2020-08-31 16:45:59,673 [ 1] INFO  Unity: Character_7_法1 Ondestroy:ID:4 Pos:(4775, 3184, 811) Dir:(4, -100, 0) Spd:0
+2020-08-31 16:45:59,674 [ 1] INFO  Unity: Character_21_123 Ondestroy:ID:1 Pos:(5000, 4000, 820) Dir:(-53, -85, 0) Spd:0
+2020-08-31 16:45:59,675 [ 1] INFO  Unity: Character_7_法1 Ondestroy:ID:3 Pos:(5104, 3897, 811) Dir:(14, -99, 0) Spd:0

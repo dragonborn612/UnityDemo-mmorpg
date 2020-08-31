@@ -11,6 +11,7 @@ using Common.Data;
 using Network;
 using GameServer.Managers;
 using GameServer.Entities;
+using GameServer.Services;
 
 namespace GameServer.Models
 {
@@ -44,6 +45,26 @@ namespace GameServer.Models
 
         internal void Update()
         {
+        }
+        public void UpdataEntity(NEntitySync nEntitySync)//客户端发过来的
+        {
+            //遍历看那个是自己
+            //是自己把自己的信息更新到服务器
+            //不是自己把自己发送给别人
+            foreach (var item in MapCharacters)
+            {
+                if (item.Value.character.entityId==nEntitySync.Id)
+                {
+                    item.Value.character.EntityData.Position = nEntitySync.Entity.Position;
+                    item.Value.character.EntityData.Direction = nEntitySync.Entity.Direction;
+                    item.Value.character.EntityData.Speed = nEntitySync.Entity.Speed;
+                }
+                else
+                {
+                    MapService.Instance.SendEntityUpdata(item.Value.connection, nEntitySync);
+                }
+            }
+
         }
 
         /// <summary>

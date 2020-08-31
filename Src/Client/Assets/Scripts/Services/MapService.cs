@@ -8,12 +8,13 @@ using System.Linq;
 using System.Text;
 using Models;
 using Managers;
+using Assets.Scripts.Managers;
 
 namespace Services
 {
     class MapService : Singleton<MapService>, IDisposable
     {
-        public int CurrentMapId { get; private set; }
+        public int CurrentMapId { get;  set; }
 
         public MapService()//创建时执行
         {
@@ -21,6 +22,7 @@ namespace Services
             Debug.Log("MapService()");
             MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
+            MessageDistributer.Instance.Subscribe<MapEntitySyncResponse>(this.OnMapEntitySync);
 
         }
 
@@ -30,6 +32,7 @@ namespace Services
         {
             MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             MessageDistributer.Instance.Unsubscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
+            MessageDistributer.Instance.Unsubscribe<MapEntitySyncResponse>(this.OnMapEntitySync);
 
         }
 
@@ -37,6 +40,26 @@ namespace Services
         {
 
         }
+        /// <summary>
+        /// 进入指定id的地图
+        /// </summary>
+        /// <param name="mapId"></param>
+        private void EnterMap(int mapId)
+        {
+            if (DataManager.Instance.Maps.ContainsKey(mapId))
+            {
+                User.Instance.currenMapData = DataManager.Instance.Maps[mapId];
+                SceneManager.Instance.LoadScene(DataManager.Instance.Maps[mapId].Resource);
+                Debug.LogFormat("EnterMap:map:{0} success", mapId);
+            }
+            else
+            {
+                Debug.LogErrorFormat("EnterMap:map:{0} not existed", mapId);
+            }
+        }
+
+
+
 
         private void OnMapCharacterEnter(object sender, MapCharacterEnterResponse message)
         {
@@ -71,23 +94,33 @@ namespace Services
             else
                 CharacterManager.Instance.RemoceCharacter(message.characterId);
         }
-        /// <summary>
-        /// 进入指定id的地图
-        /// </summary>
-        /// <param name="mapId"></param>
-        private void EnterMap(int mapId)
+        public void SendMapSync(EntityEvent entityEvent,NEntity nEntity)
         {
-            if (DataManager.Instance.Maps.ContainsKey(mapId))
+            Debug.LogFormat("MapEntityUpdataResqust:Id:{0}Pos:{1}Dir:{2}Spd:{3}", nEntity.Id, nEntity.Position, nEntity.Direction, nEntity.Speed);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.mapEntitySync = new MapEntitySyncRequest();
+            message.Request.mapEntitySync.entitySync = new NEntitySync()
             {
-                User.Instance.currenMapData = DataManager.Instance.Maps[mapId];
-                SceneManager.Instance.LoadScene(DataManager.Instance.Maps[mapId].Resource);
-                Debug.LogFormat("EnterMap:map:{0} success", mapId);
-            }
-            else
-            {
-                Debug.LogErrorFormat("EnterMap:map:{0} not existed", mapId);
-            }
+                Id = nEntity.Id,
+                Event = entityEvent,
+                Entity = nEntity
+            };
+            NetClient.Instance.SendMessage(message);
         }
-       
+        private void OnMapEntitySync(object sender, MapEntitySyncResponse message)
+        {
+            System.Text.StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("MapEntityUpdataResponse:Entitys:{0}", message.entitySyncs.Count);
+            sb.AppendLine();
+            foreach (var item in message.entitySyncs)
+            {
+                EntityManager.Instance.OnEntitySync(item);
+                sb.AppendFormat("  [{0}]event:{1} entity:{2}", item.Id, item.Event, item.Entity.String());
+                sb.AppendLine();
+            }
+            Debug.Log(sb.ToString());
+        }
+        
     }
 }

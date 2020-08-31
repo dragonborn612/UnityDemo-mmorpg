@@ -18,6 +18,7 @@ namespace Entities
         {
             get
             {
+                UpdateEntityData();
                 return entityData;
             }
 
@@ -48,18 +49,23 @@ namespace Entities
             this.speed = nEntity.Speed;
 
         }
-        /// <summary>
-        /// 实体属性向消息属性更新
-        /// </summary>
-        /// <param name="delta"></param>
+        
         public virtual void OnUpdate(float delta)
         {
             if (this.speed!=0)
             {
+                //Debug.LogFormat("{0}:sped:{1}",this.entityId, this.speed);
                 Vector3 dir = this.direction;
                 this.position += Vector3Int.RoundToInt(dir * speed * delta / 100f);
                
             }
+        }
+        /// <summary>
+        /// 实体属性向消息属性更新
+        /// </summary>
+        public void UpdateEntityData()
+        {
+
             entityData.Speed = this.speed;
             entityData.Position.FromVector3Int(this.position);
             entityData.Direction.FromVector3Int(this.direction);

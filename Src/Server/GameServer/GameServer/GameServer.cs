@@ -29,7 +29,8 @@ namespace GameServer
             DBService.Instance.Init();
             UserService.Instance.Init();
             DataManager.Instance.Load();
-            MapManager.Instance.Init();
+            MapService.Instance.Init();
+            //MapManager.Instance.Init();
             //var a = DBService.Instance.Entities.Characters.Where(s => s.TID == 1);
             //Console.WriteLine("{0}", a.FirstOrDefault<TCharacter>().Name);
             thread = new Thread(new ThreadStart(this.Update));
