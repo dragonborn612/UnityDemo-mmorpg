@@ -66,7 +66,7 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:Map:{0} Count:{1}", message.mapId, message.Characters.Count);
             foreach (var cha in message.Characters)
             {
-                if (User.Instance.CurrentCharacter.Id==cha.Id)
+                if (User.Instance.CurrentCharacter==null || User.Instance.CurrentCharacter.Id==cha.Id)
                 {
                     User.Instance.CurrentCharacter = cha;//更新角色的其他信息                  
                 }
@@ -92,7 +92,7 @@ namespace Services
                 CharacterManager.Instance.Clear();
             }
             else
-                CharacterManager.Instance.RemoceCharacter(message.characterId);
+                CharacterManager.Instance.RemoveCharacter(message.characterId);
         }
         public void SendMapSync(EntityEvent entityEvent,NEntity nEntity)
         {

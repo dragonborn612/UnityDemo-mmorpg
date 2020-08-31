@@ -22,6 +22,10 @@ public class UIMiniMap : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (playerTransform==null)
+        {
+            playerTransform = MiniMapManager.Instance.PlayerTansform;
+        }
         if (minimapBorundingBox==null||playerTransform==null)
         {
             return;
@@ -49,7 +53,7 @@ public class UIMiniMap : MonoBehaviour {
         }
         miniMap.SetNativeSize();//初始化图片尺寸
         miniMap.transform.localPosition = Vector3.zero;//初始化图片位置
-        playerTransform = User.Instance.currentCharacterObject.transform;
+        
 
     }
 }

@@ -95,7 +95,7 @@ namespace GameServer.Models
             }
                 
 
-            this.MapCharacters[character.Info.Id] = new MapCharacter(conn, character);
+            this.MapCharacters[character.Id] = new MapCharacter(conn, character);
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
@@ -105,7 +105,7 @@ namespace GameServer.Models
             Log.InfoFormat("ChaaracterLeave:Map:{0} characterId:{1},", this.Define.ID, character.Info.Id);
             foreach (var item in MapCharacters)
             {
-                SendCharacterLeaveMap(item.Value.connection, character.Info);
+                SendCharacterLeaveMap(item.Value.connection, character);
             }
             MapCharacters.Remove(character.Id);
         }
@@ -124,7 +124,7 @@ namespace GameServer.Models
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
         }
-        private void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        private void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();

@@ -18,7 +18,7 @@ namespace Entities
         {
             get
             {
-                UpdateEntityData();
+                UpdateEntityData();//实体属性向消息属性更新
                 return entityData;
             }
 

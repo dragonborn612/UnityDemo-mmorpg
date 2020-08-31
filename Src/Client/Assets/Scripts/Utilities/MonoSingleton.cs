@@ -3,9 +3,9 @@
 
 public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    public bool global = true;
+    public bool global = true;//是否全局使用
     static T instance;
-    public static T Instance
+    public static T Instance//如果没有【1】的话赋值的时候为第一次在其他地方使用
     {
         get
         {
@@ -18,10 +18,19 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 
     }
 
-    void Start()
+    void Start()//子类的逻辑不能用Start(),不然会被子类覆盖不调用这里Start(),要重写OnStart();
     {
         if (global)
+        {
+            if (instance!=null&&instance!=this.gameObject.GetComponent<T>())
+            {
+                Destroy(this.gameObject);
+                return;
+            }
             DontDestroyOnLoad(this.gameObject);
+            instance = this.gameObject.GetComponent<T>();//【1】
+        }
+           
         this.OnStart();
     }
 

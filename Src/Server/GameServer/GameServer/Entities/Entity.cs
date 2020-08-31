@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 
 namespace GameServer.Entities
 {
@@ -54,6 +55,7 @@ namespace GameServer.Entities
         {
             get
             {
+               
                 return entityData;
             }
             set
@@ -62,6 +64,8 @@ namespace GameServer.Entities
                 this.SetEntityData(value);
             }
         }
+
+       
 
         public Entity(Vector3Int pos,Vector3Int dir)
         {
@@ -82,5 +86,6 @@ namespace GameServer.Entities
             this.Direction = entity.Direction;
             this.speed = entity.Speed;
         }
+        
     }
 }

@@ -30,7 +30,7 @@ namespace Managers
             int[] keys = Characters.Keys.ToArray();
             foreach (var item in keys)
             {
-                this.RemoceCharacter(item);
+                this.RemoveCharacter(item);
             }
             Characters.Clear();
         }
@@ -45,7 +45,7 @@ namespace Managers
                 OnCharacterEnter.Invoke(character);
             }
         }
-        public void RemoceCharacter(int characterId)
+        public void RemoveCharacter(int characterId)
         {
             Debug.LogFormat("RemoveCharacter:{0}", characterId);
             if (Characters.ContainsKey(characterId))

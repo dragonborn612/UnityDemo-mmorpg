@@ -74,15 +74,17 @@ namespace GameServer.Services
                     netMessage.Response.userLogin.Errormsg = "None";
                     //在返回消息中添加用户 角色信息
                     netMessage.Response.userLogin.Userinfo = new NUserInfo();
-                    netMessage.Response.userLogin.Userinfo.Id = 1;                 
+                    netMessage.Response.userLogin.Userinfo.Id = (int)user.ID;                 
                     netMessage.Response.userLogin.Userinfo.Player = new NPlayerInfo();
                     netMessage.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
                     foreach (var character in user.Player.Characters)
                     {
                         NCharacterInfo info = new NCharacterInfo();
-                        info.Id = character.ID;
+                        info.Id = character.ID;//character.ID;
                         info.Class = (CharacterClass)character.Class;
+                        info.Type = CharacterType.Player;
                         info.Name = character.Name;
+                        info.Tid = character.ID;
                         netMessage.Response.userLogin.Userinfo.Player.Characters.Add(info);
                     }
 
@@ -128,9 +130,14 @@ namespace GameServer.Services
             foreach (var cha in sender.Session.User.Player.Characters)
             {
                 NCharacterInfo info = new NCharacterInfo();
-                info.Id = cha.ID;
+                //info.Id = cha.ID;
+                //info.Class = (CharacterClass)cha.Class;
+                //info.Name = cha.Name;
+                info.Id = 0;//character.ID;
                 info.Class = (CharacterClass)cha.Class;
+                info.Type = CharacterType.Player;
                 info.Name = cha.Name;
+                info.Tid = cha.ID;
                 netMessage.Response.createChar.Characters.Add(info);
             }
 
@@ -171,7 +178,7 @@ namespace GameServer.Services
             Log.InfoFormat("UserGameLeaveRequset:CharacterId:{0}:{1} Map:{2} ", character.Info.Id, character.Info.Name, character.Data.MapID);
 
 
-            CharacterManager.Instance.RemoveCharacter(character.Info.Id);
+            CharacterManager.Instance.RemoveCharacter(character.Id);
             MapManager.Instance[character.Info.mapId].CharacterLeave(character);
 
             NetMessage netMessage = new NetMessage();

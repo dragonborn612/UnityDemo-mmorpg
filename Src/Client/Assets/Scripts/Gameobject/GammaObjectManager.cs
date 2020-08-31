@@ -46,14 +46,14 @@ public class GammaObjectManager : MonoSingleton<GammaObjectManager> {
     }
     private void OnCharacterLeave(Character cha)
     {
-        if (!Characters.ContainsKey(cha.nCharacterInfo.Id))
+        if (!Characters.ContainsKey(cha.entityId))
         {
             return;
         }
-        if (Characters[cha.nCharacterInfo.Id]!=null)
+        if (Characters[cha.entityId]!=null)
         {
-            Destroy(Characters[cha.nCharacterInfo.Id]);
-            Characters.Remove(cha.nCharacterInfo.Id);
+            Destroy(Characters[cha.entityId]);
+            Characters.Remove(cha.entityId);
         }
     }
     /// <summary>
