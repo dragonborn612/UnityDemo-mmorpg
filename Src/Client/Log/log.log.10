@@ -1,146 +1,447 @@
-2020-08-31 00:09:08,006 [ 1] INFO  Unity: LoadingManager start
-2020-08-31 00:09:08,037 [ 1] INFO  Unity: UserService()
-2020-08-31 00:09:08,041 [ 1] INFO  Unity: MapService()
-2020-08-31 00:09:16,454 [ 1] INFO  Unity: UserLoginRequsest::user :user1 psw:123
-2020-08-31 00:09:16,455 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-08-31 00:09:16,457 [ 1] INFO  Unity: DoConnect
-2020-08-31 00:09:16,459 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-08-31 00:09:16,462 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-09-01 16:00:58,193 [ 1] INFO  Unity: LoadingManager start
+2020-09-01 16:00:58,236 [ 1] INFO  Unity: UserService()
+2020-09-01 16:00:58,239 [ 1] INFO  Unity: MapService()
+2020-09-01 16:01:07,575 [ 1] INFO  Unity: UserLoginRequsest::user :user1 psw:123
+2020-09-01 16:01:07,579 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-09-01 16:01:07,581 [ 1] INFO  Unity: DoConnect
+2020-09-01 16:01:07,584 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-09-01 16:01:07,587 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-08-31 00:09:16,465 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-08-31 00:09:19,848 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2020-08-31 00:09:19,851 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
-2020-08-31 00:09:19,981 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-08-31 00:09:19,982 [ 1] INFO  Unity: DataManager > DataManager()
-2020-08-31 00:09:20,124 [ 1] INFO  Unity: 刷新角色列表
-2020-08-31 00:09:21,201 [ 1] INFO  Unity: Select Char :[7]法1[Wizard]
-2020-08-31 00:09:21,913 [ 1] INFO  Unity: 点击开始游戏
-2020-08-31 00:09:21,915 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :0 
-2020-08-31 00:09:21,948 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2020-08-31 00:09:21,950 [ 1] INFO  Unity: AddCharacter:7:法1 Map:1 Entity:SkillBridge.Message.NEntity
-2020-08-31 00:09:21,956 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-08-31 00:09:21,958 [ 1] INFO  Unity: EnterMap:map:1 success
-2020-08-31 00:09:21,969 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
-2020-08-31 00:09:22,546 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-08-31 00:10:01,032 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2020-08-31 00:10:01,033 [ 1] INFO  Unity: AddCharacter:21:123 Map:1 Entity:SkillBridge.Message.NEntity
-2020-08-31 00:10:01,035 [ 1] INFO  Unity: 角色添加委托执行
-2020-08-31 00:10:34,158 [ 1] INFO  Unity: SetDrirection:(98, 18, 0)
-2020-08-31 00:10:34,160 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:10:34,260 [ 1] INFO  Unity: SetDrirection:(93, 36, 0)
-2020-08-31 00:10:34,261 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:10:34,359 [ 1] INFO  Unity: SetDrirection:(84, 54, 0)
-2020-08-31 00:10:34,361 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:10:34,459 [ 1] INFO  Unity: SetDrirection:(72, 70, 0)
-2020-08-31 00:10:34,460 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:10:34,594 [ 1] INFO  Unity: SetDrirection:(58, 81, 0)
-2020-08-31 00:10:34,595 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:11:02,247 [ 1] INFO  Unity: MoVeForward
-2020-08-31 00:11:02,248 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:11:02,996 [ 1] INFO  Unity: Stop
-2020-08-31 00:11:02,997 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
-2020-08-31 00:11:34,253 [ 1] INFO  Unity: MoveBack
-2020-08-31 00:11:34,255 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:11:34,919 [ 1] INFO  Unity: Stop
-2020-08-31 00:11:34,920 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
-2020-08-31 00:11:45,667 [ 1] INFO  Unity: MoveBack
-2020-08-31 00:11:45,668 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:11:47,661 [ 1] INFO  Unity: SetPosition
-2020-08-31 00:11:47,662 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
-2020-08-31 00:11:47,677 [ 1] INFO  Unity: Stop
-2020-08-31 00:11:47,678 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
-2020-08-31 00:12:07,274 [ 1] INFO  Unity: MoVeForward
-2020-08-31 00:12:07,275 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:12:10,689 [ 1] INFO  Unity: Stop
-2020-08-31 00:12:10,690 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
-2020-08-31 00:12:11,551 [ 1] INFO  Unity: MoveBack
-2020-08-31 00:12:11,552 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
-2020-08-31 00:12:14,119 [ 1] INFO  Unity: SetPosition
-2020-08-31 00:12:14,120 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
-2020-08-31 00:12:14,502 [ 1] INFO  Unity: Stop
-2020-08-31 00:12:14,503 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:1Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
-2020-08-31 00:17:55,365 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+2020-09-01 16:01:07,591 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-09-01 16:01:07,747 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2020-09-01 16:01:07,750 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
+2020-09-01 16:01:07,903 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-09-01 16:01:07,905 [ 1] INFO  Unity: DataManager > DataManager()
+2020-09-01 16:01:08,047 [ 1] INFO  Unity: 刷新角色列表
+2020-09-01 16:01:09,200 [ 1] INFO  Unity: Select Char :[7]法1[Wizard]
+2020-09-01 16:01:09,900 [ 1] INFO  Unity: 点击开始游戏
+2020-09-01 16:01:09,902 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :0 
+2020-09-01 16:01:09,944 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2020-09-01 16:01:09,947 [ 1] INFO  Unity: AddCharacter:2:法1 Map:1 Entity:SkillBridge.Message.NEntity
+2020-09-01 16:01:09,952 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-09-01 16:01:09,953 [ 1] INFO  Unity: EnterMap:map:1 success
+2020-09-01 16:01:09,954 [ 1] INFO  Unity: AddCharacter:1:法1 Map:1 Entity:SkillBridge.Message.NEntity
+2020-09-01 16:01:09,956 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
+2020-09-01 16:01:10,565 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
 
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in E:\unitymmorpg\mmowork\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
-
-2020-08-31 00:17:55,368 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
-
-2020-08-31 00:17:55,398 [ 1] INFO  Unity: DoConnect
-2020-08-31 00:17:55,399 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-08-31 00:17:55,402 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2020-08-31 00:17:57,409 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-08-31 00:17:57,427 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-08-31 00:17:57,480 [ 1] INFO  Unity: DoConnect
-2020-08-31 00:17:57,481 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-08-31 00:17:57,483 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2020-08-31 00:17:59,489 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-08-31 00:17:59,490 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-08-31 00:17:59,555 [ 1] INFO  Unity: DoConnect
-2020-08-31 00:17:59,556 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-08-31 00:17:59,557 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
-
-2020-08-31 00:18:01,563 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-08-31 00:18:01,565 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-08-31 00:18:01,565 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2020-08-31 00:18:10,381 [ 1] INFO  Unity: Character_7_法1 Ondestroy:ID:1 Pos:(4802, 3728, 811) Dir:(58, 81, 0) Spd:0
-2020-08-31 00:18:10,382 [ 1] INFO  Unity: Character_21_123 Ondestroy:ID:2 Pos:(5000, 4000, 820) Dir:(100, 0, 0) Spd:0
-2020-08-31 00:18:10,383 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-08-31 00:18:10,383 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-09-01 16:01:10,724 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-09-01 16:01:12,811 [ 1] INFO  Unity: SetDrirection:(98, -18, 0)
+2020-09-01 16:01:12,813 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:12,912 [ 1] INFO  Unity: SetDrirection:(94, -35, 0)
+2020-09-01 16:01:12,913 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:12,981 [ 1] INFO  Unity: SetDrirection:(86, -51, 0)
+2020-09-01 16:01:12,982 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:13,081 [ 1] INFO  Unity: SetDrirection:(75, -66, 0)
+2020-09-01 16:01:13,081 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:13,280 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:13,281 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:13,282 [ 1] INFO  Unity: SetDrirection:(62, -78, 0)
+2020-09-01 16:01:13,283 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:14,216 [ 1] INFO  Unity: SetDrirection:(47, -88, 0)
+2020-09-01 16:01:14,217 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:15,593 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:15,594 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:17,149 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:17,150 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:17,546 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:17,547 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:17,788 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:17,790 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:17,792 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:17,793 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:18,101 [ 1] INFO  Unity: SetDrirection:(63, -78, 0)
+2020-09-01 16:01:18,102 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:18,256 [ 1] INFO  Unity: SetDrirection:(76, -65, 0)
+2020-09-01 16:01:18,257 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:27,063 [ 1] INFO  Unity: SetDrirection:(87, -50, 0)
+2020-09-01 16:01:27,064 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:27,179 [ 1] INFO  Unity: SetDrirection:(95, -33, 0)
+2020-09-01 16:01:27,180 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:27,212 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:27,213 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:27,379 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:27,380 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:27,545 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:27,546 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:27,710 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:27,713 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:27,877 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:27,878 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:28,048 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:28,049 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:28,214 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:28,215 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:28,216 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:28,217 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:28,782 [ 1] INFO  Unity: SetDrirection:(86, -51, 0)
+2020-09-01 16:01:28,783 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:28,835 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:28,836 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:28,885 [ 1] INFO  Unity: SetDrirection:(75, -66, 0)
+2020-09-01 16:01:28,886 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:29,019 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:29,020 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:29,202 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:29,203 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:29,386 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:29,387 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:29,517 [ 1] INFO  Unity: SetDrirection:(62, -78, 0)
+2020-09-01 16:01:29,517 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:29,570 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:29,571 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:29,637 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:29,638 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:29,710 [ 1] INFO  Unity: SetDrirection:(47, -88, 0)
+2020-09-01 16:01:29,711 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:29,800 [ 1] INFO  Unity: SetDrirection:(30, -95, 0)
+2020-09-01 16:01:29,801 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:29,904 [ 1] INFO  Unity: SetDrirection:(10, -100, 0)
+2020-09-01 16:01:29,906 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:29,992 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:29,994 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:29,996 [ 1] INFO  Unity: SetDrirection:(-7, -100, 0)
+2020-09-01 16:01:29,997 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:30,097 [ 1] INFO  Unity: SetDrirection:(-26, -97, 0)
+2020-09-01 16:01:30,098 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:30,885 [ 1] INFO  Unity: SetDrirection:(-8, -100, 0)
+2020-09-01 16:01:30,886 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:30,985 [ 1] INFO  Unity: SetDrirection:(12, -99, 0)
+2020-09-01 16:01:30,986 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:31,067 [ 1] INFO  Unity: SetDrirection:(29, -96, 0)
+2020-09-01 16:01:31,068 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:31,084 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:31,084 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:31,150 [ 1] INFO  Unity: SetDrirection:(45, -89, 0)
+2020-09-01 16:01:31,151 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:31,235 [ 1] INFO  Unity: SetDrirection:(60, -80, 0)
+2020-09-01 16:01:31,236 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:31,277 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:31,280 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:31,325 [ 1] INFO  Unity: SetDrirection:(73, -68, 0)
+2020-09-01 16:01:31,326 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:31,425 [ 1] INFO  Unity: SetDrirection:(85, -52, 0)
+2020-09-01 16:01:31,427 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:31,578 [ 1] INFO  Unity: SetDrirection:(93, -36, 0)
+2020-09-01 16:01:31,579 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:32,122 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:32,123 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:32,551 [ 1] INFO  Unity: SetDrirection:(98, -18, 0)
+2020-09-01 16:01:32,552 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:32,654 [ 1] INFO  Unity: SetDrirection:(100, 1, 0)
+2020-09-01 16:01:32,655 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:32,837 [ 1] INFO  Unity: SetDrirection:(98, 19, 0)
+2020-09-01 16:01:32,838 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:33,863 [ 1] INFO  Unity: SetDrirection:(93, 36, 0)
+2020-09-01 16:01:33,863 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:35,507 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:35,508 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:35,779 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:35,780 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:35,980 [ 1] INFO  Unity: SetDrirection:(98, 19, 0)
+2020-09-01 16:01:35,981 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:36,129 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:36,130 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:38,248 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:01:38,249 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:38,546 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:38,547 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:38,647 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:01:38,648 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:01:39,529 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:39,530 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:43,188 [ 1] INFO  Unity: SetDrirection:(100, 2, 0)
+2020-09-01 16:01:43,189 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:43,319 [ 1] INFO  Unity: SetDrirection:(99, -17, 0)
+2020-09-01 16:01:43,320 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:43,419 [ 1] INFO  Unity: SetDrirection:(93, -37, 0)
+2020-09-01 16:01:43,420 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:43,523 [ 1] INFO  Unity: SetDrirection:(84, -55, 0)
+2020-09-01 16:01:43,524 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:43,639 [ 1] INFO  Unity: SetDrirection:(72, -70, 0)
+2020-09-01 16:01:43,640 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:43,772 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:43,773 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:44,435 [ 1] INFO  Unity: SetDrirection:(58, -81, 0)
+2020-09-01 16:01:44,435 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:44,451 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:44,452 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:44,568 [ 1] INFO  Unity: SetDrirection:(42, -91, 0)
+2020-09-01 16:01:44,569 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:44,660 [ 1] INFO  Unity: SetDrirection:(25, -97, 0)
+2020-09-01 16:01:44,660 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,089 [ 1] INFO  Unity: SetDrirection:(7, -100, 0)
+2020-09-01 16:01:45,090 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,288 [ 1] INFO  Unity: SetDrirection:(-12, -99, 0)
+2020-09-01 16:01:45,289 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,388 [ 1] INFO  Unity: SetDrirection:(-31, -95, 0)
+2020-09-01 16:01:45,389 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,487 [ 1] INFO  Unity: SetDrirection:(-50, -87, 0)
+2020-09-01 16:01:45,488 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,570 [ 1] INFO  Unity: SetDrirection:(-64, -77, 0)
+2020-09-01 16:01:45,571 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,646 [ 1] INFO  Unity: SetDrirection:(-77, -64, 0)
+2020-09-01 16:01:45,646 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,752 [ 1] INFO  Unity: SetDrirection:(-88, -47, 0)
+2020-09-01 16:01:45,753 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:01:45,769 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:01:45,770 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:45,869 [ 1] INFO  Unity: SetDrirection:(-95, -30, 0)
+2020-09-01 16:01:45,870 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:01:46,932 [ 1] INFO  Unity: Stop
+2020-09-01 16:01:46,933 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:02:58,794 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:02:58,795 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:02:59,193 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:02:59,194 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:02:59,463 [ 1] INFO  Unity: SetDrirection:(-99, -12, 0)
+2020-09-01 16:02:59,464 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:02:59,595 [ 1] INFO  Unity: SetDrirection:(-100, 6, 0)
+2020-09-01 16:02:59,596 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:02:59,697 [ 1] INFO  Unity: SetDrirection:(-96, 27, 0)
+2020-09-01 16:02:59,698 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:02:59,796 [ 1] INFO  Unity: SetDrirection:(-89, 46, 0)
+2020-09-01 16:02:59,797 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:02:59,931 [ 1] INFO  Unity: SetDrirection:(-79, 61, 0)
+2020-09-01 16:02:59,932 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:00,470 [ 1] INFO  Unity: SetDrirection:(-89, 46, 0)
+2020-09-01 16:03:00,471 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:01,199 [ 1] INFO  Unity: SetDrirection:(-96, 29, 0)
+2020-09-01 16:03:01,200 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:01,349 [ 1] INFO  Unity: SetDrirection:(-99, 11, 0)
+2020-09-01 16:03:01,351 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:03,219 [ 1] INFO  Unity: SetDrirection:(-100, -8, 0)
+2020-09-01 16:03:03,220 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:03,369 [ 1] INFO  Unity: SetDrirection:(-97, -26, 0)
+2020-09-01 16:03:03,370 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:05,143 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:03:05,144 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:06,360 [ 1] INFO  Unity: SetDrirection:(-100, -8, 0)
+2020-09-01 16:03:06,361 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:07,543 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:03:07,544 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:07,927 [ 1] INFO  Unity: SetDrirection:(-99, 10, 0)
+2020-09-01 16:03:07,928 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:08,444 [ 1] INFO  Unity: SetDrirection:(-100, -8, 0)
+2020-09-01 16:03:08,445 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:09,529 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:03:09,530 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:11,603 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:03:11,604 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:13,700 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:03:13,701 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:14,119 [ 1] INFO  Unity: SetDrirection:(-100, 10, 0)
+2020-09-01 16:03:14,120 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:14,307 [ 1] INFO  Unity: SetDrirection:(-96, 28, 0)
+2020-09-01 16:03:14,308 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:16,741 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:03:16,742 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:17,199 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:17,200 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:17,514 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:17,515 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:18,378 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:18,379 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:18,445 [ 1] INFO  Unity: SetDrirection:(-99, 10, 0)
+2020-09-01 16:03:18,446 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:18,577 [ 1] INFO  Unity: SetDrirection:(-100, -7, 0)
+2020-09-01 16:03:18,578 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:18,729 [ 1] INFO  Unity: SetDrirection:(-97, -24, 0)
+2020-09-01 16:03:18,731 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:19,441 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:19,442 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:19,823 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:19,824 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:23,159 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:23,160 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:25,549 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:25,551 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:25,565 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:03:25,567 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:03:26,280 [ 1] INFO  Unity: SetDrirection:(-100, -5, 0)
+2020-09-01 16:03:26,281 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:03:26,396 [ 1] INFO  Unity: SetDrirection:(-99, 16, 0)
+2020-09-01 16:03:26,397 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:03:26,412 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:26,413 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:26,500 [ 1] INFO  Unity: SetDrirection:(-94, 33, 0)
+2020-09-01 16:03:26,501 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:26,584 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:26,585 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:27,164 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:27,165 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:27,182 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:03:27,184 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:03:27,864 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:27,864 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:27,881 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:27,882 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:28,674 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:28,675 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:28,690 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:03:28,691 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:03:29,590 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:29,590 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:29,606 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:29,607 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:30,252 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:30,254 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:30,269 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:03:30,271 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:03:31,181 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:31,183 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:31,198 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:31,200 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:31,202 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:03:31,204 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:31,928 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:31,928 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:32,844 [ 1] INFO  Unity: SetDrirection:(-87, 49, 0)
+2020-09-01 16:03:32,845 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:33,043 [ 1] INFO  Unity: SetDrirection:(-77, 64, 0)
+2020-09-01 16:03:33,044 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:33,142 [ 1] INFO  Unity: SetDrirection:(-64, 77, 0)
+2020-09-01 16:03:33,143 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:33,308 [ 1] INFO  Unity: SetDrirection:(-49, 87, 0)
+2020-09-01 16:03:33,309 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:33,824 [ 1] INFO  Unity: SetDrirection:(-32, 95, 0)
+2020-09-01 16:03:33,824 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:33,938 [ 1] INFO  Unity: SetDrirection:(-14, 99, 0)
+2020-09-01 16:03:33,939 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:34,021 [ 1] INFO  Unity: SetDrirection:(4, 100, 0)
+2020-09-01 16:03:34,022 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:34,122 [ 1] INFO  Unity: SetDrirection:(25, 97, 0)
+2020-09-01 16:03:34,123 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:34,214 [ 1] INFO  Unity: SetDrirection:(44, 90, 0)
+2020-09-01 16:03:34,215 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:34,314 [ 1] INFO  Unity: SetDrirection:(59, 81, 0)
+2020-09-01 16:03:34,315 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:34,482 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:34,484 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:35,085 [ 1] INFO  Unity: SetDrirection:(72, 69, 0)
+2020-09-01 16:03:35,086 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:35,253 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:35,254 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:35,255 [ 1] INFO  Unity: SetDrirection:(84, 55, 0)
+2020-09-01 16:03:35,256 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:35,407 [ 1] INFO  Unity: SetDrirection:(92, 38, 0)
+2020-09-01 16:03:35,408 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:03:35,465 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:03:35,466 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:03:35,902 [ 1] INFO  Unity: Stop
+2020-09-01 16:03:35,904 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:25,813 [ 1] INFO  Unity: SetDrirection:(98, 20, 0)
+2020-09-01 16:25:25,814 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:25,922 [ 1] INFO  Unity: SetDrirection:(100, 0, 0)
+2020-09-01 16:25:25,923 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,022 [ 1] INFO  Unity: SetDrirection:(98, -21, 0)
+2020-09-01 16:25:26,023 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,121 [ 1] INFO  Unity: SetDrirection:(91, -41, 0)
+2020-09-01 16:25:26,122 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,220 [ 1] INFO  Unity: SetDrirection:(81, -59, 0)
+2020-09-01 16:25:26,221 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,321 [ 1] INFO  Unity: SetDrirection:(67, -74, 0)
+2020-09-01 16:25:26,321 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,401 [ 1] INFO  Unity: SetDrirection:(53, -85, 0)
+2020-09-01 16:25:26,402 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,505 [ 1] INFO  Unity: SetDrirection:(34, -94, 0)
+2020-09-01 16:25:26,505 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,609 [ 1] INFO  Unity: SetDrirection:(14, -99, 0)
+2020-09-01 16:25:26,610 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,708 [ 1] INFO  Unity: SetDrirection:(-7, -100, 0)
+2020-09-01 16:25:26,709 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:26,828 [ 1] INFO  Unity: SetDrirection:(-26, -97, 0)
+2020-09-01 16:25:26,829 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:27,116 [ 1] INFO  Unity: SetDrirection:(-43, -90, 0)
+2020-09-01 16:25:27,117 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:27,257 [ 1] INFO  Unity: SetDrirection:(-58, -81, 0)
+2020-09-01 16:25:27,259 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:27,349 [ 1] INFO  Unity: SetDrirection:(-73, -68, 0)
+2020-09-01 16:25:27,350 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:27,431 [ 1] INFO  Unity: SetDrirection:(-84, -54, 0)
+2020-09-01 16:25:27,432 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:27,559 [ 1] INFO  Unity: SetDrirection:(-93, -38, 0)
+2020-09-01 16:25:27,560 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:28,465 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:28,466 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:29,259 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:29,261 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:31,739 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:31,741 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:32,334 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:32,335 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:32,351 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:32,352 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:33,165 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:33,167 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:33,182 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:33,183 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:34,035 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:34,035 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:34,051 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:34,052 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:34,670 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:34,671 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:34,687 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:34,688 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:35,296 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:35,297 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:35,313 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:35,313 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:35,926 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:35,928 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:35,943 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:35,944 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:36,586 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:36,586 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:36,588 [ 1] INFO  Unity: SetPosition
+2020-09-01 16:25:36,589 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:36,615 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:36,615 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:37,301 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:37,302 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:37,318 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:37,318 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:37,981 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:37,982 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:38,000 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:38,001 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:38,626 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:38,628 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:38,646 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:38,647 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:39,164 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:39,165 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:39,181 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:39,182 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:39,687 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:39,688 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:39,704 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:39,705 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:40,191 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:40,192 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:40,209 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:40,210 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:40,698 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:40,699 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:40,714 [ 1] INFO  Unity: MoveBack
+2020-09-01 16:25:40,715 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:-300
+2020-09-01 16:25:41,344 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:41,345 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:25:41,360 [ 1] INFO  Unity: MoVeForward
+2020-09-01 16:25:41,361 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:300
+2020-09-01 16:25:41,679 [ 1] INFO  Unity: Stop
+2020-09-01 16:25:41,680 [ 1] INFO  Unity: MapEntityUpdataResqust:Id:2Pos:SkillBridge.Message.NVector3Dir:SkillBridge.Message.NVector3Spd:0
+2020-09-01 16:30:17,565 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
+2020-09-01 16:30:17,567 [ 1] INFO  Unity: UserGameLeaveReausest
+2020-09-01 16:30:17,604 [ 1] INFO  Unity: RemoveCharacter:2
+2020-09-01 16:30:17,607 [ 1] INFO  Unity: RemoveCharacter:1
+2020-09-01 16:30:17,609 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2020-09-01 16:30:17,611 [ 1] INFO  Unity: Character_2_法1 Ondestroy:ID:2 Pos:(805, 2716, 811) Dir:(-93, -38, 0) Spd:0
+2020-09-01 16:30:17,612 [ 1] INFO  Unity: Character_1_法1 Ondestroy:ID:1 Pos:(6885, 2531, 811) Dir:(99, 14, 0) Spd:0
+2020-09-01 16:30:17,695 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-09-01 16:30:17,700 [ 1] INFO  Unity: 刷新角色列表
+2020-09-01 16:30:19,785 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-09-01 16:30:19,786 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

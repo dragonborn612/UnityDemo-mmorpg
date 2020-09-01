@@ -40,6 +40,9 @@ namespace Services
         {
 
         }
+
+       
+
         /// <summary>
         /// 进入指定id的地图
         /// </summary>
@@ -121,6 +124,15 @@ namespace Services
             }
             Debug.Log(sb.ToString());
         }
-        
+        internal void SendMapTeleport(int teleportID)
+        {
+            Debug.LogFormat("MapTeleportRequest:TelportId{0}",teleportID);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.mapTeleport = new MapTeleportRequest();
+
+            message.Request.mapTeleport.teleporterId = teleportID;
+            NetClient.Instance.SendMessage(message);
+        }
     }
 }
