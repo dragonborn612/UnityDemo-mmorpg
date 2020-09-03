@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMiniMap : MonoBehaviour {
+public class UIMiniMap : MonoBehaviour {//只实例化一次
     public Collider minimapBorundingBox;
 
     public Image miniMap;//地图本身
@@ -16,7 +16,9 @@ public class UIMiniMap : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        InitMap();
+        MiniMapManager.Instance.miniMap = this;
+        UpdataMap();
+       
 	}
 	
 	// Update is called once per frame
@@ -44,16 +46,17 @@ public class UIMiniMap : MonoBehaviour {
 
         arrow.transform.eulerAngles=new Vector3(0,0,-playerTransform.eulerAngles.y);
 	}
-    void InitMap()
+    public void UpdataMap()
     {
         mapName.text = User.Instance.currenMapData.Name;
-        if (miniMap.overrideSprite==null)
-        {
-            miniMap.overrideSprite = MiniMapManager.Instance.LoadcurrentMiniMap();
-        }
+        
+        
+        miniMap.overrideSprite = MiniMapManager.Instance.LoadcurrentMiniMap();
+       
         miniMap.SetNativeSize();//初始化图片尺寸
         miniMap.transform.localPosition = Vector3.zero;//初始化图片位置
-        
+        this.minimapBorundingBox = MiniMapManager.Instance.MiniMapBroundingBox;
+        this.playerTransform = null;
 
     }
 }

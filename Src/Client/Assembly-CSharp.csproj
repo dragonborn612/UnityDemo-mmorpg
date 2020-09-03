@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Gameobject\GameObjectTool.cs" />
     <Compile Include="Assets\Scripts\Gameobject\GammaObjectManager.cs" />
     <Compile Include="Assets\Scripts\Gameobject\MainPlayerCamera.cs" />
+    <Compile Include="Assets\Scripts\Gameobject\MapController.cs" />
     <Compile Include="Assets\Scripts\Gameobject\PlayerInputerController.cs" />
     <Compile Include="Assets\Scripts\Gameobject\TeleporterObject.cs" />
     <Compile Include="Assets\Scripts\LoadingSlider.cs" />
@@ -89,10 +90,13 @@
     <Compile Include="Assets\Scripts\UI\UICharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\UICharInfo.cs" />
     <Compile Include="Assets\Scripts\UI\UILogin.cs" />
-    <Compile Include="Assets\Scripts\UI\UIMainCity.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain.cs" />
+    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIMessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UIRegister.cs" />
+    <Compile Include="Assets\Scripts\UI\UITest.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElementManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />

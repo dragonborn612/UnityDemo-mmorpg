@@ -4,24 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using Models;
 using Services;
+using Assets.Scripts.UI;
+using System;
 
-public class UIMainCity : MonoBehaviour {
+public class UIMain : MonoSingleton<UIMain> {
     public Text characterName;
     public Text characterLevels;
 
 	// Use this for initialization
-	void Start () {
+ 	protected override void OnStart () {
         this.AvaterUpdata();
 	}
-	
-	// Update is called once per frame
-	//void Update () {
 		
-	//}
-    //private void OnApplicationQuit()
-    //{
-    //    UserService.Instance.SenderGameLeave();
-    //}
     private void AvaterUpdata()
     {
         characterLevels.text = User.Instance.CurrentCharacter.Level.ToString();
@@ -32,4 +26,18 @@ public class UIMainCity : MonoBehaviour {
         SceneManager.Instance.LoadScene("Levels/CharacterSelect");
         UserService.Instance.SenderGameLeave();
     }
+
+    public void OnClikeUITest()
+    {
+        UITest uiTest= UIManager.Instance.Show<UITest>();
+        uiTest.Onclose += OnUITestClose;
+        uiTest.UpdataTitle("这是是一个测试标题");
+    }
+
+    private void OnUITestClose(UIWindow sender, WindowResult windowResult)
+    {
+        MessageBox.Show(string.Format("你点击了{0}", windowResult.ToString()), "确定");
+    }
+
+   
 }
