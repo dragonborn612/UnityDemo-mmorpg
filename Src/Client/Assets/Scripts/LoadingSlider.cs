@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using Assets.Scripts.Managers;
+using Services;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,7 +28,9 @@ public class LoadingSlider : MonoBehaviour
         //loadingSlider = gameObject.GetComponent<Slider>();
         UserService.Instance.Init();
         MapService.Instance.Init();
-	}
+        TestManager.Instance.Intit();
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
