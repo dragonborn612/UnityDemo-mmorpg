@@ -168,6 +168,23 @@ namespace GameServer.Services
             netMessage.Response.gameEnter.Result = Result.Success;
             netMessage.Response.gameEnter.Errormsg = "None";
 
+            netMessage.Response.gameEnter.Character = character.Info;//道具消息
+            #region 测试用例
+            int itemID = 1;
+            bool hasItem = character.ItemManager.HasItem(itemID);
+            Log.InfoFormat("HasItem[{0}]{1}", itemID, hasItem);
+            if (hasItem)
+            {
+                character.ItemManager.RemoveItem(itemID, 1);
+            }
+            else
+            {
+                character.ItemManager.AddItem(itemID, 5);
+            }
+            Models.Item item = character.ItemManager.GetItem(itemID);
+            Log.InfoFormat("Item:[{0}][{1}]", itemID, item);
+            #endregion
+
             byte[] data = PackageHandler.PackMessage(netMessage);
             sender.SendData(data, 0, data.Length);
             sender.Session.Character = character;//在会话中绑定当前角色

@@ -1,5 +1,6 @@
 ﻿using Common.Data;
 using GameServer.Core;
+using GameServer.Managers;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,7 @@ namespace GameServer.Entities
             this.Info.Level = level;
             this.Info.Tid = tid;
             this.Info.Entity = this.EntityData;
-            //this.Define = DataManager.Instance.Characters[this.Info.Tid];
+            this.Define = DataManager.Instance.Characters[this.Info.Tid];
             this.Info.Name = this.Define.Name;
         }
     }

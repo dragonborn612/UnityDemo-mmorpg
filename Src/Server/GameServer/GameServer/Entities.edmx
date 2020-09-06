@@ -58,8 +58,9 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="CharacterID" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="ItemCount" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="UserPlayer">
     <End Role="User" Type="ExtremeWorldModel.Store.Users" Multiplicity="*" />
@@ -164,9 +165,10 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Character" Relationship="ExtremeWorldModel.TCharacterTCharacterItem" FromRole="TCharacterItem" ToRole="TCharacter" />
           <Property Name="CharacterID" Type="Int32" Nullable="false" />
+          <Property Name="ItemID" Type="Int32" Nullable="false" a:GetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Name="ItemCount" Type="Int32" Nullable="false" />
         </EntityType>
         <Association Name="TCharacterTCharacterItem">
           <End Type="ExtremeWorldModel.TCharacter" Role="TCharacter" Multiplicity="1" />
@@ -222,8 +224,9 @@
       <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TCharacterItem)">
         <MappingFragment StoreEntitySet="CharacterItem">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="CharacterID" ColumnName="CharacterID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -8,6 +8,7 @@ using UnityEngine;
 
 using SkillBridge.Message;
 using Models;
+using Assets.Scripts.Managers;
 
 namespace Services
 {
@@ -237,7 +238,10 @@ namespace Services
             Debug.LogFormat("OnGameEnterCharacter:{0} [{1}]", message.Result, message.Errormsg);
             if (message.Result == Result.Success)
             {
-
+                if (message.Character!=null)
+                {
+                    ItemManager.Instance.Init(message.Character.Items);
+                }
             }
         }
         private void OnGameLeave(object sender, UserGameLeaveResponse message)

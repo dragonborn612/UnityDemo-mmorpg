@@ -78,9 +78,11 @@
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MiniMapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
+    <Compile Include="Assets\Scripts\Models\Item.cs" />
     <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />

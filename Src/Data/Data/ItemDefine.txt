@@ -1,0 +1,121 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": "小型治疗药水",
+    "Description": "使用立即回复500生命值（战斗回复）",
+    "Type": "NORMAL",
+    "Category": "药水",
+    "CanUse": true,
+    "UseCD": 1.0,
+    "Price": 200,
+    "SellPrice": 100,
+    "Function": "RecoverHP",
+    "Param": 500
+  },
+  "2": {
+    "ID": 2,
+    "Name": "小型法力药水",
+    "Description": "使用立即回复500法力值（战斗回复）",
+    "Type": "NORMAL",
+    "Category": "药水",
+    "CanUse": true,
+    "UseCD": 1.0,
+    "Price": 200,
+    "SellPrice": 100,
+    "Function": "RecoverMP",
+    "Param": 500
+  },
+  "3": {
+    "ID": 3,
+    "Name": "面包",
+    "Description": "使用5后恢复1000点生命值（非战斗状态）",
+    "Type": "NORMAL",
+    "Category": "食物",
+    "CanUse": true,
+    "UseCD": 5.0,
+    "Price": 200,
+    "SellPrice": 100,
+    "Function": "AddBuff",
+    "Param": 1
+  },
+  "4": {
+    "ID": 4,
+    "Name": "海鲜汤",
+    "Description": "使用5后恢复1000点法力值（非战斗状态）",
+    "Type": "NORMAL",
+    "Category": "食物",
+    "CanUse": true,
+    "UseCD": 5.0,
+    "Price": 200,
+    "SellPrice": 100,
+    "Function": "AddBuff",
+    "Param": 2
+  },
+  "5": {
+    "ID": 5,
+    "Name": "小型经验书",
+    "Description": "使用增加10000经验",
+    "Type": "NORMAL",
+    "Category": "经验书",
+    "CanUse": true,
+    "UseCD": 0.0,
+    "SellPrice": 1,
+    "Function": "AddExp"
+  },
+  "6": {
+    "ID": 6,
+    "Name": "荣耀徽章",
+    "Description": "集齐一定数量兑换装备",
+    "Type": "MATERIAL",
+    "Category": "徽章",
+    "UseCD": 0.0,
+    "SellPrice": 1
+  },
+  "7": {
+    "ID": 7,
+    "Name": "钱袋",
+    "Description": "点击打开获得1000枚金币",
+    "Type": "NORMAL",
+    "Category": "钱袋",
+    "CanUse": true,
+    "UseCD": 0.0,
+    "SellPrice": 1,
+    "Function": "AddMoney",
+    "Param": 1000
+  },
+  "8": {
+    "ID": 8,
+    "Name": "大钱袋",
+    "Description": "点击打开获得10000枚金币",
+    "Type": "NORMAL",
+    "Category": "钱袋",
+    "CanUse": true,
+    "UseCD": 0.0,
+    "SellPrice": 1,
+    "Function": "AddMoney",
+    "Param": 10000
+  },
+  "9": {
+    "ID": 9,
+    "Name": "10级装备盒",
+    "Description": "点击打开获得10级紫色装备一件",
+    "Type": "NORMAL",
+    "Category": "装备盒",
+    "CanUse": true,
+    "UseCD": 0.0,
+    "SellPrice": 1,
+    "Function": "AddItem"
+  },
+  "10": {
+    "ID": 10,
+    "Name": "技能书",
+    "Description": "点击获得1点技能点",
+    "Type": "NORMAL",
+    "Category": "技能书",
+    "CanUse": true,
+    "UseCD": 0.0,
+    "SellPrice": 1,
+    "Function": "AddSkillPoint",
+    "Param": 1
+  }
+}
