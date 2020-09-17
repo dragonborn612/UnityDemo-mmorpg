@@ -20,7 +20,7 @@ namespace GameServer.Managers
             this.Owner = owenr;
             foreach (var item in owenr.Data.Items)
             {
-                this.Items.Add(item.Id, new Item(item));
+                this.Items.Add(item.ItemID, new Item(item));
             }
         }
 
@@ -46,7 +46,12 @@ namespace GameServer.Managers
             {
                 return item.Count > 0;
             }
-            return false;
+            else
+            {
+                return false;
+            }
+
+           
         }
         public Item GetItem(int itemId)
         {
@@ -67,13 +72,17 @@ namespace GameServer.Managers
             {
                 TCharacterItem dbItem = new TCharacterItem();
                 dbItem.CharacterID = this.Owner.Data.ID;
-                dbItem.Character = this.Owner.Data;
+                dbItem.Owner = this.Owner.Data;
                 dbItem.ItemID = itemId;
                 dbItem.ItemCount = count;
                 this.Owner.Data.Items.Add(dbItem);
                 item = new Item(dbItem);
                 Items.Add(itemId, item);
+                //Items[itemId] = item;
             }
+
+            this.Owner.StatusManager.AddItemChange(itemId, count, StatusAction.Add);//加入状态 
+
             Log.InfoFormat("[{0}]AddItem[{1}] addCount:{2}", this.Owner.Data.ID, itemId, count);
             DBService.Instance.Save();
             return true;
@@ -90,6 +99,9 @@ namespace GameServer.Managers
                 return false;
             }
             item.Remove(count);
+
+            this.Owner.StatusManager.AddItemChange(itemId, count, StatusAction.Delete);//加入状态 
+
             Log.InfoFormat("[{0}]RemoveItem[{1}] removeCount:{2}", this.Owner.Data.ID, itemId, count);
             return true;
         }

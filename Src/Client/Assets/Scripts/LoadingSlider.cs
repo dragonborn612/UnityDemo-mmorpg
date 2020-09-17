@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Managers;
+using Assets.Scripts.Services;
 using Services;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,7 +29,10 @@ public class LoadingSlider : MonoBehaviour
         //loadingSlider = gameObject.GetComponent<Slider>();
         UserService.Instance.Init();
         MapService.Instance.Init();
-        TestManager.Instance.Intit();
+        //TestManager.Instance.Intit();
+        ShopManager.Instance.Init();
+        ItemService.Instance.Intit();
+        StatusService.Instance.Init();
 
     }
 	

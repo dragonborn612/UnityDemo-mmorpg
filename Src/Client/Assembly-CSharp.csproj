@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -75,31 +75,45 @@
     <Compile Include="Assets\Scripts\LoadingSlider.cs" />
     <Compile Include="Assets\Scripts\Log\UnityLogger.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
+    <Compile Include="Assets\Scripts\Managers\BagManager.cs" />
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\EquipMananger.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MiniMapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Models\BagItem.cs" />
     <Compile Include="Assets\Scripts\Models\Item.cs" />
     <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
+    <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\TipsAnimatonEvent.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\Minimap\UIMiniMap.cs" />
+    <Compile Include="Assets\Scripts\UI\TabView\TabButten.cs" />
+    <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
+    <Compile Include="Assets\Scripts\UI\UIBag.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterView.cs" />
+    <Compile Include="Assets\Scripts\UI\UICharEquip.cs" />
     <Compile Include="Assets\Scripts\UI\UICharInfo.cs" />
+    <Compile Include="Assets\Scripts\UI\UIEquipItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIIconItem.cs" />
     <Compile Include="Assets\Scripts\UI\UILogin.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain.cs" />
-    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIMessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UIRegister.cs" />
+    <Compile Include="Assets\Scripts\UI\UIShop.cs" />
+    <Compile Include="Assets\Scripts\UI\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UITest.cs" />
     <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement.cs" />

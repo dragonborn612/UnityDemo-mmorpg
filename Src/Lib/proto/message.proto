@@ -48,10 +48,20 @@ enum ENTITY_EVENT
 enum ITEM_TYPE 
 {
 	NORMAL = 0;
-	MATERAL = 1;
+	MATERIAL = 1;
 	TASK = 2;//任务道具
+	EQUIP=3;
 }
-
+enum  EQIP_SLOT {
+	WEAPON=0;      //主武器
+	ACCESSORY=1;   //副武器
+	HELMET=2;      //头盔
+	CHEST=3;       //胸甲
+	SHOULDER=4;    //肩胛/手套
+	PANTS=5;       //裤子
+	BOOTS=6;       //鞋子
+	SOLT_MAX=7;
+}
 message NUserInfo {
 	int32 id = 1;
 	NPlayerInfo player = 2;
@@ -71,8 +81,11 @@ message NCharacterInfo {
 	int32 level = 6;
 	int32 mapId = 7;
 	NEntity entity = 8;
+	int64 gold=9;
 
 	repeated NItemInfo Items = 10;
+	NBagInfo Bag=11;
+	bytes Equips=12;
 }
 message NItemInfo 
 {
@@ -86,7 +99,37 @@ message NVector3
 	int32 y = 2;
 	int32 z = 3;
 }
-
+message  NBagInfo {
+	int32 Unlocked=1;//解锁的格子数
+	bytes Items=2;
+}
+enum STATUS_ACTION
+{
+    UPDATE=0;
+	ADD=1;
+	DELETE=2;
+}
+enum  STATUS_TYPE {
+	MONEY=0;
+	EXp=1;
+	SKILL_POINT=2;
+	ITEM=3;
+}
+enum  STATUS_SOURCE
+{
+	UPDATE=0;
+	ADD=1;
+	DELETE=2;
+}
+message Nstatus {
+	STATUS_TYPE type=1;
+	STATUS_ACTION action=2;
+	int32 id=3;
+	int32 value=4;
+}
+message StatusNotify {
+	repeated Nstatus status=1;
+}
 ////////////////////////////////////////////////////////////////
 //
 //  Entities
@@ -133,7 +176,10 @@ message NetMessageRequest{
 	MapEntitySyncRequest mapEntitySync = 8;
 	MapTeleportRequest mapTeleport = 9;
 
-	FirstTestRequest firstRequest=10;
+	//FirstTestRequest firstRequest=10;
+	ItemBuyRequest itemBuy=10;
+	ItemEquipRequest itemEquip=11;
+	
 }
 
 message NetMessageResponse{
@@ -147,6 +193,12 @@ message NetMessageResponse{
 	MapCharacterLeaveResponse mapCharacterLeave = 7;
 
 	MapEntitySyncResponse mapEntitySync = 8;
+
+	ItemBuyResponse itemBuy=10;
+	ItemEquipResponse itemEquip=11;
+
+
+	StatusNotify statusNotify=100;
 	
 }
 
@@ -243,4 +295,32 @@ message MapEntitySyncResponse
 message MapTeleportRequest
 {
 	int32 teleporterId = 1;
+}
+message ItemBuyRequest
+{
+	int32 shopId=1;
+	int32 shopItemId=2;
+}
+message ItemBuyResponse
+{
+	RESULT result = 1;
+	string errormsg=2;
+}
+message  BagSaveRequst 
+{
+	NBagInfo BagInfo = 1;
+}
+message  BagSaveResponse 
+{
+	RESULT result = 1;
+	string errormsg=2;
+}
+message ItemEquipRequest {
+	int32 slot=1;
+	int32 itemId=2;
+	bool isEquip=3;
+}
+message ItemEquipResponse {
+	RESULT result = 1;
+	string errormsg=2;
 }

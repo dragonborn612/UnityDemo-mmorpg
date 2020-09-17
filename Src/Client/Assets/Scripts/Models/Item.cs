@@ -3,17 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using SkillBridge.Message;
 using System.Text;
+using Common.Data;
 
 namespace Assets.Scripts.Models
 {
-    class Item
+    public class Item
     {
         public int Id;
         public int Count;
-        public Item(NItemInfo item)
+        public ItemDefine itemDefine;
+        public EquipDefine EquipInfo;
+        public Item(NItemInfo item):this(item.Id,item.Count)
         {
-            this.Id = item.Id;
-            this.Count = item.Count;
+            
+        }
+        public Item(int id,int count)
+        {
+            this.Id = id;
+            this.Count = count;
+           
+
+            DataManager.Instance.Items.TryGetValue(this.Id,out this.itemDefine);
+            DataManager.Instance.Equips.TryGetValue(Id, out EquipInfo);
         }
         public override string ToString()
         {

@@ -12,8 +12,8 @@ namespace Assets.Scripts.Managers
     {
         public void Intit()
         {
-            NPCManager.Instance.RegisterNpcEvent(NpcFunction.InvokeInsrance, OnNpcInvokeInsrance);
-            NPCManager.Instance.RegisterNpcEvent(NpcFunction.InvokeShop, OnNpcInvokeShop);
+            //NPCManager.Instance.RegisterNpcEvent(NpcFunction.InvokeInsrance, OnNpcInvokeInsrance);
+            //NPCManager.Instance.RegisterNpcEvent(NpcFunction.InvokeShop, OnNpcInvokeShop);
         }
 
         private bool OnNpcInvokeInsrance(NPCDefine nPCDefine)

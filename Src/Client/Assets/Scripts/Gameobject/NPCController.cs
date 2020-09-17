@@ -6,11 +6,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class NPCController : MonoBehaviour {
     public int npcID;
     private Animator animator;
     private NPCDefine npc;
     private SkinnedMeshRenderer renderer;
+    public Vector3 startForward;
     /// <summary>
     /// 原本颜色
     /// </summary>
@@ -27,7 +29,14 @@ public class NPCController : MonoBehaviour {
         renderer = GetComponentInChildren<SkinnedMeshRenderer>();
         orignColor = renderer.sharedMaterial.color;
         this.StartCoroutine(Actions());
-	}
+        this.transform.forward = startForward;
+       
+
+    }
+    private void OnDestroy()
+    {
+        
+    }   
     IEnumerator Actions()
     {
         while (true)
@@ -109,6 +118,19 @@ public class NPCController : MonoBehaviour {
             {
                 renderer.material.color = orignColor;
             }
+        }
+    }
+    public void FaceBack()
+    {
+        StartCoroutine(FaceToPlayerBack());
+    }
+    IEnumerator FaceToPlayerBack()
+    {
+       
+        while (Mathf.Abs(Vector3.Angle(this.transform.forward, startForward)) > 5)//小于5度不再插值
+        {
+            this.transform.forward = Vector3.Lerp(this.transform.forward, startForward, Time.deltaTime * 5f);
+            yield return null;
         }
     }
 }

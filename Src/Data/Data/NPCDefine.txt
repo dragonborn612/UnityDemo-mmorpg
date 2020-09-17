@@ -22,7 +22,7 @@
   },
   "4": {
     "ID": 4,
-    "Name": "奥德里奇",
+    "Name": "奥德利奇",
     "Description": "装备NPC",
     "Type": "Functional",
     "Function": "InvokeShop",

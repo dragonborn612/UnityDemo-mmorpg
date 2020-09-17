@@ -6,10 +6,13 @@ using System.Text;
 
 namespace Assets.Scripts.Managers
 {
+
     class NPCManager:Singleton<NPCManager>
     {
         public delegate bool NpcActionHanger(NPCDefine nPCDefine);
+        
         Dictionary<NpcFunction, NpcActionHanger> eventMap = new Dictionary<NpcFunction, NpcActionHanger>();
+
         public void RegisterNpcEvent(NpcFunction npcFunction,NpcActionHanger  npcActionHanger)
         {
             if (!eventMap.ContainsKey(npcFunction) )//如果不存在 添加字典
@@ -36,6 +39,7 @@ namespace Assets.Scripts.Managers
             else
                 return false;           
         }
+        //交互
         public bool Interactive(NPCDefine nPCDefine)
         {
             if (nPCDefine.Type ==NpcType.Task)

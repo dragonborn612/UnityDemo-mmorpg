@@ -12,14 +12,18 @@ namespace GameServer.Entities
 {
     class Character : CharacterBase
     {
-       
+        /// <summary>
+        /// data为数据库表角色
+        /// </summary>
         public TCharacter Data;
         public ItemManager ItemManager;
+        public StatusManager StatusManager;
 
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
         {
+            //data为数据库表角色
             this.Data = cha;
             this.Info = new NCharacterInfo();
             this.Info.Type = type;
@@ -27,6 +31,7 @@ namespace GameServer.Entities
             this.Info.Name = cha.Name;
             this.Info.Level = 1;//cha.Level;
             this.Info.Tid = cha.TID;
+            this.Info.Gold = cha.Gold;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
             this.Info.Entity = this.EntityData;
@@ -34,6 +39,29 @@ namespace GameServer.Entities
 
             this.ItemManager = new ItemManager(this);
             this.ItemManager.GetItemInfos(this.Info.Items);
+            this.Info.Bag = new NBagInfo();
+            this.Info.Bag.Unlocked = this.Data.Bag.Unlocked;
+            this.Info.Bag.Items = this.Data.Bag.Items;
+            this.Info.Equips = this.Data.Equips;
+            this.StatusManager = new StatusManager(this);
+
+        }
+        public long Gold
+        {
+            get
+            {
+                return this.Data.Gold;
+
+            }
+            set
+            {
+                if (this.Data.Gold==value)
+                {
+                    return;
+                }
+                this.StatusManager.AddGoldChange((int)(value - this.Data.Gold));
+                this.Data.Gold = value;//修改了数据库表角色
+            }
         }
     }
 }

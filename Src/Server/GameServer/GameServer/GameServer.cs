@@ -30,6 +30,7 @@ namespace GameServer
             UserService.Instance.Init();
             DataManager.Instance.Load();
             MapService.Instance.Init();
+            ItemService.Instance.Init();
             //MapManager.Instance.Init();
             //var a = DBService.Instance.Entities.Characters.Where(s => s.TID == 1);
             //Console.WriteLine("{0}", a.FirstOrDefault<TCharacter>().Name);

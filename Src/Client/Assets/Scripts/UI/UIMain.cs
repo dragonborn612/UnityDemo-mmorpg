@@ -6,6 +6,7 @@ using Models;
 using Services;
 using Assets.Scripts.UI;
 using System;
+using Assets.Scripts.Managers;
 
 public class UIMain : MonoSingleton<UIMain> {
     public Text characterName;
@@ -39,5 +40,12 @@ public class UIMain : MonoSingleton<UIMain> {
         MessageBox.Show(string.Format("你点击了{0}", windowResult.ToString()), "确定");
     }
 
-   
+   public void OnClikeBagButten()
+    {
+        BagManager.Instance.ShowBag();
+    }
+    public void OnClikeCharacterEquip()
+    {
+        EquipMananger.Instance.ShowUiEquip();
+    }
 }
