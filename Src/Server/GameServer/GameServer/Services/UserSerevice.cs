@@ -123,6 +123,13 @@ namespace GameServer.Services
                 
 
             };
+
+            TCharacterBag bag = new TCharacterBag();
+            bag.TCharacter = character;
+            bag.Items = new byte[0];
+            bag.Unlocked = 20;
+            character.TCharacterBag = DBService.Instance.Entities.TCharacterBags.Add(bag);
+
             character= DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character);
             DBService.Instance.Entities.SaveChanges();
@@ -167,24 +174,27 @@ namespace GameServer.Services
             netMessage.Response.gameEnter = new UserGameEnterResponse();
             netMessage.Response.gameEnter.Result = Result.Success;
             netMessage.Response.gameEnter.Errormsg = "None";
-
             netMessage.Response.gameEnter.Character = character.Info;//道具消息
-            #region 测试用例
+
+            #region 道具测试用例
             int itemID = 1;
             bool hasItem = character.ItemManager.HasItem(itemID);
             Log.InfoFormat("HasItem[{0}]{1}", itemID, hasItem);
             if (hasItem)
             {
-                character.ItemManager.RemoveItem(itemID, 1);
+                //character.ItemManager.RemoveItem(itemID, 1);
             }
             else
             {
-                character.ItemManager.AddItem(itemID, 5);
+                character.ItemManager.AddItem(1,200);
+                character.ItemManager.AddItem(2, 100);
+                character.ItemManager.AddItem(3, 30);
+                character.ItemManager.AddItem(4, 120);
             }
-            Models.Item item = character.ItemManager.GetItem(itemID);
-            Log.InfoFormat("Item:[{0}][{1}]", itemID, item);
+           // Models.Item item = character.ItemManager.GetItem(itemID);
+           // Log.InfoFormat("Item:[{0}][{1}]", itemID, item);
             #endregion
-
+           
             byte[] data = PackageHandler.PackMessage(netMessage);
             sender.SendData(data, 0, data.Length);
             sender.Session.Character = character;//在会话中绑定当前角色

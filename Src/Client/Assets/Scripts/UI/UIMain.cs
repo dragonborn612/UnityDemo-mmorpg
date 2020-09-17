@@ -39,5 +39,8 @@ public class UIMain : MonoSingleton<UIMain> {
         MessageBox.Show(string.Format("你点击了{0}", windowResult.ToString()), "确定");
     }
 
-   
+   public void OnClikeBagButten()
+    {
+        UIBag uIBag = UIManager.Instance.Show<UIBag>();
+    }
 }

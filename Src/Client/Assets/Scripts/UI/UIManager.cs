@@ -18,6 +18,7 @@ namespace Assets.Scripts.UI
         public UIManager()
         {
             UIResouces.Add(typeof(UITest), new UIElment() { Resouce = "UI/UITest", Cache = true, });
+            UIResouces.Add(typeof(UIBag), new UIElment() { Resouce = "UI/UIBag", Cache = true, });
         }
         ~UIManager()
         {

@@ -20,7 +20,7 @@ namespace GameServer.Managers
             this.Owner = owenr;
             foreach (var item in owenr.Data.Items)
             {
-                this.Items.Add(item.Id, new Item(item));
+                this.Items.Add(item.ItemID, new Item(item));
             }
         }
 
@@ -46,7 +46,12 @@ namespace GameServer.Managers
             {
                 return item.Count > 0;
             }
-            return false;
+            else
+            {
+                return false;
+            }
+
+           
         }
         public Item GetItem(int itemId)
         {
@@ -73,6 +78,7 @@ namespace GameServer.Managers
                 this.Owner.Data.Items.Add(dbItem);
                 item = new Item(dbItem);
                 Items.Add(itemId, item);
+                //Items[itemId] = item;
             }
             Log.InfoFormat("[{0}]AddItem[{1}] addCount:{2}", this.Owner.Data.ID, itemId, count);
             DBService.Instance.Save();

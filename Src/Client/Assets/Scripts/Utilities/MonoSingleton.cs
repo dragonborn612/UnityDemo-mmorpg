@@ -18,7 +18,7 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 
     }
 
-    void Start()//子类的逻辑不能用Start(),不然会被子类覆盖不调用这里Start(),要重写OnStart();
+    void Awake()//子类的逻辑不能用Awake(),不然会被子类覆盖不调用这里Awake(),要重写OnStart();
     {
         if (global)
         {

@@ -48,7 +48,7 @@ enum ENTITY_EVENT
 enum ITEM_TYPE 
 {
 	NORMAL = 0;
-	MATERAL = 1;
+	MATERIAL = 1;
 	TASK = 2;//任务道具
 }
 
@@ -73,6 +73,7 @@ message NCharacterInfo {
 	NEntity entity = 8;
 
 	repeated NItemInfo Items = 10;
+	NBagInfo Bag=11;
 }
 message NItemInfo 
 {
@@ -86,7 +87,10 @@ message NVector3
 	int32 y = 2;
 	int32 z = 3;
 }
-
+message  NBagInfo {
+	int32 Unlocked=1;//解锁的格子数
+	bytes Items=2;
+}
 ////////////////////////////////////////////////////////////////
 //
 //  Entities
@@ -243,4 +247,12 @@ message MapEntitySyncResponse
 message MapTeleportRequest
 {
 	int32 teleporterId = 1;
+}
+
+message  BagSaveRequst {
+	NBagInfo BagInfo = 1;
+}
+message  BagSaveResponse {
+	RESULT result = 1;
+	string errormsg=2;
 }

@@ -8,6 +8,8 @@
     "CanUse": true,
     "UseCD": 1.0,
     "Price": 200,
+    "StackLimit": 100,
+    "Icon": "UI/Items/hongp",
     "SellPrice": 100,
     "Function": "RecoverHP",
     "Param": 500
@@ -21,6 +23,8 @@
     "CanUse": true,
     "UseCD": 1.0,
     "Price": 200,
+    "StackLimit": 100,
+    "Icon": "UI/Items/lanp",
     "SellPrice": 100,
     "Function": "RecoverMP",
     "Param": 500
@@ -34,6 +38,8 @@
     "CanUse": true,
     "UseCD": 5.0,
     "Price": 200,
+    "StackLimit": 100,
+    "Icon": "UI/Items/mbao",
     "SellPrice": 100,
     "Function": "AddBuff",
     "Param": 1
@@ -47,6 +53,8 @@
     "CanUse": true,
     "UseCD": 5.0,
     "Price": 200,
+    "StackLimit": 100,
+    "Icon": "UI/Items/haixiant",
     "SellPrice": 100,
     "Function": "AddBuff",
     "Param": 2
@@ -59,6 +67,8 @@
     "Category": "经验书",
     "CanUse": true,
     "UseCD": 0.0,
+    "StackLimit": 1,
+    "Icon": "UI/Items/jinengsh",
     "SellPrice": 1,
     "Function": "AddExp"
   },
@@ -69,6 +79,8 @@
     "Type": "MATERIAL",
     "Category": "徽章",
     "UseCD": 0.0,
+    "StackLimit": 99,
+    "Icon": "UI/Items/huizhang",
     "SellPrice": 1
   },
   "7": {
@@ -79,6 +91,8 @@
     "Category": "钱袋",
     "CanUse": true,
     "UseCD": 0.0,
+    "StackLimit": 1,
+    "Icon": "UI/Items/xiaoqiandai",
     "SellPrice": 1,
     "Function": "AddMoney",
     "Param": 1000
@@ -91,6 +105,8 @@
     "Category": "钱袋",
     "CanUse": true,
     "UseCD": 0.0,
+    "StackLimit": 1,
+    "Icon": "UI/Items/daqiandai",
     "SellPrice": 1,
     "Function": "AddMoney",
     "Param": 10000
@@ -103,6 +119,8 @@
     "Category": "装备盒",
     "CanUse": true,
     "UseCD": 0.0,
+    "StackLimit": 1,
+    "Icon": "UI/Items/baoxiang",
     "SellPrice": 1,
     "Function": "AddItem"
   },
@@ -114,6 +132,8 @@
     "Category": "技能书",
     "CanUse": true,
     "UseCD": 0.0,
+    "StackLimit": 1,
+    "Icon": "UI/Items/jinengshu",
     "SellPrice": 1,
     "Function": "AddSkillPoint",
     "Param": 1

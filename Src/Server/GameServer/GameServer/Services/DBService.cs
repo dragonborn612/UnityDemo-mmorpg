@@ -23,7 +23,7 @@ namespace GameServer.Services
         }
         public void Save()
         {
-            entities.SaveChangesAsync();//异步保存
+            entities.SaveChanges/*Async*/();//异步保存
         }
     }
 }
