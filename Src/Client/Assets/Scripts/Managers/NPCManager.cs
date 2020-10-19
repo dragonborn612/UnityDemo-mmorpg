@@ -42,9 +42,9 @@ namespace Assets.Scripts.Managers
         //交互
         public bool Interactive(NPCDefine nPCDefine)
         {
-            if (nPCDefine.Type ==NpcType.Task)
+            if (DoTaskInteractive(nPCDefine))
             {
-              return  DoTaskInteractive(nPCDefine);
+                return true;
             }
             if (nPCDefine.Type==NpcType.Functional)
             {
@@ -52,10 +52,19 @@ namespace Assets.Scripts.Managers
             }
             return false;
         }
+        /// <summary>
+        /// 任务交互
+        /// </summary>
+        /// <param name="nPCDefine"></param>
+        /// <returns></returns>
         public bool DoTaskInteractive(NPCDefine nPCDefine)
         {
-            MessageBox.Show("点击了npc：" + nPCDefine.Name, "npc对话");
-            return true;
+            var status = QuestManager.Instance.GetQuestStatusByNpc(nPCDefine.ID);
+            if (status==NpcQuestStatus.None)
+            {
+                return false;
+            }
+            return QuestManager.Instance.OpenNpcQuest(nPCDefine.ID);
         }
         public bool DoFuctionInteractive(NPCDefine nPCDefine)
         {

@@ -33,6 +33,7 @@ public class LoadingSlider : MonoBehaviour
         ShopManager.Instance.Init();
         ItemService.Instance.Intit();
         StatusService.Instance.Init();
+        QuestService.Instance.Init();
 
     }
 	

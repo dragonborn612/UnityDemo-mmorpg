@@ -6,9 +6,11 @@ using UnityEngine;
 public class TabView : MonoBehaviour {
     public TabButten[] tabButtens;
     public GameObject[] pages;
-
-	// Use this for initialization
-	IEnumerator Start () {
+    public delegate void TabSelectHandel(int idx);
+    public event TabSelectHandel OnTabSelect;
+    // Use this for initialization
+    //初始化
+    IEnumerator Start () {
         for (int i = 0; i < tabButtens.Length; i++)
         {
             tabButtens[i].tabView = this;
@@ -24,8 +26,12 @@ public class TabView : MonoBehaviour {
     {
         for (int i = 0; i < tabButtens.Length; i++)
         {
-            tabButtens[i].Seclect(tabIndex == i);
-            pages[i].SetActive(tabIndex == i);
+            tabButtens[i].Seclect(tabIndex == i); //改按钮图标
+            pages[i].SetActive(tabIndex == i); //改页面
+        }
+        if (OnTabSelect!=null)
+        {
+            OnTabSelect.Invoke(tabIndex);
         }
     }
 }

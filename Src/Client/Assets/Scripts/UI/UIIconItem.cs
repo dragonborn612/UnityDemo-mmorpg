@@ -11,9 +11,17 @@ public class UIIconItem : MonoBehaviour {
     public Text mainText;
 
 
-    public void SetMainIcon(string iconName ,string text)
+    public void SetMainIcon(string iconName ,string text=null)
     {
+        if (mainText!=null)
+        {
+            this.mainText.text = text;
+        }
         this.mainImage.overrideSprite = Resloader.Load<Sprite>(iconName);
-        this.mainText.text = text;
+        
+    }
+    public void SetMainIcon (Sprite Icon)
+    {
+        this.mainImage.overrideSprite = Icon;
     }
 }

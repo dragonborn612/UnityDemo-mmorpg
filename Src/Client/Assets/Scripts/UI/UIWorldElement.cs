@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class UIWorldElement : MonoBehaviour {
     public Transform owner;
-    public float hight = 1.5f;
+    public float hight = 2.5f;
 	// Use this for initialization
-	void Start () {
-		
-	}
+	
 	
 	// Update is called once per frame
 	void Update () {
         if (owner != null)
         {
             this.transform.position = owner.position + Vector3.up * hight;
+        }
+        if (Camera.main!=null)
+        {
+            this.transform.forward = Camera.main.transform.forward;
         }
 	}
 }

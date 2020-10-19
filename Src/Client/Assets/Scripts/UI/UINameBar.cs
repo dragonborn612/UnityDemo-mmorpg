@@ -21,7 +21,7 @@ public class UINameBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.forward= palyerCamera.transform.forward;
+        //this.transform.forward= palyerCamera.transform.forward;
 	}
     void UpdataInfo()
     {

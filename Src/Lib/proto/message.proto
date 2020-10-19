@@ -86,6 +86,7 @@ message NCharacterInfo {
 	repeated NItemInfo Items = 10;
 	NBagInfo Bag=11;
 	bytes Equips=12;
+	repeated NQuestInfo quests=13;
 }
 message NItemInfo 
 {
@@ -179,6 +180,10 @@ message NetMessageRequest{
 	//FirstTestRequest firstRequest=10;
 	ItemBuyRequest itemBuy=10;
 	ItemEquipRequest itemEquip=11;
+
+	QuestListRequest questList=12;
+	QuestAcceptRequest questAccept=13;
+	QuestSubmitRequest questSubmit=14;
 	
 }
 
@@ -197,9 +202,13 @@ message NetMessageResponse{
 	ItemBuyResponse itemBuy=10;
 	ItemEquipResponse itemEquip=11;
 
+    QuestListResponse questList=12;
+	QuestAcceptResponse questAccept=13;
+	QuestSubmitResponse questSubmit=14;
 
 	StatusNotify statusNotify=100;
 	
+
 }
 
 message FirstTestRequest { 
@@ -321,6 +330,57 @@ message ItemEquipRequest {
 	bool isEquip=3;
 }
 message ItemEquipResponse {
+	RESULT result = 1;
+	string errormsg=2;
+}
+
+//Quest System
+
+enum QUEST_STATUS {
+	IN_PROGRESS=0 ;  //已接受，没完成
+	COMPLATED=1; //已完成，未提交
+	FINISHED=2; //已完成，已提交
+	FAILED=3; //已失败
+}
+enum QUEST_LIST_TYPE {
+	ALL=0;
+	IN_PROGRESS=1;
+	FINISHED=2;
+}
+message NQuestInfo {
+	int32 quest_id=1;
+	int32 quest_guid=2;
+	QUEST_STATUS status=3;
+	repeated int32 targets=4;
+}
+message QuestListRequest {
+	QUEST_LIST_TYPE listType=1;
+}
+message  QuestListResponse {
+	RESULT result = 1;
+	string errormsg=2;
+	repeated NQuestInfo quests=3;
+}
+message QuestAcceptRequest {
+	int32 quest_id=1;
+}
+message QuestAcceptResponse {
+	RESULT result = 1;
+	string errormsg=2;
+	NQuestInfo quest=3;
+}
+message QuestSubmitRequest {
+	int32 quest_id=1; 
+}
+message QuestSubmitResponse{
+	RESULT result = 1;
+	string errormsg=2;
+	NQuestInfo quest=3;
+}
+message QuestAbandonRequest {
+	int32 quest_id=1;
+}
+message QuestAbandonResponse {
 	RESULT result = 1;
 	string errormsg=2;
 }

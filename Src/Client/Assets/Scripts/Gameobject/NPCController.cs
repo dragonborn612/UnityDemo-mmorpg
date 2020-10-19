@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Managers;
+using Assets.Scripts.Models;
 using Common.Data;
 using Models;
 using System;
@@ -21,7 +22,7 @@ public class NPCController : MonoBehaviour {
     /// 是不是进行交互
     /// </summary>
     private bool inIteracive = false;
-
+    NpcQuestStatus questStatus;
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
@@ -30,13 +31,31 @@ public class NPCController : MonoBehaviour {
         orignColor = renderer.sharedMaterial.color;
         this.StartCoroutine(Actions());
         this.transform.forward = startForward;
-       
+        RefreshNpcStatus();
+        QuestManager.Instance.onQuestStatusChange += OnQuestStatusChange;
+    }
+
+    private void OnQuestStatusChange(Quest quest)
+    {
+        this.RefreshNpcStatus();
+    }
+
+    
+    private void RefreshNpcStatus()
+    {
+        questStatus = QuestManager.Instance.GetQuestStatusByNpc(this.npcID);//获得状态
+        UIWorldElementManager.Instance.AddNpcQuestStatus(this.transform, questStatus);//更新或生成状态图标
 
     }
     private void OnDestroy()
     {
-        
-    }   
+        QuestManager.Instance.onQuestStatusChange -= OnQuestStatusChange;
+        //角色游戏物体销毁时状态图标也销毁
+        if (UIWorldElementManager.Instance!=null)
+        {
+            UIWorldElementManager.Instance.RemoveNpcQuestStatus(this.transform);
+        }
+    }
     IEnumerator Actions()
     {
         while (true)

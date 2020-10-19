@@ -39,5 +39,9 @@ namespace Assets.Scripts.UI
         {
             this.Close(WindowResult.Yes);
         }
+        public virtual void OnClickNo()
+        {
+            this.Close(WindowResult.No);
+        }
     }
 }

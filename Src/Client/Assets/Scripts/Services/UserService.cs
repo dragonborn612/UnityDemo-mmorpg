@@ -240,9 +240,11 @@ namespace Services
             {
                 if (message.Character!=null)
                 {
+                    User.Instance.CurrentCharacter = message.Character;
                     ItemManager.Instance.Init(message.Character.Items);
                     BagManager.Instance.Init(message.Character.Bag);
                     EquipMananger.Instance.Init(message.Character.Equips);
+                    QuestManager.Instance.Init(message.Character.Quests);
                     Debug.Log("Init");
                 }
             }

@@ -48,4 +48,8 @@ public class UIMain : MonoSingleton<UIMain> {
     {
         EquipMananger.Instance.ShowUiEquip();
     }
+    public void OnClickQuest()
+    {
+        UIManager.Instance.Show<UIQuestSystem>();
+    }
 }
