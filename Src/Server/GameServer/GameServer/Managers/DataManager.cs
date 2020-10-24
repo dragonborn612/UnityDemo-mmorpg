@@ -16,7 +16,7 @@ namespace GameServer.Managers
         internal Dictionary<int, MapDefine> Maps = null;
         internal Dictionary<int, CharacterDefine> Characters = null;
         internal Dictionary<int, TeleporterDefine> Teleporters = null;
-        public Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;
+        public Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;//前一个key为地图id；
         public Dictionary<int, Dictionary<int,SpawnRuleDefine>> SpawnRules = null;
         public Dictionary<int, NPCDefine> NPCs = null;
         public Dictionary<int, ItemDefine> Items = null;
@@ -59,6 +59,12 @@ namespace GameServer.Managers
 
             json = File.ReadAllText(this.DataPath + "QuestDefine.txt");
             this.Quests = JsonConvert.DeserializeObject<Dictionary<int, QuestDefine>>(json);
+
+            json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
+            this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json);
+
+            json = File.ReadAllText(this.DataPath + "SpawnRuleDefine.txt");
+            this.SpawnRules = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnRuleDefine>>>(json);
 
         }
     }

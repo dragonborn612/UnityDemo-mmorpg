@@ -1,100 +1,98 @@
-2020-10-19 15:58:33,581 [ 1] INFO  Unity: LoadingManager start
-2020-10-19 15:58:33,611 [ 1] INFO  Unity: UserService()
-2020-10-19 15:58:33,614 [ 1] INFO  Unity: MapService()
-2020-10-19 15:58:42,577 [ 1] INFO  Unity: UserLoginRequsest::user :user01 psw:123
-2020-10-19 15:58:42,578 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-10-19 15:58:42,580 [ 1] INFO  Unity: DoConnect
-2020-10-19 15:58:42,582 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-10-19 15:58:42,584 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-10-19 16:20:22,336 [ 1] INFO  Unity: LoadingManager start
+2020-10-19 16:20:22,362 [ 1] INFO  Unity: UserService()
+2020-10-19 16:20:22,364 [ 1] INFO  Unity: MapService()
+2020-10-19 16:20:30,927 [ 1] INFO  Unity: UserLoginRequsest::user :user01 psw:123
+2020-10-19 16:20:30,929 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-10-19 16:20:30,931 [ 1] INFO  Unity: DoConnect
+2020-10-19 16:20:30,934 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-10-19 16:20:30,936 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-10-19 15:58:42,587 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-10-19 15:58:42,717 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2020-10-19 15:58:42,719 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
-2020-10-19 15:58:42,829 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-10-19 15:58:42,831 [ 1] INFO  Unity: DataManager > DataManager()
-2020-10-19 15:58:43,000 [ 1] INFO  Unity: 刷新角色列表
-2020-10-19 15:58:44,344 [ 1] INFO  Unity: Select Char :[1]测法01[Wizard]
-2020-10-19 15:58:45,090 [ 1] INFO  Unity: 点击开始游戏
-2020-10-19 15:58:45,092 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :0 
-2020-10-19 15:58:45,133 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2020-10-19 15:58:45,135 [ 1] INFO  Unity: AddCharacter:5:测法01 Map:1 Entity:SkillBridge.Message.NEntity
-2020-10-19 15:58:45,140 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-10-19 15:58:45,141 [ 1] INFO  Unity: EnterMap:map:1 success
-2020-10-19 15:58:45,142 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
-2020-10-19 15:58:45,145 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count20]
-2020-10-19 15:58:45,146 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count20]
-2020-10-19 15:58:45,147 [ 1] INFO  Unity: ItemManager:Init[Id:3,Count5]
-2020-10-19 15:58:45,148 [ 1] INFO  Unity: ItemManager:Init[Id:4,Count10]
-2020-10-19 15:58:45,151 [ 1] INFO  Unity: BagManagerInit
-2020-10-19 15:58:45,159 [ 1] INFO  Unity: Init
-2020-10-19 15:58:45,660 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+2020-10-19 16:20:30,938 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-10-19 16:20:31,086 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2020-10-19 16:20:31,088 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
+2020-10-19 16:20:31,206 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-10-19 16:20:31,208 [ 1] INFO  Unity: DataManager > DataManager()
+2020-10-19 16:20:31,378 [ 1] INFO  Unity: 刷新角色列表
+2020-10-19 16:20:32,283 [ 1] INFO  Unity: Select Char :[1]测法01[Wizard]
+2020-10-19 16:20:33,095 [ 1] INFO  Unity: 点击开始游戏
+2020-10-19 16:20:33,096 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :0 
+2020-10-19 16:20:33,141 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2020-10-19 16:20:33,143 [ 1] INFO  Unity: AddCharacter:7:测法01 Map:1 Entity:SkillBridge.Message.NEntity
+2020-10-19 16:20:33,147 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-10-19 16:20:33,148 [ 1] INFO  Unity: EnterMap:map:1 success
+2020-10-19 16:20:33,149 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
+2020-10-19 16:20:33,153 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count20]
+2020-10-19 16:20:33,154 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count20]
+2020-10-19 16:20:33,155 [ 1] INFO  Unity: ItemManager:Init[Id:3,Count5]
+2020-10-19 16:20:33,156 [ 1] INFO  Unity: ItemManager:Init[Id:4,Count10]
+2020-10-19 16:20:33,159 [ 1] INFO  Unity: BagManagerInit
+2020-10-19 16:20:33,167 [ 1] INFO  Unity: Init
+2020-10-19 16:20:33,675 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
 
-2020-10-19 15:58:45,855 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-10-19 15:58:45,857 [ 1] INFO  Unity: Look rotation viewing vector is zero
-2020-10-19 15:58:45,859 [ 1] INFO  Unity: Look rotation viewing vector is zero
-2020-10-19 15:58:45,860 [ 1] INFO  Unity: Look rotation viewing vector is zero
-2020-10-19 15:58:45,860 [ 1] INFO  Unity: Look rotation viewing vector is zero
-2020-10-19 15:58:49,300 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:38)
+2020-10-19 16:20:33,864 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-10-19 16:20:33,866 [ 1] INFO  Unity: Look rotation viewing vector is zero
+2020-10-19 16:20:33,868 [ 1] INFO  Unity: Look rotation viewing vector is zero
+2020-10-19 16:20:33,870 [ 1] INFO  Unity: Look rotation viewing vector is zero
+2020-10-19 16:20:33,870 [ 1] INFO  Unity: Look rotation viewing vector is zero
+2020-10-19 16:20:37,388 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:35)
+ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
+UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:49)
 ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
 ListView+ListViewItem.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/Scripts/UI/ListView/ListView.cs:44)
 UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
 UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
 UnityEngine.EventSystems.EventSystem:Update()
 }</args></log4net.Error>
-2020-10-19 16:00:13,222 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:38)
+2020-10-19 16:22:37,918 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:35)
+ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
+UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:49)
 ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
 ListView+ListViewItem.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/Scripts/UI/ListView/ListView.cs:44)
 UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
 UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
 UnityEngine.EventSystems.EventSystem:Update()
 }</args></log4net.Error>
-2020-10-19 16:01:16,051 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:47)
+2020-10-19 16:23:41,178 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:35)
+ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
+UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:49)
 ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
 ListView+ListViewItem.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/Scripts/UI/ListView/ListView.cs:44)
 UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
 UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
 UnityEngine.EventSystems.EventSystem:Update()
 }</args></log4net.Error>
-2020-10-19 16:04:40,123 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{MissingReferenceException: The object of type 'UIQuestItem' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., UnityEngine.Component.GetComponent[Image] () (at D:/unity/Runtime/Export/Component.bindings.cs:42)
-UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:47)
+2020-10-19 16:24:55,706 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:35)
+ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
+UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:49)
 ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
 ListView+ListViewItem.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/Scripts/UI/ListView/ListView.cs:44)
 UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
 UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
 UnityEngine.EventSystems.EventSystem:Update()
 }</args></log4net.Error>
-2020-10-19 16:05:40,115 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIQuestSystem.cs:38)
-ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/ListView/ListView.cs:65)
-ListView+ListViewItem.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/Scripts/UI/ListView/ListView.cs:44)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2020-10-19 16:07:09,861 [ 1] WARN  Unity: Assets/Scripts/Gameobject/NPCController.cs(15,33): warning CS0108: `NPCController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
+2020-10-19 16:33:14,947 [ 1] WARN  Unity: Assets/Scripts/Gameobject/NPCController.cs(15,33): warning CS0108: `NPCController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
 
-2020-10-19 16:07:09,862 [ 1] WARN  Unity: Assets/Scripts/Gameobject/TeleporterObject.cs(50,18): warning CS0665: Assignment in conditional expression is always constant. Did you mean to use `==' instead ?
+2020-10-19 16:33:14,947 [ 1] WARN  Unity: Assets/Scripts/Gameobject/TeleporterObject.cs(50,18): warning CS0665: Assignment in conditional expression is always constant. Did you mean to use `==' instead ?
 
-2020-10-19 16:07:09,862 [ 1] WARN  Unity: Assets/Scripts/Managers/BagManager.cs(103,51): warning CS0162: Unreachable code detected
+2020-10-19 16:33:14,948 [ 1] WARN  Unity: Assets/Scripts/Managers/BagManager.cs(103,51): warning CS0162: Unreachable code detected
 
-2020-10-19 16:07:09,862 [ 1] WARN  Unity: Assets/Scripts/Managers/TestManager.cs(22,20): warning CS0219: The variable `test' is assigned but its value is never used
+2020-10-19 16:33:14,948 [ 1] WARN  Unity: Assets/Scripts/Managers/TestManager.cs(22,20): warning CS0219: The variable `test' is assigned but its value is never used
 
-2020-10-19 16:07:09,863 [ 1] WARN  Unity: Assets/Scripts/UI/UIShop.cs(29,13): warning CS0219: The variable `count' is assigned but its value is never used
+2020-10-19 16:33:14,949 [ 1] WARN  Unity: Assets/Scripts/UI/UIShop.cs(29,13): warning CS0219: The variable `count' is assigned but its value is never used
 
-2020-10-19 16:07:09,863 [ 1] WARN  Unity: Assets/Scripts/Gameobject/EntiyController.cs(20,16): warning CS0649: Field `EntiyController.rotation' is never assigned to, and will always have its default value
+2020-10-19 16:33:14,949 [ 1] WARN  Unity: Assets/Scripts/Gameobject/EntiyController.cs(20,16): warning CS0649: Field `EntiyController.rotation' is never assigned to, and will always have its default value
 
-2020-10-19 16:07:09,863 [ 1] WARN  Unity: Assets/Scripts/Gameobject/EntiyController.cs(23,16): warning CS0414: The private field `EntiyController.lastRotation' is assigned but its value is never used
+2020-10-19 16:33:14,949 [ 1] WARN  Unity: Assets/Scripts/Gameobject/EntiyController.cs(23,16): warning CS0414: The private field `EntiyController.lastRotation' is assigned but its value is never used
 
-2020-10-19 16:07:09,863 [ 1] WARN  Unity: Assets/Scripts/Gameobject/PlayerInputerController.cs(120,11): warning CS0414: The private field `PlayerInputerController.lastSync' is assigned but its value is never used
+2020-10-19 16:33:14,950 [ 1] WARN  Unity: Assets/Scripts/Gameobject/PlayerInputerController.cs(120,11): warning CS0414: The private field `PlayerInputerController.lastSync' is assigned but its value is never used
 
-2020-10-19 16:07:09,864 [ 1] WARN  Unity: Assets/Scripts/UI/TabView/TabButten.cs(8,20): warning CS0649: Field `TabButten.normalIamge' is never assigned to, and will always have its default value `null'
+2020-10-19 16:33:14,950 [ 1] WARN  Unity: Assets/Scripts/UI/TabView/TabButten.cs(8,20): warning CS0649: Field `TabButten.normalIamge' is never assigned to, and will always have its default value `null'
 
-2020-10-19 16:07:09,864 [ 1] WARN  Unity: Assets/Scripts/UI/UIQuestStatus.cs(10,28): warning CS0414: The private field `UIQuestStatus.questStatus' is assigned but its value is never used
+2020-10-19 16:33:14,951 [ 1] WARN  Unity: Assets/Scripts/UI/UIQuestStatus.cs(10,28): warning CS0414: The private field `UIQuestStatus.questStatus' is assigned but its value is never used
 
-2020-10-19 16:07:09,864 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(25,32): warning CS0219: The variable `allTeleporters' is assigned but its value is never used
+2020-10-19 16:33:14,951 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(25,32): warning CS0219: The variable `allTeleporters' is assigned but its value is never used
 

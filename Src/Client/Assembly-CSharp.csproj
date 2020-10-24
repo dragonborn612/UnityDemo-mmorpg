@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Gameobject\MapController.cs" />
     <Compile Include="Assets\Scripts\Gameobject\NPCController.cs" />
     <Compile Include="Assets\Scripts\Gameobject\PlayerInputerController.cs" />
+    <Compile Include="Assets\Scripts\Gameobject\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\Gameobject\TeleporterObject.cs" />
     <Compile Include="Assets\Scripts\LoadingSlider.cs" />
     <Compile Include="Assets\Scripts\Log\UnityLogger.cs" />

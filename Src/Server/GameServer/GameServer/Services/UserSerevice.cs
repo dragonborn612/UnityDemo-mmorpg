@@ -33,35 +33,31 @@ namespace GameServer.Services
         {
             Log.InfoFormat("UserRegisterRequest:User:{0} Password:{1}", request.User, request.Passward);
 
-            NetMessage netMessage = new NetMessage();
-            netMessage.Response = new NetMessageResponse();
-            netMessage.Response.userRegister = new UserRegisterResponse();
+            sender.Session.Response.userRegister = new UserRegisterResponse();
 
             TUser user = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
             if (user!=null)
             {
-                netMessage.Response.userRegister.Result = Result.Failed;
-                netMessage.Response.userRegister.Errormsg = "用户已存在";
+                sender.Session.Response.userRegister.Result = Result.Failed;
+                sender.Session.Response.userRegister.Errormsg = "用户已存在";
             }
             else
             {
                 TPlayer player= DBService.Instance.Entities.Players.Add(new TPlayer());
                 DBService.Instance.Entities.Users.Add(new TUser() { Username = request.User, Password = request.Passward, Player = player });
                 DBService.Instance.Entities.SaveChanges();
-                netMessage.Response.userRegister.Result = Result.Success;
-                netMessage.Response.userRegister.Errormsg = "None";
+                sender.Session.Response.userRegister.Result = Result.Success;
+                sender.Session.Response.userRegister.Errormsg = "None";
             }
 
-            byte[] data = PackageHandler.PackMessage(netMessage);
-            sender.SendData(data, 0, data.Length);
+            sender.SendResponse();
 
         }
         private void OnLogin(NetConnection<NetSession> sender, UserLoginRequest loginRequest)
         {
             Log.InfoFormat("UserLoginRequest:User{0} Password:{1}", loginRequest.User, loginRequest.Passward);
-            NetMessage netMessage = new NetMessage();
-            netMessage.Response = new NetMessageResponse();
-            netMessage.Response.userLogin = new UserLoginResponse();
+
+            sender.Session.Response.userLogin = new UserLoginResponse();
 
             TUser user = DBService.Instance.Entities.Users.Where(u => u.Username == loginRequest.User).FirstOrDefault();
             if (user!=null)
@@ -70,13 +66,13 @@ namespace GameServer.Services
                 {
                     sender.Session.User = user;//当前会话的用户
 
-                    netMessage.Response.userLogin.Result = Result.Success;
-                    netMessage.Response.userLogin.Errormsg = "None";
+                    sender.Session.Response.userLogin.Result = Result.Success;
+                    sender.Session.Response.userLogin.Errormsg = "None";
                     //在返回消息中添加用户 角色信息
-                    netMessage.Response.userLogin.Userinfo = new NUserInfo();
-                    netMessage.Response.userLogin.Userinfo.Id = (int)user.ID;                 
-                    netMessage.Response.userLogin.Userinfo.Player = new NPlayerInfo();
-                    netMessage.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
+                    sender.Session.Response.userLogin.Userinfo = new NUserInfo();
+                    sender.Session.Response.userLogin.Userinfo.Id = (int)user.ID;
+                    sender.Session.Response.userLogin.Userinfo.Player = new NPlayerInfo();
+                    sender.Session.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
                     foreach (var character in user.Player.Characters)
                     {
                         NCharacterInfo info = new NCharacterInfo();
@@ -85,31 +81,28 @@ namespace GameServer.Services
                         info.Type = CharacterType.Player;
                         info.Name = character.Name;
                         info.Tid = character.ID;
-                        netMessage.Response.userLogin.Userinfo.Player.Characters.Add(info);
+                        sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
                     }
 
                 }
                 else
                 {
-                    netMessage.Response.userLogin.Result = Result.Failed;
-                    netMessage.Response.userLogin.Errormsg = "密码错误";
+                    sender.Session.Response.userLogin.Result = Result.Failed;
+                    sender.Session.Response.userLogin.Errormsg = "密码错误";
                 }
             }
             else
             {
-                netMessage.Response.userLogin.Result = Result.Failed;
-                netMessage.Response.userLogin.Errormsg = "用户名不存在";
+                sender.Session.Response.userLogin.Result = Result.Failed;
+                sender.Session.Response.userLogin.Errormsg = "用户名不存在";
             }
-            byte[] data = PackageHandler.PackMessage(netMessage); //打包二进制
-            sender.SendData(data, 0, data.Length); //发送到客户端
+            sender.SendResponse();
         }
         private void OnCharacterCrate(NetConnection<NetSession> sender, UserCreateCharacterRequest message)
         {
             Log.InfoFormat("UserCharacterCrateRequset:CharacterName:{0} ChaaracterClass:{1}", message.Name, message.Class);
 
-            NetMessage netMessage = new NetMessage();
-            netMessage.Response = new NetMessageResponse();
-            netMessage.Response.createChar = new UserCreateCharacterResponse();
+            sender.Session.Response.createChar = new UserCreateCharacterResponse();
 
             TCharacter character = new TCharacter()
             {
@@ -160,17 +153,13 @@ namespace GameServer.Services
                 info.Type = CharacterType.Player;
                 info.Name = cha.Name;
                 info.Tid = cha.ID;
-                netMessage.Response.createChar.Characters.Add(info);
+                sender.Session.Response.createChar.Characters.Add(info);
             }
 
-            netMessage.Response.createChar.Result = Result.Success;
-            netMessage.Response.createChar.Errormsg = "None";
+            sender.Session.Response.createChar.Result = Result.Success;
+            sender.Session.Response.createChar.Errormsg = "None";
 
-            byte[] date = PackageHandler.PackMessage(netMessage);
-            sender.SendData(date, 0, date.Length);
-
-
-
+            sender.SendResponse();
         }
 
         private void OnGameEnter(NetConnection<NetSession> sender, UserGameEnterRequest message)
@@ -184,34 +173,31 @@ namespace GameServer.Services
 
             MapManager.Instance[dbCharacter.MapID].CharacterEnter(sender, character);//调用Map类的角色进入
 
-            NetMessage netMessage = new NetMessage();
-            netMessage.Response = new NetMessageResponse();
-            netMessage.Response.gameEnter = new UserGameEnterResponse();
-            netMessage.Response.gameEnter.Result = Result.Success;
-            netMessage.Response.gameEnter.Errormsg = "None";
-            netMessage.Response.gameEnter.Character = character.Info;//道具消息
+            sender.Session.Response.gameEnter = new UserGameEnterResponse();
+            sender.Session.Response.gameEnter.Result = Result.Success;
+            sender.Session.Response.gameEnter.Errormsg = "None";
+            sender.Session.Response.gameEnter.Character = character.Info;//道具消息
 
-           /* #region 道具测试用例
-            int itemID = 1;
-            bool hasItem = character.ItemManager.HasItem(itemID);
-            Log.InfoFormat("HasItem[{0}]{1}", itemID, hasItem);
-            if (hasItem)
-            {
-                //character.ItemManager.RemoveItem(itemID, 1);
-            }
-            else
-            {
-                character.ItemManager.AddItem(1,200);
-                character.ItemManager.AddItem(2, 100);
-                character.ItemManager.AddItem(3, 30);
-                character.ItemManager.AddItem(4, 120);
-            }
-           // Models.Item item = character.ItemManager.GetItem(itemID);
-           // Log.InfoFormat("Item:[{0}][{1}]", itemID, item);
-            #endregion*/
-           
-            byte[] data = PackageHandler.PackMessage(netMessage);
-            sender.SendData(data, 0, data.Length);
+            /* #region 道具测试用例
+             int itemID = 1;
+             bool hasItem = character.ItemManager.HasItem(itemID);
+             Log.InfoFormat("HasItem[{0}]{1}", itemID, hasItem);
+             if (hasItem)
+             {
+                 //character.ItemManager.RemoveItem(itemID, 1);
+             }
+             else
+             {
+                 character.ItemManager.AddItem(1,200);
+                 character.ItemManager.AddItem(2, 100);
+                 character.ItemManager.AddItem(3, 30);
+                 character.ItemManager.AddItem(4, 120);
+             }
+            // Models.Item item = character.ItemManager.GetItem(itemID);
+            // Log.InfoFormat("Item:[{0}][{1}]", itemID, item);
+             #endregion*/
+
+            sender.SendResponse();
             sender.Session.Character = character;//在会话中绑定当前角色
         }
         private void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest message)
@@ -220,14 +206,11 @@ namespace GameServer.Services
             Log.InfoFormat("UserGameLeaveRequset:CharacterId:{0}:{1} Map:{2} ", character.Info.Id, character.Info.Name, character.Data.MapID);
             CharacterLeave(character);
 
-            NetMessage netMessage = new NetMessage();
-            netMessage.Response = new NetMessageResponse();
-            netMessage.Response.gameLeave = new UserGameLeaveResponse();
-            netMessage.Response.gameLeave.Result = Result.Success;
-            netMessage.Response.gameLeave.Errormsg = "None";
+            sender.Session.Response.gameLeave = new UserGameLeaveResponse();
+            sender.Session.Response.gameLeave.Result = Result.Success;
+            sender.Session.Response.gameLeave.Errormsg = "None";
 
-            byte[] data = PackageHandler.PackMessage(netMessage);
-            sender.SendData(data, 0, data.Length);
+            sender.SendResponse();
             //sender.Session.Character = null;
         }
 

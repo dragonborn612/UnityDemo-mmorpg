@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a651099f1da286a45820cab69422819e
+guid: 4a27693a9f1ec3b4ca0719e4b03d37ef
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -49,8 +49,9 @@ ModelImporter:
     100086: Bone005
     100088: Bone006
     100090: //RootNode
-    100092: treasure_skull01
-    100094: treasure_skull01_axe
+    100092: Root
+    100094: treasure_skull01
+    100096: treasure_skull01_axe
     400000: Bip001
     400002: Bip001 Footsteps
     400004: Bip001 Head
@@ -97,8 +98,9 @@ ModelImporter:
     400086: Bone005
     400088: Bone006
     400090: //RootNode
-    400092: treasure_skull01
-    400094: treasure_skull01_axe
+    400092: Root
+    400094: treasure_skull01
+    400096: treasure_skull01_axe
     2100000: 'Material #25'
     4300000: treasure_skull01
     4300002: treasure_skull01_axe
@@ -177,7 +179,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    rootMotionBoneRotation: {x: -0.50000036, y: 0.4999997, z: 0.4999997, w: 0.50000036}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
