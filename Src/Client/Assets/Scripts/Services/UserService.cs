@@ -246,6 +246,7 @@ namespace Services
                     BagManager.Instance.Init(message.Character.Bag);
                     EquipMananger.Instance.Init(message.Character.Equips);
                     QuestManager.Instance.Init(message.Character.Quests);
+                    FriendManager.Instance.Init(message.Character.Friends);
                     Debug.Log("Init");
                 }
             }

@@ -17,6 +17,11 @@ namespace Entities
         /// </summary>
         public CharacterDefine characterDefine;
 
+        public int Id
+        {
+            get { return this.nCharacterInfo.Id; }
+        }
+
         public string Name
         {
             get
@@ -38,6 +43,14 @@ namespace Entities
         {
             get
             {
+                return this.nCharacterInfo.Type ==CharacterType.Player;
+            }
+        }
+        public bool IsCurrentPlayer
+        {
+            get
+            {
+                if (!IsPlayer) return false;
                 return this.nCharacterInfo.Id == User.Instance.CurrentCharacter.Id;
             }
         }
@@ -45,7 +58,7 @@ namespace Entities
         public Character(NCharacterInfo Info):base(Info.Entity)
         {
             this.nCharacterInfo = Info;
-            this.characterDefine = DataManager.Instance.Characters[Info.Tid];
+            this.characterDefine = DataManager.Instance.Characters[Info.ConfigId];
         }
         public void MoveForward()
         {

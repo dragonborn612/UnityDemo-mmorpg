@@ -26,6 +26,7 @@ public class UIMiniMap : MonoBehaviour {//只实例化一次
     {
         if (playerTransform==null)
         {
+            
             playerTransform = MiniMapManager.Instance.PlayerTansform;
         }
         if (minimapBorundingBox==null||playerTransform==null)

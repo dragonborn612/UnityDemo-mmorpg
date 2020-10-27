@@ -29,6 +29,7 @@ public class LoadingSlider : MonoBehaviour
         //loadingSlider = gameObject.GetComponent<Slider>();
         UserService.Instance.Init();
         MapService.Instance.Init();
+        FriendService.Instance.Init();
         //TestManager.Instance.Intit();
         ShopManager.Instance.Init();
         ItemService.Instance.Intit();

@@ -69,7 +69,7 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:Map:{0} Count:{1}", message.mapId, message.Characters.Count);
             foreach (var cha in message.Characters)
             {
-                if (User.Instance.CurrentCharacter==null || User.Instance.CurrentCharacter.Id==cha.Id)
+                if (User.Instance.CurrentCharacter==null ||(cha.Type==CharacterType.Player&&User.Instance.CurrentCharacter.Id==cha.Id))
                 {
                     User.Instance.CurrentCharacter = cha;//更新角色的其他信息                  
                 }
@@ -90,12 +90,12 @@ namespace Services
             //判断是不是自己离开
             //是自己全部移除
             //别人 移除别人
-            if (message.characterId == User.Instance.CurrentCharacter.Id)
+            if (message.entityId == User.Instance.CurrentCharacter.EntityId)
             {
                 CharacterManager.Instance.Clear();
             }
             else
-                CharacterManager.Instance.RemoveCharacter(message.characterId);
+                CharacterManager.Instance.RemoveCharacter(message.entityId);
         }
         public void SendMapSync(EntityEvent entityEvent,NEntity nEntity)
         {

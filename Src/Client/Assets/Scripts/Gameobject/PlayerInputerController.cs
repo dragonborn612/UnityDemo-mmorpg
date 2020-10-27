@@ -30,7 +30,7 @@ public class PlayerInputerController : MonoBehaviour {
             DataManager.Instance.Load();
             NCharacterInfo nCharacterInfo = new NCharacterInfo();
             nCharacterInfo.Id = 1;
-            nCharacterInfo.Tid = 1;
+            nCharacterInfo.ConfigId = 1;
             nCharacterInfo.Entity = new NEntity();
             nCharacterInfo.Entity.Position = new NVector3();
             nCharacterInfo.Entity.Direction = new NVector3();

@@ -85,11 +85,12 @@ public class UIQuestSystem : UIWindow {
                 {
                     continue;
                 }
+                if (item.Value.Info.Status == QuestStatus.Finished)
+                {
+                    continue;
+                }
             }
-            if (item.Value.Info.Status==QuestStatus.Finished)
-            {
-                continue;
-            }
+            
             GameObject go = Instantiate(itemPrefab, item.Value.Define.Type == QuestType.Main ? this.listMain.transform : this.listBranch.transform);
             UIQuestItem ui = go.GetComponent<UIQuestItem>();
             ui.SetQuestInfo(item.Value);

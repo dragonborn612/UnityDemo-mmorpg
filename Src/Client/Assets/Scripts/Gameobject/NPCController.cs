@@ -30,7 +30,7 @@ public class NPCController : MonoBehaviour {
         renderer = GetComponentInChildren<SkinnedMeshRenderer>();
         orignColor = renderer.sharedMaterial.color;
         this.StartCoroutine(Actions());
-        this.transform.forward = startForward;
+        startForward = this.transform.forward;
         RefreshNpcStatus();
         QuestManager.Instance.onQuestStatusChange += OnQuestStatusChange;
     }

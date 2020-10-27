@@ -35,7 +35,7 @@ namespace GameServer.Managers
         {
             Character character = new Character(CharacterType.Player, cha);
             EntityManager.Instance.AddEneity(cha.MapID, character);
-            character.Info.Id = character.Id;
+            character.Info.EntityId = character.entityId;
             this.Characters[character.Id] = character;
             return character;
         }
@@ -46,6 +46,13 @@ namespace GameServer.Managers
             var cha = Characters[characterId];
             EntityManager.Instance.RemoveEneity(cha.Data.MapID, cha);
             this.Characters.Remove(characterId);
+        }
+
+        public Character GetCharacter(int characterId)
+        {
+            Character character = null;
+            this.Characters.TryGetValue(characterId, out character);
+            return character;
         }
     }
 }

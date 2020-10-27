@@ -52,13 +52,14 @@ namespace GameServer.Managers
         {
             this.AddStatus(StatusType.Item, id, count, action);
         }
+        
         /// <summary>
         /// 将状态列表的状态全部传入消息，并清空状态列表
         /// </summary>
         /// <param name="message"></param>
-        public void ApplyResponse(NetMessageResponse message)
+        internal void PostProcess(NetMessageResponse message)
         {
-            if (message.statusNotify==null)
+            if (message.statusNotify == null)
             {
                 message.statusNotify = new StatusNotify();
             }
@@ -68,6 +69,5 @@ namespace GameServer.Managers
             }
             this.Status.Clear();
         }
-        
     }
 }

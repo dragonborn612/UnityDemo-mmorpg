@@ -27,6 +27,10 @@ namespace Assets.Scripts.Managers
                 {
                     return null;
                 }
+                if (User.Instance.currentCharacterObject==null)
+                {
+                    return null;
+                }
                 return User.Instance.currentCharacterObject.transform;
             }
         }

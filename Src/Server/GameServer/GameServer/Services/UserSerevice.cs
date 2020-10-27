@@ -80,7 +80,7 @@ namespace GameServer.Services
                         info.Class = (CharacterClass)character.Class;
                         info.Type = CharacterType.Player;
                         info.Name = character.Name;
-                        info.Tid = character.ID;
+                        info.ConfigId = character.TID;
                         sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
                     }
 
@@ -109,6 +109,7 @@ namespace GameServer.Services
                 Name = message.Name,
                 Class = (int)message.Class,
                 TID = (int)message.Class,
+                Level=1,
                 MapID = 1,
                 MapPosX = 5000,
                 MapPosY = 4000,
@@ -152,7 +153,7 @@ namespace GameServer.Services
                 info.Class = (CharacterClass)cha.Class;
                 info.Type = CharacterType.Player;
                 info.Name = cha.Name;
-                info.Tid = cha.ID;
+                info.ConfigId = cha.ID;
                 sender.Session.Response.createChar.Characters.Add(info);
             }
 
@@ -168,9 +169,13 @@ namespace GameServer.Services
 
             Log.InfoFormat("UserGameEnterRequest: characterId:{0}:{1} Map:{2}", dbCharacter.ID, dbCharacter.Name, dbCharacter.MapID);
 
+            
 
             Character character= CharacterManager.Instance.AddCharacter(dbCharacter);//角色管理器添加角色
 
+            sender.Session.Character = character;//在会话中绑定当前角色
+            sender.Session.PostResponser = character;
+            SessionManager.Instance.AddSession(character.Id, sender);
             MapManager.Instance[dbCharacter.MapID].CharacterEnter(sender, character);//调用Map类的角色进入
 
             sender.Session.Response.gameEnter = new UserGameEnterResponse();
@@ -198,12 +203,13 @@ namespace GameServer.Services
              #endregion*/
 
             sender.SendResponse();
-            sender.Session.Character = character;//在会话中绑定当前角色
+            
         }
         private void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest message)
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequset:CharacterId:{0}:{1} Map:{2} ", character.Info.Id, character.Info.Name, character.Data.MapID);
+            SessionManager.Instance.RemoveSession(character.Id);
             CharacterLeave(character);
 
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
@@ -218,6 +224,7 @@ namespace GameServer.Services
         {
             CharacterManager.Instance.RemoveCharacter(character.Id);
             MapManager.Instance[character.Info.mapId].CharacterLeave(character);
+            character.Clear();
         }
     }
 }

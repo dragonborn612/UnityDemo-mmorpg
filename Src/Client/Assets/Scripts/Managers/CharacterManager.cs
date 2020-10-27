@@ -38,24 +38,24 @@ namespace Managers
         {
             Debug.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", nCharacterInfo.Id, nCharacterInfo.Name, nCharacterInfo.mapId, nCharacterInfo.Entity.ToString());
             Character character = new Character(nCharacterInfo);
-            this.Characters[nCharacterInfo.Id] = character;
+            this.Characters[nCharacterInfo.EntityId] = character;
             EntityManager.Instance.AddEntity(character);
             if (OnCharacterEnter!=null)
             {
                 OnCharacterEnter.Invoke(character);
             }
         }
-        public void RemoveCharacter(int characterId)
+        public void RemoveCharacter(int entityId)
         {
-            Debug.LogFormat("RemoveCharacter:{0}", characterId);
-            if (Characters.ContainsKey(characterId))
+            Debug.LogFormat("RemoveCharacter:{0}", entityId);
+            if (Characters.ContainsKey(entityId))
             {
-                EntityManager.Instance.RemoveEntity(Characters[characterId].nCharacterInfo.Entity);     
+                EntityManager.Instance.RemoveEntity(Characters[entityId].nCharacterInfo.Entity);     
                 if (OnCharacterLeave != null)
                 {
-                    OnCharacterLeave.Invoke(Characters[characterId]);
+                    OnCharacterLeave.Invoke(Characters[entityId]);
                 }
-                this.Characters.Remove(characterId);
+                this.Characters.Remove(entityId);
             }    
         }
     }

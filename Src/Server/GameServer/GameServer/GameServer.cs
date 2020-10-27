@@ -33,6 +33,7 @@ namespace GameServer
             ItemService.Instance.Init();
             BagService.Instance.Init();
             QuestService.Instance.Init();
+            FriendService.Instance.Init();
             //MapManager.Instance.Init();
             //var a = DBService.Instance.Entities.Characters.Where(s => s.TID == 1);
             //Console.WriteLine("{0}", a.FirstOrDefault<TCharacter>().Name);

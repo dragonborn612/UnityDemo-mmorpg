@@ -6,12 +6,14 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ListView : MonoBehaviour
 {
     public UnityAction<ListViewItem> onItemSelected;
-
-
+    public GridLayoutGroup gridLayoutGroup;
+    [SerializeField]
+    private float startHight;
 
 
 
@@ -52,7 +54,11 @@ public class ListView : MonoBehaviour
     public List<ListViewItem> items = new List<ListViewItem>();
     [SerializeField]
     private ListViewItem selectedItem = null;
-    
+
+    private void Start()
+    {
+        this.startHight = GetComponent<RectTransform>().sizeDelta.y;
+    }
     public ListViewItem SelectedItem
 
     {
@@ -76,6 +82,7 @@ public class ListView : MonoBehaviour
     {
         item.owner = this;
         this.items.Add(item);
+        SetContentSize();
     }
 
     public void RemoveAll()
@@ -85,5 +92,16 @@ public class ListView : MonoBehaviour
             Destroy(it.gameObject);
         }
         items.Clear();
+    }
+    public void SetContentSize()
+    {
+        RectTransform rt = this.gameObject.GetComponent<RectTransform>();
+        float wigth = rt.sizeDelta.x;
+        float hight = gridLayoutGroup.cellSize.y * items.Count;
+        if (hight>startHight)
+        {
+            rt.sizeDelta = new Vector3(wigth, gridLayoutGroup.cellSize.y * items.Count);
+        }
+        
     }
 }

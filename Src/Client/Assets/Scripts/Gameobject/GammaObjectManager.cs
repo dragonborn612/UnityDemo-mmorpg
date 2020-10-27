@@ -71,7 +71,7 @@ public class GammaObjectManager : MonoSingleton<GammaObjectManager> {
                 return;
             }
             GameObject go =(GameObject) Instantiate(obj,this.transform) ;
-            go.name = "Character_" + cha.nCharacterInfo.Id + "_" + cha.nCharacterInfo.Name;
+            go.name = "Character_" + cha.Id + "_" + cha.Name;
 
             go.transform.position = GameObjectTool.LogicToWorld(cha.position);
             go.transform.forward = GameObjectTool.LogicToWorld(cha.direction);
@@ -89,14 +89,14 @@ public class GammaObjectManager : MonoSingleton<GammaObjectManager> {
         if (ec != null)
         {
             ec.entity = cha;
-            ec.isPlayer = cha.IsPlayer;
+            ec.isPlayer = cha.IsCurrentPlayer;
         }
 
         PlayerInputerController pc = go.GetComponent<PlayerInputerController>();
         if (pc != null)
         {
             //确定是否为当前控制角色
-            if (cha.nCharacterInfo.Id == Models.User.Instance.CurrentCharacter.Id)
+            if (cha.IsCurrentPlayer)
             {
                 User.Instance.currentCharacterObject = go;
                 MainPlayerCamera.Instance.player = go;
