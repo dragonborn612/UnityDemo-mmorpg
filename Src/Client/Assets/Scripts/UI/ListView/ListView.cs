@@ -95,6 +95,10 @@ public class ListView : MonoBehaviour
     }
     public void SetContentSize()
     {
+        if (gridLayoutGroup==null)
+        {
+            return;
+        }
         RectTransform rt = this.gameObject.GetComponent<RectTransform>();
         float wigth = rt.sizeDelta.x;
         float hight = gridLayoutGroup.cellSize.y * items.Count;

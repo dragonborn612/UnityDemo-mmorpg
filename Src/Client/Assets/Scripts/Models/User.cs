@@ -32,6 +32,8 @@ namespace Models
         public MapDefine currenMapData { get; set; }
         public GameObject currentCharacterObject { get; set; }
 
+        public NTeamInfo TeamInfo { get; set; }
+
         public void AddGold(int gold)
         {
             this.CurrentCharacter.Gold += gold;

@@ -191,6 +191,11 @@ message NetMessageRequest{
 	FriendAddResponse friendAddRes=16;
 	FriendListRequest friendList=17;
 	FriendRemoveRequest friendRemove=18;
+
+	TeamInviteRequest teamInviteReq=19;
+	TeamInviteResponse teamInviteRes=20;
+	TeamInfoRequest teamInfo=21;
+	TeamleaveRequest teamLeave=22;
 }
 
 message NetMessageResponse{
@@ -217,6 +222,12 @@ message NetMessageResponse{
 	FriendAddResponse friendAddRes=16;
 	FriendListResponse friendList=17;
 	FriendRemoveResponse friendRemove=18;
+
+	TeamInviteRequest teamInviteReq=19;
+	TeamInviteResponse teamInviteRes=20;
+	TeamInfoResponse teamInfo=21;
+	TeamLeaveResponse teamLeave=22;
+
 
 	StatusNotify statusNotify=100;
 	
@@ -431,5 +442,40 @@ message FriendRemoveResponse{
 	RESULT result=1;
 	string errormsg=2;
 	int32 id=3;
+}
+
+//#Team Syeteam
+message NTeamInfo {
+	int32 id = 1;
+	int32 leader=2;
+	repeated NCharacterInfo members=3;
+}
+message  TeamInviteRequest {
+	int32 team_id=1;
+	int32 from_id=2;
+	string from_name=3;
+	int32 to_id=4;
+	string to_name=5;
+}
+message  TeamInviteResponse {
+	RESULT result = 1;
+	string errormsg=2;
+	TeamInviteRequest request=3;
+}
+message  TeamInfoRequest {
+}
+message  TeamInfoResponse {
+	RESULT result = 1;
+	string errormsg=2;
+	NTeamInfo team = 3;
+}
+message TeamLeaveRequest {
+	int32 team_id=1;
+	int32 CharacterId=2;
+}
+message  TeamLeaveResponse {
+	RESULT result = 1;
+	string errormsg=2;
+	int32 CharacterId=3;
 }
 

@@ -1,4 +1,5 @@
-﻿using GameServer.Entities;
+﻿using Common;
+using GameServer.Entities;
 using GameServer.Services;
 using SkillBridge.Message;
 using System;
@@ -60,10 +61,14 @@ namespace GameServer.Managers
             }
             else
             {
-                friendInfo.friendInfo = GetBasicInfo(character.Info);
+                friendInfo.friendInfo =character.GetBasicInfo();
                 friendInfo.friendInfo.Name = character.Info.Name;
                 friendInfo.friendInfo.Class = character.Info.Class;
                 friendInfo.friendInfo.Level = character.Info.Level;
+                if (friend.Level!=character.Info.Level)
+                {
+                    friend.Level = character.Info.Level;
+                }
                 character.FriendManager.UpdateFrindInfo(this.Owner.Info, 1);//更新好友的好友列表里本玩家的在线状态
                 friendInfo.Status = 1;
 
@@ -74,6 +79,7 @@ namespace GameServer.Managers
             //{
             //    friendSession.Session.Character.FriendManager.UpdateFrindInfo(friendSession.Session.Character.Info, 1);
             //}
+            Log.InfoFormat("{0}:{1} GetFriendInfo:{2}:{3} Status:{4}", this.Owner.Info.Name, friendInfo.friendInfo.Name, Owner.Info.Id, friendInfo.friendInfo.Id, friendInfo.Status);
             return friendInfo;
         }
 
@@ -105,22 +111,18 @@ namespace GameServer.Managers
             }
             this.friendChange = true;
         }
-
-        /// <summary>
-        /// 转化为只有基本信息的NCharacterInfo
-        /// </summary>
-        /// <param name="info"></param>
-        /// <returns></returns>
-        private NCharacterInfo GetBasicInfo(NCharacterInfo info)
+        public void OfflineNotify()
         {
-            return new NCharacterInfo()
+            foreach (var friendInfo in this.friends)
             {
-                Id = info.Id,
-                Name = info.Name,
-                Class = info.Class,
-                Level = info.Level,
-            };
+                var friend = CharacterManager.Instance.GetCharacter(friendInfo.friendInfo.Id);
+                if (friend!=null)
+                {
+                    friend.FriendManager.UpdateFrindInfo(this.Owner.Info, 0);
+                }
+            }
         }
+
 
         /// <summary>
         /// 向本玩家的数据库好友列表里加好友
@@ -170,6 +172,7 @@ namespace GameServer.Managers
         {
             if (friendChange)
             {
+                Log.InfoFormat("PostProcess>FriendManager:characterID:{0}:{1}", this.Owner.Id, this.Owner.Info.Name);
                 this.InitFriends();
                 if (mesage.friendList==null)
                 {

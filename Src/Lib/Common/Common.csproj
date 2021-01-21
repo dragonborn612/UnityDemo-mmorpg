@@ -84,4 +84,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)Common.* $(ProjectDir)..\..\Client\Assets\References\ /Y
+copy $(TargetDir)Protocol.* $(ProjectDir)..\..\Client\Assets\References\ /Y</PostBuildEvent>
+  </PropertyGroup>
 </Project>

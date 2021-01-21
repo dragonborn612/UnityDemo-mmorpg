@@ -1,6 +1,8 @@
-﻿using Common.Data;
+﻿using Common;
+using Common.Data;
 using GameServer.Core;
 using GameServer.Managers;
+using GameServer.Models;
 using Network;
 using SkillBridge.Message;
 using System;
@@ -24,6 +26,8 @@ namespace GameServer.Entities
         public StatusManager StatusManager;
         public FriendManager FriendManager;
 
+        public Team Team;
+        public int TeamUpateTS;
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -75,9 +79,36 @@ namespace GameServer.Entities
             }
         }
 
+        /// <summary>
+        /// 转化为只有基本信息的NCharacterInfo
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+        public NCharacterInfo GetBasicInfo()
+        {
+            return new NCharacterInfo()
+            {
+                Id = this.Id,
+                Name = Info.Name,
+                Class = Info.Class,
+                Level = Info.Level,
+            };
+        }
         public void PostProcess(NetMessageResponse message)
         {
+            Log.InfoFormat("PostProcess>Character:characterID{0}:{1}", this.Id, this.Info.Name);
             this.FriendManager.PostProcess(message);
+
+            if (this.Team!=null)
+            {
+                Log.InfoFormat("PostProcess>Team:characterID:{0}:{1}", this.Id, this.Info.Id, TeamUpateTS, this.Team.timestamp);
+                if (TeamUpateTS<this.Team.timestamp)
+                {
+                    TeamUpateTS = Team.timestamp;
+                    this.Team.PostProcess(message);
+                }
+            }
+
             if (this.StatusManager.HasStatus)
             {
                 this.StatusManager.PostProcess(message);
@@ -89,7 +120,7 @@ namespace GameServer.Entities
         /// </summary>
         public void Clear()
         {
-            this.FriendManager.UpdateFrindInfo(this.Info, 0);
+            this.FriendManager.OfflineNotify();
         }
     }
 }

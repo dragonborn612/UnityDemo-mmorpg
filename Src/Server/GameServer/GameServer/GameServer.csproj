@@ -127,8 +127,10 @@
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\SpawnManager.cs" />
     <Compile Include="Managers\StatusManager.cs" />
+    <Compile Include="Managers\TeamManager.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Map.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Network\ExtensionMethods.cs" />
     <Compile Include="Network\INetSession.cs" />
     <Compile Include="Network\IPostResponse.cs" />
@@ -150,6 +152,7 @@
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Services\MapService.cs" />
     <Compile Include="Services\QuestService.cs" />
+    <Compile Include="Services\TeamService.cs" />
     <Compile Include="Services\UserSerevice.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Core\Vector3Int.cs" />
@@ -166,6 +169,15 @@
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="TCharacterQuest.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGuild.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGuildApply.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGuildMember.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="TPlayer.cs">

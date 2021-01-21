@@ -670,6 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409494427}
   - component: {fileID: 409494426}
+  - component: {fileID: 409494428}
   m_Layer: 0
   m_Name: NetClient
   m_TagString: Untagged
@@ -702,6 +703,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &409494428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 409494425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47cc3a34eec7de3468d5385b573b6cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  global: 1
+  classIcons:
+  - {fileID: 21300000, guid: 89aaa5c4359204145ad94e0bbdc3b2bf, type: 3}
+  - {fileID: 21300000, guid: f7b79acef3f77ff4c8ab4a12ad0c0aa7, type: 3}
+  - {fileID: 21300000, guid: f70403590efcaaa43927e411dd4cd4ae, type: 3}
 --- !u!1 &424841905
 GameObject:
   m_ObjectHideFlags: 0

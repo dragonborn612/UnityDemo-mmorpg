@@ -25,6 +25,7 @@ namespace Assets.Scripts.Managers
             UIResouces.Add(typeof(UIQuestSystem), new UIElment() { Resouce = "UI/UIQuestSystem", Cache = false, });
             UIResouces.Add(typeof(UIQuestDialog), new UIElment() { Resouce = "UI/UIQuestDialog", Cache = false, });
             UIResouces.Add(typeof(UIFriends), new UIElment() { Resouce = "UI/UIFriends", Cache = false, });
+            //UIResouces.Add(typeof(UITeam), new UIElment() { Resouce = "UI/UITeam", Cache = false, });
         }
         ~UIManager()
         {

@@ -12,6 +12,8 @@ public class UIMain : MonoSingleton<UIMain> {
     public Text characterName;
     public Text characterLevels;
 
+    public UITeam TeamWindow;
+
 	// Use this for initialization
  	protected override void OnStart () {
         this.AvaterUpdata();
@@ -55,5 +57,9 @@ public class UIMain : MonoSingleton<UIMain> {
     public void OnClickFriend()
     {
         UIManager.Instance.Show<UIFriends>();
+    }
+    public void ShowTeamUI(bool show)
+    {
+        TeamWindow.ShowTeam(show);
     }
 }

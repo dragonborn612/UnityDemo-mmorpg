@@ -30,6 +30,8 @@ public class LoadingSlider : MonoBehaviour
         UserService.Instance.Init();
         MapService.Instance.Init();
         FriendService.Instance.Init();
+        TeamManager.Instance.Init();
+        TeamService.Instance.Init();
         //TestManager.Instance.Intit();
         ShopManager.Instance.Init();
         ItemService.Instance.Intit();

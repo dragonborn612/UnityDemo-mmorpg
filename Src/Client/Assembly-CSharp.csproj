@@ -87,6 +87,8 @@
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SpriteManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\TeamManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\Models\BagItem.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
     <Compile Include="Assets\Scripts\Services\QuestService.cs" />
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
+    <Compile Include="Assets\Scripts\Services\TeamService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\TipsAnimatonEvent.cs" />
     <Compile Include="Assets\Scripts\Tool\ScrollViewContentTool.cs" />
@@ -109,6 +112,8 @@
     <Compile Include="Assets\Scripts\UI\Minimap\UIMiniMap.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabButten.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
+    <Compile Include="Assets\Scripts\UI\Team\UITeam.cs" />
+    <Compile Include="Assets\Scripts\UI\Team\UITeamIteam.cs" />
     <Compile Include="Assets\Scripts\UI\UIBag.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterView.cs" />
