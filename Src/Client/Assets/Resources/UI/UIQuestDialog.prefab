@@ -683,7 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81439305c84ed994d810e67a91238a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainImage: {fileID: 0}
+  mainImage: {fileID: 114081389678005128}
   secondImage: {fileID: 0}
   mainText: {fileID: 0}
 --- !u!114 &114081389678005128
@@ -838,7 +838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81439305c84ed994d810e67a91238a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainImage: {fileID: 0}
+  mainImage: {fileID: 114410658044173118}
   secondImage: {fileID: 0}
   mainText: {fileID: 0}
 --- !u!114 &114301702183153974
@@ -979,6 +979,7 @@ MonoBehaviour:
   - {fileID: 114973304289441920}
   - {fileID: 114205480410595054}
   - {fileID: 114070154063044422}
+  noRewardItemSprite: {fileID: 21300022, guid: 9bef550bcc059b84f9c4f7889b19c2d6, type: 3}
   rewardMoney: {fileID: 114929518574207494}
   rewardExp: {fileID: 114696413593898268}
 --- !u!114 &114348457798572220
@@ -1699,7 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81439305c84ed994d810e67a91238a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainImage: {fileID: 0}
+  mainImage: {fileID: 114614350985332646}
   secondImage: {fileID: 0}
   mainText: {fileID: 0}
 --- !u!114 &114976200181887684
@@ -1786,7 +1787,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &222013852925802942
 CanvasRenderer:
   m_ObjectHideFlags: 1

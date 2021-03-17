@@ -234,6 +234,11 @@ namespace Services
                 this.OnCreateCharacter.Invoke(message.Result, message.Errormsg);
             }
         }
+        /// <summary>
+        /// 当角色登入时
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
         private void OnGameEnter(object sender, UserGameEnterResponse message)
         {
             Debug.LogFormat("OnGameEnterCharacter:{0} [{1}]", message.Result, message.Errormsg);
@@ -247,6 +252,7 @@ namespace Services
                     EquipMananger.Instance.Init(message.Character.Equips);
                     QuestManager.Instance.Init(message.Character.Quests);
                     FriendManager.Instance.Init(message.Character.Friends);
+                    GUildManager.Instance.Init(message.Character.Guild);
                     Debug.Log("Init");
                 }
             }

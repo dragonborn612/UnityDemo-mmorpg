@@ -37,6 +37,7 @@ public class LoadingSlider : MonoBehaviour
         ItemService.Instance.Intit();
         StatusService.Instance.Init();
         QuestService.Instance.Init();
+        GuildService.Instance.Init();
 
     }
 	

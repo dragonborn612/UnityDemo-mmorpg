@@ -21,8 +21,7 @@ namespace GameServer
         public int Level { get; set; }
         public int Result { get; set; }
         public System.DateTime ApplyTime { get; set; }
-        public int Guildid { get; set; }
-        public int TGuildId { get; set; }
+        public int GuildId { get; set; }
     
         public virtual TGuild Guild { get; set; }
     }

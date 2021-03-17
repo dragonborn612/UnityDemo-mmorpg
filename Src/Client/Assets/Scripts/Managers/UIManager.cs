@@ -25,6 +25,11 @@ namespace Assets.Scripts.Managers
             UIResouces.Add(typeof(UIQuestSystem), new UIElment() { Resouce = "UI/UIQuestSystem", Cache = false, });
             UIResouces.Add(typeof(UIQuestDialog), new UIElment() { Resouce = "UI/UIQuestDialog", Cache = false, });
             UIResouces.Add(typeof(UIFriends), new UIElment() { Resouce = "UI/UIFriends", Cache = false, });
+            UIResouces.Add(typeof(UIGuildPopNoGuild), new UIElment() { Resouce = "UI/UIGuildPopNoGuild", Cache = false, });
+            UIResouces.Add(typeof(UIGuildPopCreate), new UIElment() { Resouce = "UI/UIGuildPopCreate", Cache = false, });
+            UIResouces.Add(typeof(UIGuildList), new UIElment() { Resouce = "UI/UIGuildList", Cache = false, });
+            UIResouces.Add(typeof(UIGuild), new UIElment() { Resouce = "UI/UIGuild", Cache = false, });
+            UIResouces.Add(typeof(UIGuildApplyList), new UIElment() { Resouce = "UI/UIGuildApplyList", Cache = false, });
             //UIResouces.Add(typeof(UITeam), new UIElment() { Resouce = "UI/UITeam", Cache = false, });
         }
         ~UIManager()

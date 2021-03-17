@@ -35,6 +35,7 @@ namespace GameServer
         public byte[] Equips { get; set; }
         public int Level { get; set; }
         public long Exp { get; set; }
+        public int GuildId { get; set; }
     
         public virtual TPlayer Player { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

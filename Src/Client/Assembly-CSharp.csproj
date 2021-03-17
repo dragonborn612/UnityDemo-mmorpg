@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EquipMananger.cs" />
     <Compile Include="Assets\Scripts\Managers\FriendManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\GUildManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MiniMapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Services\FriendService.cs" />
+    <Compile Include="Assets\Scripts\Services\GuildService.cs" />
     <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
     <Compile Include="Assets\Scripts\Services\QuestService.cs" />
@@ -122,6 +124,15 @@
     <Compile Include="Assets\Scripts\UI\UIEquipItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIFriends.cs" />
     <Compile Include="Assets\Scripts\UI\UIFrindItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuild.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildApplyItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildApplyList.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildInfo.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildList.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildMemberItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildPopCreate.cs" />
+    <Compile Include="Assets\Scripts\UI\UIGuildPopNoGuild.cs" />
     <Compile Include="Assets\Scripts\UI\UIIconItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIInputBox.cs" />
     <Compile Include="Assets\Scripts\UI\UILogin.cs" />

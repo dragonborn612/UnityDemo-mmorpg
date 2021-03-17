@@ -22,8 +22,11 @@ namespace Assets.Scripts.UI
             this.listMain.onItemSelected += this.OnFriendSelected;
             RefreshUI();
         }
+        private void OnDestroy()
+        {
+            FriendService.Instance.OnFriendUpdate -= RefreshUI;
+        }
 
-       
 
         private void OnFriendSelected(ListView.ListViewItem item)
         {

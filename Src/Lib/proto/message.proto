@@ -89,6 +89,8 @@ message NCharacterInfo {
 	bytes Equips=13;
 	repeated NQuestInfo quests=14;
 	repeated NFriendInfo friends=15;
+
+	NGuildInfo guild=16;
 }
 message NItemInfo 
 {
@@ -196,6 +198,15 @@ message NetMessageRequest{
 	TeamInviteResponse teamInviteRes=20;
 	TeamInfoRequest teamInfo=21;
 	TeamleaveRequest teamLeave=22;
+
+	GuildCreateRequest guildCreate=23;
+	GuildJoinRequest guildJoinReq=24;
+	GuildJoinResponse guildJoinRes=25;
+	GuildRequest guild=26;
+	GuildLeaveRequest guildLeave=27;
+	GuildListRequest guildList=28;
+	GuildAdminRequest guildAdmin=29;
+
 }
 
 message NetMessageResponse{
@@ -228,6 +239,13 @@ message NetMessageResponse{
 	TeamInfoResponse teamInfo=21;
 	TeamLeaveResponse teamLeave=22;
 
+	GuildCreateResponse guildCreate=23;
+	GuildJoinRequest guildJoinReq=24;
+	GuildJoinResponse guildJoinRes=25;
+	GuildResponse guild=26;
+	GuildLeaveResponse guildLeave=27;
+	GuildListResponse guildList=28;
+	GuildAdminResponse guildAdmin=29;
 
 	StatusNotify statusNotify=100;
 	
@@ -479,3 +497,108 @@ message  TeamLeaveResponse {
 	int32 CharacterId=3;
 }
 
+//Guild system
+
+enum GUILD_TITLE {
+	NOME=0;
+	PRESIDENT=1;//会长
+	VICE_PRESIDENT=2;//副会长
+}
+enum APPLY_RESULT {
+	NOME=0;
+	ACCPET=1;
+	REJECT=2;
+}
+message  NGuildInfo {
+	int32 id=1;
+	string guild_name=2;
+	int32 leaderId=3;
+	string leaderName=4;
+	string notice=5;
+	int32 memberCont=6;
+	repeated NGuildMemberInfo member=7;  //成员列表	
+	repeated NGuildApplyInfo applies=8;//申请加入信息
+	int64 createTime=9;
+}
+message  NGuildMemberInfo {
+	int32 id=1;
+	int32 characterId=2;//角色id
+	GUILD_TITLE titlr=3;//职位
+	NCharacterInfo info = 4;//角色信息
+	int64 joinTime=5;//加入时间
+	int64 lasttime=6;//上次在线时间
+	int32 status=7;//在线状态
+}
+//公会加入申请信息
+message  NguildApplyInfo {
+	int32 guild_id=1;
+	int32 characterID=2;
+	string name=3;
+	int32 class=4;
+	int32 level=5;
+	APPLY_RESULT result=6;
+}
+//创建公会
+message GuildCreateRequest {
+	string guild_name=1;
+	string guild_notice=2;
+}
+message  GuildCreateResponse {
+	RESULT result = 1;
+	string errormsg=2;
+	NGuildInfo guildInfo=3;
+}
+//加入公会申请[member->server->leader]
+message GuildJoinRequest {
+	NGuildApplyInfo apply=1;
+}
+
+//加入公会响应[server->member]
+message GuildJoinResponse {
+	RESULT  result = 1;
+	string errormsg=2;
+	NGuildApplyInfo apply=3;
+}
+
+//公会列表
+message GuildListRequest {
+}
+message GuildListResponse {
+	RESULT  result = 1;
+	string errormsg=2;
+	repeated NguildInfo guilds=3;
+}
+
+//公会信息
+message  GuildRequest {
+
+}
+message  GuildResponse {
+	RESULT  result = 1;
+	string errormsg=2;
+	NguildInfo guildInfo=3;
+}
+
+message  GuildLeaveRequest {
+
+}
+message  GuildLeaveResponse {
+	RESULT  result = 1;
+	string errormsg=2;
+}
+//公会管理
+enum  GUILD_ADMIN_COMMAND {
+	KICKOUT=1;//踢人
+	PROMOTE=2;//晋升
+	DEPOST=3;//罢免
+	TRANSFER=4;//转让会长
+}
+message  GuildAdminRequest {
+	GUILD_ADMIN_COMMAND command=1;
+	int32 target=2;
+}
+message GuildAdminResponse {
+	RESULT result = 1;
+	string errormsg=2;
+	GuildAdminRequest command=3;
+}

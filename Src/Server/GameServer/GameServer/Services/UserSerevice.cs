@@ -181,6 +181,9 @@ namespace GameServer.Services
             sender.Session.Response.gameEnter = new UserGameEnterResponse();
             sender.Session.Response.gameEnter.Result = Result.Success;
             sender.Session.Response.gameEnter.Errormsg = "None";
+
+           
+
             sender.Session.Response.gameEnter.Character = character.Info;//道具消息
 
             /* #region 道具测试用例

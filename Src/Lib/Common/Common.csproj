@@ -72,6 +72,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton.cs" />
     <Compile Include="Utils\MathUtil.cs" />
+    <Compile Include="Utils\TimeUtil.cs" />
     <Compile Include="我的服务端.cs" />
   </ItemGroup>
   <ItemGroup>

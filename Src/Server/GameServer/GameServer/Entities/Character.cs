@@ -27,7 +27,10 @@ namespace GameServer.Entities
         public FriendManager FriendManager;
 
         public Team Team;
-        public int TeamUpateTS;
+        public double TeamUpateTS;
+
+        public Guild Guild;
+        public double GuildUpdateTs;
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -59,7 +62,8 @@ namespace GameServer.Entities
             this.StatusManager = new StatusManager(this);
             this.FriendManager = new FriendManager(this);
             this.FriendManager.GetFriendInfos(this.Info.Friends);
-           
+
+            this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
         }
         public long Gold
         {
@@ -112,6 +116,26 @@ namespace GameServer.Entities
             if (this.StatusManager.HasStatus)
             {
                 this.StatusManager.PostProcess(message);
+            }
+
+            //公会后处理
+            if (this.Guild!=null)
+            {
+                Log.InfoFormat("PostProcess>OnGuild:CharacterID:{0}:{1} {2}<{3}", this.Id, this.Name, GuildUpdateTs, this.Guild.timestemp);
+                if (this.Info.Guild==null)
+                {
+                    this.Info.Guild = this.Guild.GuildInfo(this);
+                    if (message.mapCharacterEnter != null)//不是第一次登入
+                    {
+                        GuildUpdateTs = Guild.timestemp;
+                    }             
+                }
+                if (GuildUpdateTs < this.Guild.timestemp && message.mapCharacterEnter == null)
+                {
+                    GuildUpdateTs = Guild.timestemp;
+                    this.Guild.PostProcess(this, message);
+                    Log.Info("公会后处理执行");
+                }
             }
         }
 

@@ -62,4 +62,8 @@ public class UIMain : MonoSingleton<UIMain> {
     {
         TeamWindow.ShowTeam(show);
     }
+    public void OnClickGuild()
+    {
+        GUildManager.Instance.ShowGuild();
+    }
 }
