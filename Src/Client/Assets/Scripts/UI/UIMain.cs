@@ -11,18 +11,20 @@ using Assets.Scripts.Managers;
 public class UIMain : MonoSingleton<UIMain> {
     public Text characterName;
     public Text characterLevels;
-
+    public Image photo;
     public UITeam TeamWindow;
+    public Sprite[] photos;
 
 	// Use this for initialization
  	protected override void OnStart () {
         this.AvaterUpdata();
 	}
 		
-    private void AvaterUpdata()
+    public void AvaterUpdata()
     {
         characterLevels.text = User.Instance.CurrentCharacter.Level.ToString();
         characterName.text = string.Format("{0}[{1}]",User.Instance.CurrentCharacter.Name, User.Instance.CurrentCharacter.Id);
+        photo.sprite = photos[(int)User.Instance.CurrentCharacter.Class-1];//战士、牧师、射手
     }
     public void BackCharacterPlane()
     {

@@ -20,7 +20,7 @@ namespace Services
         public UnityEngine.Events.UnityAction<Result, string> OnCreateCharacter;
         NetMessage pendingMessage = null;
         bool connected = false;
-
+       
         public UserService()//创建时执行
         {
             Debug.Log("UserService()");
@@ -246,14 +246,20 @@ namespace Services
             {
                 if (message.Character!=null)
                 {
-                    User.Instance.CurrentCharacter = message.Character;
+                   
+                    User.Instance.CurrentCharacter = message.Character;                  
                     ItemManager.Instance.Init(message.Character.Items);
                     BagManager.Instance.Init(message.Character.Bag);
                     EquipMananger.Instance.Init(message.Character.Equips);
                     QuestManager.Instance.Init(message.Character.Quests);
                     FriendManager.Instance.Init(message.Character.Friends);
                     GUildManager.Instance.Init(message.Character.Guild);
+                    if (UIMain.Instance != null)
+                    {
+                        UIMain.Instance.AvaterUpdata();
+                    }
                     Debug.Log("Init");
+                   
                 }
             }
         }

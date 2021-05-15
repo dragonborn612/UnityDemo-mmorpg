@@ -29,6 +29,7 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
             }
             DontDestroyOnLoad(this.gameObject);
             instance = this.gameObject.GetComponent<T>();//【1】
+            //没有new是因为游戏一运行就实例好了，因为是monobehaviour类
         }
            
         this.OnStart();

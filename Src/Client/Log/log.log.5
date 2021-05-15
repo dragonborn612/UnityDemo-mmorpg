@@ -1,18 +1,18 @@
-2021-03-11 22:14:33,430 [ 1] INFO  Unity: LoadingManager start
-2021-03-11 22:14:33,461 [ 1] INFO  Unity: UserService()
-2021-03-11 22:14:33,464 [ 1] INFO  Unity: MapService()
-2021-03-11 22:14:51,197 [ 1] INFO  Unity: UserLoginRequsest::user :3 psw:1
-2021-03-11 22:14:51,198 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-03-11 22:14:51,200 [ 1] INFO  Unity: DoConnect
-2021-03-11 22:14:51,202 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-03-11 22:14:51,203 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2021-03-11 22:14:51,206 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-03-11 22:15:01,029 [ 1] INFO  Unity: UserLoginRequsest::user :3 psw:1
-2021-03-11 22:15:02,062 [ 1] INFO  Unity: UserLoginRequsest::user :3 psw:1
-2021-03-11 22:15:02,433 [ 1] INFO  Unity: UserLoginRequsest::user :3 psw:1
-2021-03-11 22:15:12,609 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-03-11 22:15:12,610 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-05-11 22:34:52,929 [ 1] INFO  Unity: LoadingManager start
+2021-05-11 22:34:52,958 [ 1] INFO  Unity: UserService()
+2021-05-11 22:34:52,961 [ 1] INFO  Unity: MapService()
+2021-05-11 22:34:53,401 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{SocketException: 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+, System.Net.Sockets.Socket.Bind (System.Net.EndPoint local_end)
+SyntaxTree.VisualStudio.Unity.Messaging.UdpSocket.Bind (System.Net.IPAddress address, Int32 port)
+SyntaxTree.VisualStudio.Unity.Messaging.Messager..ctor (Int32 port)
+SyntaxTree.VisualStudio.Unity.Messaging.Messager.BindTo (Int32 port)
+SyntaxTree.VisualStudio.Unity.Bridge.VisualStudioIntegration+<>c__DisplayClass9_0.<.cctor>b__0 ()
+SyntaxTree.VisualStudio.Unity.Bridge.Project+<>c__DisplayClass40_0.<RunOnceOnUpdate>b__0 ()
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at D:/unity/Editor/Mono/EditorApplication.cs:191)
+}</args></log4net.Error>
+2021-05-11 22:34:53,448 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-05-11 22:34:53,448 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)

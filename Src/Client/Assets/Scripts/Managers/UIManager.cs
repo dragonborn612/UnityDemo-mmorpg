@@ -15,6 +15,9 @@ namespace Assets.Scripts.Managers
            public bool  Cache;
            public GameObject Instance;
         }
+        /// <summary>
+        /// UI注册集合
+        /// </summary>
         Dictionary<Type, UIElment> UIResouces = new Dictionary<Type, UIElment>();
         public UIManager()
         {
@@ -49,7 +52,7 @@ namespace Assets.Scripts.Managers
                     UnityEngine.Object prefab = Resources.Load(info.Resouce);
                     if (prefab==null)
                     {
-                        return default(T);
+                        return default(T);//返回 T 的默认值 
                     }
                     info.Instance =(GameObject) GameObject.Instantiate(prefab);
                 }

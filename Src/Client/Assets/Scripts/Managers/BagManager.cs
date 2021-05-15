@@ -106,8 +106,9 @@ namespace Assets.Scripts.Managers
                     {
                         Items[i].ItemId = (ushort)itemId;
                         Items[i].Count = addCount;
+                        break;
                     }
-                    break;
+                   
                 }
             }
             if (BagManager.Instance.uIBag != null)//背包打开时

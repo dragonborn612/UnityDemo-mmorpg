@@ -1,114 +1,68 @@
-2021-03-11 21:39:48,854 [ 1] INFO  Unity: LoadingManager start
-2021-03-11 21:39:48,875 [ 1] INFO  Unity: UserService()
-2021-03-11 21:39:48,876 [ 1] INFO  Unity: MapService()
-2021-03-11 21:39:57,806 [ 1] INFO  Unity: UserLoginRequsest::user :user02 psw:1
-2021-03-11 21:39:57,807 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-03-11 21:39:57,812 [ 1] INFO  Unity: DoConnect
-2021-03-11 21:39:57,814 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-03-11 21:39:57,815 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-05-11 22:18:53,334 [ 1] INFO  Unity: LoadingManager start
+2021-05-11 22:18:53,350 [ 1] INFO  Unity: UserService()
+2021-05-11 22:18:53,353 [ 1] INFO  Unity: MapService()
+2021-05-11 22:18:53,765 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{SocketException: ��һ�ַ���Ȩ�޲������ķ�ʽ����һ�������׽��ֵĳ��ԡ�
+, System.Net.Sockets.Socket.Bind (System.Net.EndPoint local_end)
+SyntaxTree.VisualStudio.Unity.Messaging.UdpSocket.Bind (System.Net.IPAddress address, Int32 port)
+SyntaxTree.VisualStudio.Unity.Messaging.Messager..ctor (Int32 port)
+SyntaxTree.VisualStudio.Unity.Messaging.Messager.BindTo (Int32 port)
+SyntaxTree.VisualStudio.Unity.Bridge.VisualStudioIntegration+<>c__DisplayClass9_0.<.cctor>b__0 ()
+SyntaxTree.VisualStudio.Unity.Bridge.Project+<>c__DisplayClass40_0.<RunOnceOnUpdate>b__0 ()
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at D:/unity/Editor/Mono/EditorApplication.cs:191)
+}</args></log4net.Error>
+2021-05-11 22:19:01,318 [ 1] INFO  Unity: UserLoginRequsest::user :123456 psw:1
+2021-05-11 22:19:01,318 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-05-11 22:19:01,319 [ 1] INFO  Unity: DoConnect
+2021-05-11 22:19:01,321 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-05-11 22:19:01,323 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-03-11 21:39:57,821 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-03-11 21:39:58,937 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2021-03-11 21:39:58,937 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
-2021-03-11 21:40:00,217 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-03-11 21:40:00,217 [ 1] INFO  Unity: DataManager > DataManager()
-2021-03-11 21:40:00,383 [ 1] INFO  Unity: 刷新角色列表
-2021-03-11 21:40:13,408 [ 1] INFO  Unity: 刷新角色列表
-2021-03-11 21:40:20,453 [ 1] INFO  Unity: UserCharacterCreateRequsest::characterName :测试14 characterClass:Warrior
-2021-03-11 21:40:20,940 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2021-03-11 21:40:24,019 [ 1] INFO  Unity: 刷新角色列表
-2021-03-11 21:40:30,100 [ 1] INFO  Unity: Select Char :[0]测试14[Warrior]
-2021-03-11 21:40:31,650 [ 1] INFO  Unity: 点击开始游戏
-2021-03-11 21:40:31,650 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :6 
-2021-03-11 21:40:31,708 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-03-11 21:40:31,709 [ 1] INFO  Unity: AddCharacter:15:测试14 Map:1 Entity:SkillBridge.Message.NEntity
-2021-03-11 21:40:31,711 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-03-11 21:40:31,711 [ 1] INFO  Unity: EnterMap:map:1 success
-2021-03-11 21:40:31,712 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
-2021-03-11 21:40:31,713 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count20]
-2021-03-11 21:40:31,713 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count20]
-2021-03-11 21:40:31,715 [ 1] INFO  Unity: BagManagerInit
-2021-03-11 21:40:31,721 [ 1] INFO  Unity: Init
-2021-03-11 21:40:34,099 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-03-11 21:40:43,298 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-03-11 21:40:43,298 [ 1] INFO  Unity: AddCharacter:9:测试9 Map:1 Entity:SkillBridge.Message.NEntity
-2021-03-11 21:40:43,298 [ 1] INFO  Unity: 角色添加委托执行
-2021-03-11 21:40:56,034 [ 1] INFO  Unity: SendGuildListRequest
-2021-03-11 21:40:56,317 [ 1] INFO  Unity: OnGuildList
-2021-03-11 21:40:56,318 [ 1] INFO  Unity: 公会列表刷新
-2021-03-11 21:40:59,492 [ 1] INFO  Unity: SendguildJoinrequest
-2021-03-11 21:41:02,662 [ 1] INFO  Unity: OnGuildJoinResponse:Success
-2021-03-11 21:41:02,663 [ 1] INFO  Unity: OnGuild:Success 5:测试9的公
-2021-03-11 21:41:02,663 [ 1] INFO  Unity: 当前公会信信与成员列表更新
-2021-03-11 21:41:05,413 [ 1] INFO  Unity: 公会成员列表刷新
-2021-03-11 21:43:19,952 [ 1] INFO  Unity: RemoveCharacter:10
-2021-03-11 21:43:19,955 [ 1] INFO  Unity: OnGuild:Success 5:测试9的公
-2021-03-11 21:43:19,955 [ 1] INFO  Unity: 当前公会信信与成员列表更新
-2021-03-11 21:43:19,958 [ 1] INFO  Unity: 公会成员列表刷新
-2021-03-11 21:43:19,959 [ 1] INFO  Unity: Character_9_测试9 Ondestroy:ID:10 Pos:(5000, 4000, 820) Dir:(100, 0, 0) Spd:0
-2021-03-11 21:43:22,446 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2021-03-11 21:43:22,446 [ 1] INFO  Unity: AddCharacter:9:测试9 Map:1 Entity:SkillBridge.Message.NEntity
-2021-03-11 21:43:22,446 [ 1] INFO  Unity: 角色添加委托执行
-2021-03-11 21:44:10,570 [ 1] INFO  Unity: OnGuild:Success 5:测试9的公
-2021-03-11 21:44:10,570 [ 1] INFO  Unity: 当前公会信信与成员列表更新
-2021-03-11 21:44:10,573 [ 1] INFO  Unity: 公会成员列表刷新
-2021-03-11 21:44:10,574 [ 1] INFO  Unity: GuildAdmin:SkillBridge.Message.GuildAdminRequest:Success
-2021-03-11 21:44:29,843 [ 1] INFO  Unity: OnGuild:Success 5:测试9的公
-2021-03-11 21:44:29,844 [ 1] INFO  Unity: 当前公会信信与成员列表更新
-2021-03-11 21:44:29,846 [ 1] INFO  Unity: 公会成员列表刷新
-2021-03-11 21:44:29,846 [ 1] INFO  Unity: GuildAdmin:SkillBridge.Message.GuildAdminRequest:Success
-2021-03-11 21:44:40,359 [ 1] INFO  Unity: OnGuild:Success 5:测试9的公
-2021-03-11 21:44:40,359 [ 1] INFO  Unity: 当前公会信信与成员列表更新
-2021-03-11 21:44:40,361 [ 1] INFO  Unity: 公会成员列表刷新
-2021-03-11 21:44:40,361 [ 1] INFO  Unity: GuildAdmin:SkillBridge.Message.GuildAdminRequest:Success
-2021-03-11 21:45:22,844 [ 1] INFO  Unity: RemoveCharacter:11
-2021-03-11 21:45:22,845 [ 1] INFO  Unity: OnGuild:Success 5:测试9的公
-2021-03-11 21:45:22,845 [ 1] INFO  Unity: 当前公会信信与成员列表更新
-2021-03-11 21:45:22,847 [ 1] INFO  Unity: 公会成员列表刷新
-2021-03-11 21:45:22,847 [ 1] INFO  Unity: Character_9_测试9 Ondestroy:ID:11 Pos:(5000, 4000, 820) Dir:(100, 0, 0) Spd:0
-2021-03-11 21:47:50,301 [ 1] INFO  Unity: 公会成员列表刷新
-2021-03-11 21:50:46,232 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+2021-05-11 22:19:01,329 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-05-11 22:19:02,426 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2021-05-11 22:19:02,427 [ 1] INFO  Unity: LoadLevel: Levels/CharacterSelect
+2021-05-11 22:19:02,586 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-05-11 22:19:02,587 [ 1] INFO  Unity: DataManager > DataManager()
+2021-05-11 22:19:02,758 [ 1] INFO  Unity: ˢ�½�ɫ�б�
+2021-05-11 22:19:03,816 [ 1] INFO  Unity: Select Char :[18]123[Warrior]
+2021-05-11 22:19:05,523 [ 1] INFO  Unity: �����ʼ��Ϸ
+2021-05-11 22:19:05,524 [ 1] INFO  Unity: UserGameEnterRequsest::characterindex :1 
+2021-05-11 22:19:05,696 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2021-05-11 22:19:05,706 [ 1] INFO  Unity: AddCharacter:18:123 Map:1 Entity:SkillBridge.Message.NEntity
+2021-05-11 22:19:05,709 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-05-11 22:19:05,710 [ 1] INFO  Unity: EnterMap:map:1 success
+2021-05-11 22:19:05,712 [ 1] INFO  Unity: OnGameEnterCharacter:Success [None]
+2021-05-11 22:19:05,713 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse message) [0x00055] in E:\unitymmorpg\mmowork\Src\Client\Assets\Scripts\Services\UserService.cs:251 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\unitymmorpg\mmowork\Src\Lib\Common\Network\MessageDistributer.cs:106 
+2021-05-11 22:19:05,713 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse message) (at Assets/Scripts/Services/UserService.cs:251)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/unitymmorpg/mmowork/Src/Lib/Common/Network/MessageDistributer.cs:106)
+}</args></log4net.Error>
+2021-05-11 22:19:06,446 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
 
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00000] in <filename unknown>:0 
+2021-05-11 22:19:06,593 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-05-11 22:34:20,947 [ 1] WARN  Unity: Assets/Scripts/Gameobject/NPCController.cs(15,33): warning CS0108: `NPCController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
 
-2021-03-11 21:50:46,233 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+2021-05-11 22:34:20,947 [ 1] WARN  Unity: Assets/Scripts/Gameobject/TeleporterObject.cs(50,18): warning CS0665: Assignment in conditional expression is always constant. Did you mean to use `==' instead ?
 
-2021-03-11 21:50:46,245 [ 1] INFO  Unity: DoConnect
-2021-03-11 21:50:46,245 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-03-11 21:50:46,245 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-05-11 22:34:20,948 [ 1] WARN  Unity: Assets/Scripts/Managers/TestManager.cs(22,20): warning CS0219: The variable `test' is assigned but its value is never used
 
-2021-03-11 21:50:48,248 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2021-05-11 22:34:20,948 [ 1] WARN  Unity: Assets/Scripts/UI/UIGuildApplyItem.cs(28,11): warning CS0219: The variable `ui' is assigned but its value is never used
 
-2021-03-11 21:50:48,346 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2021-05-11 22:34:20,948 [ 1] WARN  Unity: Assets/Scripts/UI/UIShop.cs(29,13): warning CS0219: The variable `count' is assigned but its value is never used
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2021-05-11 22:34:20,948 [ 1] WARN  Unity: Assets/Scripts/Gameobject/EntiyController.cs(20,16): warning CS0649: Field `EntiyController.rotation' is never assigned to, and will always have its default value
 
-2021-03-11 21:50:48,352 [ 1] INFO  Unity: DoConnect
-2021-03-11 21:50:48,352 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-03-11 21:50:48,352 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+2021-05-11 22:34:20,948 [ 1] WARN  Unity: Assets/Scripts/Gameobject/EntiyController.cs(23,16): warning CS0414: The private field `EntiyController.lastRotation' is assigned but its value is never used
 
-2021-03-11 21:50:50,356 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2021-05-11 22:34:20,949 [ 1] WARN  Unity: Assets/Scripts/Gameobject/PlayerInputerController.cs(120,11): warning CS0414: The private field `PlayerInputerController.lastSync' is assigned but its value is never used
 
-2021-03-11 21:50:50,356 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2021-05-11 22:34:20,950 [ 1] WARN  Unity: Assets/Scripts/UI/TabView/TabButten.cs(8,20): warning CS0649: Field `TabButten.normalIamge' is never assigned to, and will always have its default value `null'
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2021-05-11 22:34:20,950 [ 1] WARN  Unity: Assets/Scripts/UI/UIFriends.cs(14,27): warning CS0649: Field `Assets.Scripts.UI.UIFriends.itemPrefab' is never assigned to, and will always have its default value `null'
 
-2021-03-11 21:50:50,363 [ 1] INFO  Unity: DoConnect
-2021-03-11 21:50:50,363 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-03-11 21:50:50,364 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+2021-05-11 22:34:20,951 [ 1] WARN  Unity: Assets/Scripts/UI/UIFriends.cs(16,26): warning CS0649: Field `Assets.Scripts.UI.UIFriends.itemRoot' is never assigned to, and will always have its default value `null'
 
-2021-03-11 21:50:52,368 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2021-05-11 22:34:20,951 [ 1] WARN  Unity: Assets/Scripts/UI/UIQuestStatus.cs(10,28): warning CS0414: The private field `UIQuestStatus.questStatus' is assigned but its value is never used
 
-2021-03-11 21:50:52,368 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2021-05-11 22:34:20,951 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(26,32): warning CS0219: The variable `allTeleporters' is assigned but its value is never used
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-
-2021-03-11 21:50:52,368 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2021-03-11 22:12:25,655 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-03-11 22:12:25,655 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
-
-2021-03-11 22:12:25,658 [ 1] INFO  Unity: Character_15_测试14 Ondestroy:ID:9 Pos:(5000, 4000, 820) Dir:(100, 0, 0) Spd:0

@@ -24,11 +24,13 @@ public class UIBag : UIWindow
     {
         if (slots==null)
         {
+            //把格子添加到格子列表内
             slots = new List<Image>();
             for (int page = 0; page < this.pages.Length; page++)
             {
                 slots.AddRange(this.pages[page].GetComponentsInChildren<Image>(true));
             }
+
             StartCoroutine(InitBag());
         }
         money.text = User.Instance.CurrentCharacter.Gold.ToString();
