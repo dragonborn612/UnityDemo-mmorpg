@@ -1,0 +1,19 @@
+2021-05-11 22:18:40,118 [ 1] INFO  Unity: LoadingManager start
+2021-05-11 22:18:40,144 [ 1] INFO  Unity: UserService()
+2021-05-11 22:18:40,145 [ 1] INFO  Unity: MapService()
+2021-05-11 22:18:40,347 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{SocketException: 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+, System.Net.Sockets.Socket.Bind (System.Net.EndPoint local_end)
+SyntaxTree.VisualStudio.Unity.Messaging.UdpSocket.Bind (System.Net.IPAddress address, Int32 port)
+SyntaxTree.VisualStudio.Unity.Messaging.Messager..ctor (Int32 port)
+SyntaxTree.VisualStudio.Unity.Messaging.Messager.BindTo (Int32 port)
+SyntaxTree.VisualStudio.Unity.Bridge.VisualStudioIntegration+<>c__DisplayClass9_0.<.cctor>b__0 ()
+SyntaxTree.VisualStudio.Unity.Bridge.Project+<>c__DisplayClass40_0.<RunOnceOnUpdate>b__0 ()
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at D:/unity/Editor/Mono/EditorApplication.cs:191)
+}</args></log4net.Error>
+2021-05-11 22:18:40,986 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-05-11 22:18:40,987 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
+
