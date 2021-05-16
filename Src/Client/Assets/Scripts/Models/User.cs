@@ -30,13 +30,28 @@ namespace Models
         }
         public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
         public MapDefine currenMapData { get; set; }
-        public GameObject currentCharacterObject { get; set; }
+        public PlayerInputerController currentCharacterObject { get; set; }
 
         public NTeamInfo TeamInfo { get; set; }
 
         public void AddGold(int gold)
         {
             this.CurrentCharacter.Gold += gold;
+        }
+
+        public int CurrentRide = 0;
+        public void  Ride(int id)
+        {
+            if (CurrentRide != id)
+            {
+                CurrentRide = id;
+                currentCharacterObject.SendEntityEvent(EntityEvent.Ride, CurrentRide);
+            }
+            else
+            {
+                CurrentRide = 0;
+                currentCharacterObject.SendEntityEvent(EntityEvent.Ride, 0);
+            }
         }
     }
 }

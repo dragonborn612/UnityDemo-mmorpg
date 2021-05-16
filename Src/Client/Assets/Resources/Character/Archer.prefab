@@ -2370,8 +2370,8 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1960688865382148}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b74a745d5d1ef5d4c91ce2291435c037, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9c0be460bca926641bdcd40d7de69bb6, type: 2}
+  m_Avatar: {fileID: 9000000, guid: c9d8afea1d6f5614485dd29f43645b28, type: 3}
+  m_Controller: {fileID: 9100000, guid: 86a93a1c2b175bd4ea41ac08c24171c8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2417,6 +2417,8 @@ MonoBehaviour:
   animSpeed: 1.5
   jumpPower: 3
   isPlayer: 0
+  rideController: {fileID: 0}
+  rideBone: {fileID: 4484465789644618}
 --- !u!136 &136874936736807874
 CapsuleCollider:
   m_ObjectHideFlags: 1

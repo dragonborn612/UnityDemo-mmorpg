@@ -1407,7 +1407,7 @@ Animator:
   m_GameObject: {fileID: 1175799879459822}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a468a87bb65541c48befe742afc6dd9f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0f6f66c25b3e5cf4bae999569d09d9c4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 33ef021f95b6b9745a6e6e332062ff98, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1453,6 +1453,8 @@ MonoBehaviour:
   animSpeed: 1.5
   jumpPower: 3
   isPlayer: 0
+  rideController: {fileID: 0}
+  rideBone: {fileID: 4312011338921186}
 --- !u!136 &136608625140143940
 CapsuleCollider:
   m_ObjectHideFlags: 1

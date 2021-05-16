@@ -69,6 +69,10 @@ namespace GameServer.Models
                     item.Value.character.EntityData.Position = nEntitySync.Entity.Position;
                     item.Value.character.EntityData.Direction = nEntitySync.Entity.Direction;
                     item.Value.character.EntityData.Speed = nEntitySync.Entity.Speed;
+                    if (nEntitySync.Event==EntityEvent.Ride)
+                    {
+                        item.Value.character.Ride = nEntitySync.Param;
+                    }
                 }
                 else
                 {

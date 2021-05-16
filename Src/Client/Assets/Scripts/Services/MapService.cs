@@ -97,7 +97,7 @@ namespace Services
             else
                 CharacterManager.Instance.RemoveCharacter(message.entityId);
         }
-        public void SendMapSync(EntityEvent entityEvent,NEntity nEntity)
+        public void SendMapSync(EntityEvent entityEvent,NEntity nEntity,int param)
         {
             Debug.LogFormat("MapEntityUpdataResqust:Id:{0}Pos:{1}Dir:{2}Spd:{3}", nEntity.Id, nEntity.Position, nEntity.Direction, nEntity.Speed);
             NetMessage message = new NetMessage();
@@ -107,7 +107,8 @@ namespace Services
             {
                 Id = nEntity.Id,
                 Event = entityEvent,
-                Entity = nEntity
+                Entity = nEntity,
+                Param=param
             };
             NetClient.Instance.SendMessage(message);
         }

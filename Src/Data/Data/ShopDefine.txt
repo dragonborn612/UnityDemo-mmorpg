@@ -10,5 +10,11 @@
     "Name": "杂货商店",
     "Description": "没有杂货商店",
     "Status": 1
+  },
+  "3": {
+    "ID": 3,
+    "Name": "坐骑商店",
+    "Description": "千里马要不要来一匹？",
+    "Status": 1
   }
 }

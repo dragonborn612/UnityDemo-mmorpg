@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Gameobject\MapController.cs" />
     <Compile Include="Assets\Scripts\Gameobject\NPCController.cs" />
     <Compile Include="Assets\Scripts\Gameobject\PlayerInputerController.cs" />
+    <Compile Include="Assets\Scripts\Gameobject\RideController.cs" />
     <Compile Include="Assets\Scripts\Gameobject\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\Gameobject\TeleporterObject.cs" />
     <Compile Include="Assets\Scripts\LoadingSlider.cs" />
@@ -145,6 +146,8 @@
     <Compile Include="Assets\Scripts\UI\UIQuestStatus.cs" />
     <Compile Include="Assets\Scripts\UI\UIQuestSystem.cs" />
     <Compile Include="Assets\Scripts\UI\UIRegister.cs" />
+    <Compile Include="Assets\Scripts\UI\UIRide.cs" />
+    <Compile Include="Assets\Scripts\UI\UIRideItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIShop.cs" />
     <Compile Include="Assets\Scripts\UI\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UITest.cs" />

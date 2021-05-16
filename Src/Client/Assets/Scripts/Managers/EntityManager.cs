@@ -11,7 +11,7 @@ namespace Assets.Scripts.Managers
     {
         void OnEntityRemoved();//移除“事件”
         void OnEntityChange(Entity entity);
-        void OnEntityEvent(EntityEvent @event);
+        void OnEntityEvent(EntityEvent @event,int param);
     }
     class EntityManager:Singleton<EntityManager>
     {
@@ -49,7 +49,7 @@ namespace Assets.Scripts.Managers
                 {
                     //发消息
                     notifiers[nEntitySync.Id].OnEntityChange(entity);
-                    notifiers[nEntitySync.Id].OnEntityEvent(nEntitySync.Event);
+                    notifiers[nEntitySync.Id].OnEntityEvent(nEntitySync.Event,nEntitySync.Param);
                 }
             }
         }

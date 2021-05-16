@@ -68,4 +68,8 @@ public class UIMain : MonoSingleton<UIMain> {
     {
         GUildManager.Instance.ShowGuild();
     }
+    public void OnclickRide()
+    {
+        UIManager.Instance.Show<UIRide>();
+    }
 }

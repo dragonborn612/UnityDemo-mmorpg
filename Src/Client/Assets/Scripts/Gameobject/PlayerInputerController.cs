@@ -57,6 +57,10 @@ public class PlayerInputerController : MonoBehaviour {
         {
             return;
         }
+        //if (InputManager)
+        //{
+
+        //}
         float v = Input.GetAxis("Vertical");
         if (v > 0.01f)
         {
@@ -143,12 +147,12 @@ public class PlayerInputerController : MonoBehaviour {
         //}
     }
 
-    void SendEntityEvent(EntityEvent entityEvent)
+    public void SendEntityEvent(EntityEvent entityEvent,int param=0)
     {
         if (entiyController!=null)
         {
-            entiyController.OnEntityEvent(entityEvent);
-            MapService.Instance.SendMapSync(entityEvent,this.character.EntityData);
+            entiyController.OnEntityEvent(entityEvent,param);
+            MapService.Instance.SendMapSync(entityEvent,this.character.EntityData,param);
         }
     }
 }

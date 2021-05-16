@@ -44,6 +44,7 @@ enum ENTITY_EVENT
 	MOVE_FWD = 2;
 	MOVE_BACK = 3;
 	JUMP = 4;
+	RIDE=5;
 }
 enum ITEM_TYPE 
 {
@@ -51,6 +52,7 @@ enum ITEM_TYPE
 	MATERIAL = 1;
 	TASK = 2;//任务道具
 	EQUIP=3;
+	RIDE=4;
 }
 enum  EQIP_SLOT {
 	WEAPON=0;      //主武器
@@ -91,6 +93,7 @@ message NCharacterInfo {
 	repeated NFriendInfo friends=15;
 
 	NGuildInfo guild=16;
+	int32 ride=17;
 }
 message NItemInfo 
 {
@@ -153,6 +156,7 @@ message NEntitySync {
 	int32 id = 1;
 	ENTITY_EVENT event = 2;
 	NEntity entity = 3;
+	int32 param=4;
 	
 }
 
@@ -207,6 +211,7 @@ message NetMessageRequest{
 	GuildListRequest guildList=28;
 	GuildAdminRequest guildAdmin=29;
 
+	ChatRequest chat = 30;
 }
 
 message NetMessageResponse{
@@ -601,4 +606,46 @@ message GuildAdminResponse {
 	RESULT result = 1;
 	string errormsg=2;
 	GuildAdminRequest command=3;
+}
+
+//聊天
+
+enum CHAT_CHANNEL
+{
+	ALL = -1;     //所有
+	LOCAL = 1;	  //本地
+	WORLD = 2;	  //世界
+	SYSTEM = 4;   //系统
+	PRIVATE = 8;  //私聊
+	TEAM = 16;    //队伍
+	GUILD = 32;   //公会
+}
+
+message ChatMessage
+{
+	CHAT_CHANNEL channel = 1;
+	int32 id = 2;
+	int32 from_id = 3; 
+	string from_name = 4; 
+	int32 to_id = 5; 
+	string to_name = 6; 
+	string message = 7;
+	double time = 8;
+}
+
+message ChatRequest
+{
+	ChatMessage message = 1;
+}
+
+message ChatResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	repeated ChatMessage localMessages = 3;
+	repeated ChatMessage worldMessages = 4;
+	repeated ChatMessage systemMssages = 5;
+	repeated ChatMessage privateMessages = 6;
+	repeated ChatMessage teamMessages = 7;
+	repeated ChatMessage guildMessages = 8;
 }

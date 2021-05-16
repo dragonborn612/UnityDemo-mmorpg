@@ -33,6 +33,7 @@ namespace Assets.Scripts.Managers
             UIResouces.Add(typeof(UIGuildList), new UIElment() { Resouce = "UI/UIGuildList", Cache = false, });
             UIResouces.Add(typeof(UIGuild), new UIElment() { Resouce = "UI/UIGuild", Cache = false, });
             UIResouces.Add(typeof(UIGuildApplyList), new UIElment() { Resouce = "UI/UIGuildApplyList", Cache = false, });
+            UIResouces.Add(typeof(UIRide), new UIElment() { Resouce = "UI/UIRide", Cache = false, });
             //UIResouces.Add(typeof(UITeam), new UIElment() { Resouce = "UI/UITeam", Cache = false, });
         }
         ~UIManager()

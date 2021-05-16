@@ -5,8 +5,10 @@ using Entities;
 using Gameobject;
 using SkillBridge.Message;
 using Assets.Scripts.Managers;
+using Assets.Scripts.Gameobject;
+using System;
 
-public class EntiyController : MonoBehaviour,IEntityNotiy
+public class EntiyController : MonoBehaviour, IEntityNotiy
 {
 
     public Animator anim;
@@ -26,8 +28,11 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
     public float jumpPower = 3.0f;
 
     public bool isPlayer = false;
-	// Use this for initialization
-	void Start () {
+    public RideController rideController;
+    private int currentRideid = 0;
+    public Transform rideBone;
+    // Use this for initialization
+    void Start() {
         if (entity != null)
         {
             EntityManager.Instance.RegiestEntityChangeNotify(entity.entityId, this);
@@ -38,10 +43,10 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
         {
             this.rb.useGravity = false;
         }
-	}
+    }
     private void OnDestroy()
     {
-        if (entity!=null)
+        if (entity != null)
         {
             Debug.LogFormat("{0} Ondestroy:ID:{1} Pos:{2} Dir:{3} Spd:{4}", this.name, entity.entityId, entity.position, entity.direction, entity.speed);
             if (UIWorldElementManager.Instance != null)
@@ -51,8 +56,8 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
         }
     }
     // Update is called once per frame
-    void FixedUpdate () {
-        if (this.entity==null)
+    void FixedUpdate() {
+        if (this.entity == null)
         {
             return;
         }
@@ -61,7 +66,7 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
         {
             this.UpdataTransforn();
         }
-	}
+    }
     void UpdataTransforn()
     {
         this.position = GameObjectTool.LogicToWorld(entity.position);
@@ -77,7 +82,7 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
     /// 动画状态机条件改变
     /// </summary>
     /// <param name="entityEvent"></param> //接口实现 同步状态
-    public void OnEntityEvent(EntityEvent entityEvent)
+    public void OnEntityEvent(EntityEvent entityEvent, int param = 0)
     {
         switch (entityEvent)
         {
@@ -94,9 +99,19 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
             case EntityEvent.Jump:
                 anim.SetTrigger("Jump");
                 break;
-            
+            case EntityEvent.Ride:
+                {
+                    this.Ride(param);
+                }
+                break;
+        }
+        if (this.rideController != null)
+        {
+            this.rideController.onEntityEvent(entityEvent, param);
         }
     }
+
+
 
     //接口实现
     public void OnEntityRemoved()
@@ -112,6 +127,37 @@ public class EntiyController : MonoBehaviour,IEntityNotiy
     {
         Debug.LogFormat("OnEntityChange:id:{0} pos:{1}:Dir:{2} Spd{3}", entity.entityId, entity.position, entity.direction, entity.speed);
     }
+    public void Ride(int rideId)
+    {
+        if (currentRideid==rideId)
+        {
+            return;
+        }
+        currentRideid = rideId;
+        if (rideId>0)
+        {
+            this.rideController = GammaObjectManager.Instance.LoadRide(rideId, this.transform);
+        }
+        else
+        {
+            Destroy(this.rideController.gameObject);
+            this.rideController = null;
 
-    
+        }
+        if (this.rideController==null)
+        {
+            this.anim.transform.localPosition = Vector3.zero;
+            this.anim.SetLayerWeight(1, 0);
+        }
+        else
+        {
+            this.rideController.SetRider(this);
+            this.anim.SetLayerWeight(1, 1);
+        }
+    }
+    public void SetRidePotision(Vector3 position)
+    {
+        this.anim.transform.position = position + (this.anim.transform.position - this.rideBone.position);
+    }
+
 }

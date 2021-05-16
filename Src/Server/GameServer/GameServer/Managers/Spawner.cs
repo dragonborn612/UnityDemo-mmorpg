@@ -63,7 +63,7 @@ namespace GameServer.Managers
             {
                 return false;
             }
-            if (this.unspawnTime+this.Define.SpawnPeriod>Time.time)
+            if (this.unspawnTime + this.Define.SpawnPeriod > Time.time)
             {
                 return false;
             }

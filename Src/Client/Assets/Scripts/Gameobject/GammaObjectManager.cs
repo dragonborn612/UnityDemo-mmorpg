@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿using Assets.Scripts.Gameobject;
+using Entities;
 using Gameobject;
 using Managers;
 using Models;
@@ -90,6 +91,7 @@ public class GammaObjectManager : MonoSingleton<GammaObjectManager> {
         {
             ec.entity = cha;
             ec.isPlayer = cha.IsCurrentPlayer;
+            ec.Ride(cha.nCharacterInfo.Ride);
         }
 
         PlayerInputerController pc = go.GetComponent<PlayerInputerController>();
@@ -98,7 +100,7 @@ public class GammaObjectManager : MonoSingleton<GammaObjectManager> {
             //确定是否为当前控制角色
             if (cha.IsCurrentPlayer)
             {
-                User.Instance.currentCharacterObject = go;
+                User.Instance.currentCharacterObject =pc;
                 MainPlayerCamera.Instance.player = go;
                 pc.enabled = true;
                 pc.isPlayer = true;
@@ -110,5 +112,20 @@ public class GammaObjectManager : MonoSingleton<GammaObjectManager> {
                 pc.enabled = false;
             }
         }
+    }
+
+    public  RideController LoadRide(int rideId,Transform parent)
+    {
+        var rideDefine = DataManager.Instance.Rides[rideId];
+        UnityEngine.Object obj = Resloader.Load<UnityEngine.Object>(rideDefine.Resource);
+        if (obj==null)
+        {
+            Debug.LogErrorFormat("Ride[{0}] Resource[{1}] not existed.", rideDefine.ID, rideDefine.Resource);
+            return null;
+        }
+        GameObject go = (GameObject)Instantiate(obj, parent);
+        go.name = "Ride_+rideDefine.ID" + "_" + rideDefine.Name;
+        return go.GetComponent<RideController>();
+
     }
 }

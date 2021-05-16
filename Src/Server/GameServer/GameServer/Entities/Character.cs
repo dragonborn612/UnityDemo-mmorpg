@@ -46,6 +46,7 @@ namespace GameServer.Entities
             this.Info.Level = 10;//cha.Level;
             this.Info.ConfigId = cha.TID;
             this.Info.Gold = cha.Gold;
+            this.Info.Ride = 0;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
             this.Info.Entity = this.EntityData;
@@ -80,6 +81,18 @@ namespace GameServer.Entities
                 }
                 this.StatusManager.AddGoldChange((int)(value - this.Data.Gold));
                 this.Data.Gold = value;//修改了数据库表角色
+            }
+        }
+        public int Ride
+        {
+            get { return this.Info.Ride; }
+            set
+            {
+                if (this.Info.Ride==value)
+                {
+                    return;
+                }
+                this.Info.Ride = value;
             }
         }
 
@@ -146,5 +159,6 @@ namespace GameServer.Entities
         {
             this.FriendManager.OfflineNotify();
         }
+        
     }
 }

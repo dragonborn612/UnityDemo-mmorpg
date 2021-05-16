@@ -27,5 +27,13 @@
     "Type": "Functional",
     "Function": "InvokeShop",
     "Param": 2
+  },
+  "5": {
+    "ID": 5,
+    "Name": "微微安",
+    "Description": "坐骑NPC",
+    "Type": "Functional",
+    "Function": "InvokeShop",
+    "Param": 3
   }
 }
